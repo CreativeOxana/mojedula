@@ -1,6 +1,6 @@
 import '../HomePage/style.css';
 import { useEffect, useRef } from 'react';
-import Logo from '/src/img/logo.png';
+import Logo from '/img/logo.png';
 
 export const HomePage = () => {
   const navbarRef = useRef(null);
