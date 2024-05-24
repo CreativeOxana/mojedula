@@ -36,7 +36,7 @@ export const HomePage = () => {
     <nav className="navbar" ref={navbarRef}>
       <i className="uil uil-bars navOpenBtn"></i>
       <div className="logo">
-        <img src="src/img/logo-moje-dula.png" alt="České logo" width="110px" />
+        <img src="/src/img/logo-moje-dula.png" alt="České duly logo" width="110px" />
       </div>
       <ul className="nav-links">
         <i className="uil uil-bars navCloseBtn"></i>
