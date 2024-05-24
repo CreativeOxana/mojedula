@@ -33,6 +33,9 @@ a {
   font-size: 22px;
   font-weight: 500;
   background-image: url(img/logo.png);
+  background-size: cover;
+  width: 100px;
+}
 }
 
 .navbar .nav-links {
