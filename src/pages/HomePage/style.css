@@ -32,6 +32,7 @@ a {
 .navbar .logo {
   font-size: 22px;
   font-weight: 500;
+ background-image: url(img/logo.png);
 }
 
 .navbar .nav-links {
