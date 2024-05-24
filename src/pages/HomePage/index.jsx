@@ -1,5 +1,6 @@
 import '../HomePage/style.css';
 import { useEffect, useRef } from 'react';
+import Logo from '/img/logo.png';
 
 export const HomePage = () => {
   const navbarRef = useRef(null);
@@ -36,6 +37,7 @@ export const HomePage = () => {
     <nav className="navbar" ref={navbarRef}>
       <i className="uil uil-bars navOpenBtn"></i>
       <div className="logo">
+        <img src={Logo} alt="logo" width="110px" />
       </div>
       <ul className="nav-links">
         <i className="uil uil-bars navCloseBtn"></i>
