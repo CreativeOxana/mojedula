@@ -1,6 +1,7 @@
 import '../HomePage/style.css';
 import { useEffect, useRef } from 'react';
 import Logo from '/img/logo.png';
+import { Find_doula } from '../Find_doula';
 
 export const HomePage = () => {
   const navbarRef = useRef(null);
