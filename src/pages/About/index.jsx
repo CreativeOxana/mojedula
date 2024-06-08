@@ -1,9 +1,9 @@
 export const About = () => {
   return (
     <>
-      <div className="container">
+      <div className="about-text">
         <h1>Kdo je dula</h1>
-        <p>
+        <p className="text">
           Dula poskytuje ženě a její rodině podporu během těhotenství, porodu i
           šestinedělí. Doprovází­ je na jejich individuální cestě a pomáhá jim
           naplnit jejich představy o tomto životním období. Dula podporuje ženy
