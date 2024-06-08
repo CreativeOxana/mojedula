@@ -185,4 +185,8 @@ a {
     transform: translateX(50%);
     box-shadow: 0 2px 10px rgba(179, 150, 180, 1);
   }
+
+  .card-container {
+    display: flex;
+  }
 }
