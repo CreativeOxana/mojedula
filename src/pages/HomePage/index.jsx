@@ -1,11 +1,22 @@
 // import { CollapseBox } from '../components/CollapseBox';
+import { useState } from 'react';
+import Map from '../components/Map/Map';
+import DulaList from '../components/DulaList/DulaList';
 import './style.css';
 
 export const HomePage = () => {
+  const [regionId, setRegionId] = useState('');
+
+  function handleDataFromChild(data) {
+    setRegionId(data);
+  }
+
   return (
     <div className="app-container">
       <main>
         <div className="container">
+          <Map sendDataToParent={handleDataFromChild} />
+          <DulaList region={regionId} />
           <div className="card-container">
             <div className="card scale-element">
               <img src="../img/pexels1.jpg" alt="" width="200px" />
