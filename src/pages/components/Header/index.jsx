@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import './style.css';
 import Logo from '/img/logo.png';
 
 export const Header = () => {
@@ -31,40 +32,60 @@ export const Header = () => {
     navCloseBtn.addEventListener('click', () => {
       navbarRef.current.classList.remove('openNav');
     });
+
+    const closeSearch = document.querySelector('.close-search');
+
+    closeSearch.addEventListener('click', () => {
+      navbarRef.current.classList.toggle('openNav');
+      navbarRef.current.classList.remove('openSearch');
+    });
   }, []);
+
   return (
     <>
-      <nav className="navbar" ref={navbarRef}>
-        <i className="uil uil-bars navOpenBtn"></i>
-        <div className="logo">
-          <img src={Logo} alt="logo" width="110px" />
-        </div>
-        <ul className="nav-links">
-          <i className="uil uil-bars navCloseBtn"></i>
-          <li className="about">
-            <Link to="/about">O nás</Link>
-          </li>
-          <li className="education">
-            <Link to="/education">Vzdělávání</Link>
-          </li>
-          <li className="events">
-            <Link to="/events">Události</Link>
-          </li>
-          <li className="find_doula">
-            <Link to="/find_doula">Najít dulu</Link>
-          </li>
-          <li className="contacts">
-            <Link to="/contacts">Kontakty</Link>
-          </li>
-        </ul>
-        <i
-          className="uil uil-search search-icon"
-          ref={searchIconRef}
-          id="searchIcon"
-        ></i>
-        <div className="search-box">
-          <i className="uil uil-search search-icon"></i>
-          <input type="text" placeholder="Hledám..." />
+      <nav className="header" ref={navbarRef}>
+        <div className="header-container">
+          <div className="logo">
+            <img src={Logo} alt="logo" width="110px" />
+          </div>
+
+          <i className="uil uil-bars navOpenBtn"></i>
+
+          <div className="navbar">
+            <ul className="nav">
+              <i className="uil uil-bars navCloseBtn"></i>
+              <li className="about">
+                <Link to="/about">O nás</Link>
+              </li>
+              <li className="education">
+                <Link to="/education">Vzdělávání</Link>
+              </li>
+              <li className="events">
+                <Link to="/events">Události</Link>
+              </li>
+              <li className="find_doula">
+                <Link to="/find_doula">Najít dulu</Link>
+              </li>
+              <li className="contacts">
+                <Link to="/contacts">Kontakty</Link>
+              </li>
+            </ul>
+
+            <div className="searchbar">
+              <div className="searchbar-label" ref={searchIconRef}>
+                <i className="uil uil-search search-icon" id="searchIcon"></i>
+                Hledejte
+              </div>
+
+              <div className="searchbar-control">
+                <div className="search-box">
+                  <i className="uil uil-search search-icon"></i>
+                  <input type="text" placeholder="Hledám..." />
+                  <button className="close-search">&times;</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </>

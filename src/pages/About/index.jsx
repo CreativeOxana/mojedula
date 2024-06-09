@@ -1,8 +1,11 @@
+import './style.css';
+
 export const About = () => {
   return (
     <>
       <div className="about-text">
         <h1>Kdo je dula</h1>
+        <img src="img/pexels2.jpg" alt="" width="300px" />
         <p className="text">
           Dula poskytuje ženě a její rodině podporu během těhotenství, porodu i
           šestinedělí. Doprovází­ je na jejich individuální cestě a pomáhá jim
