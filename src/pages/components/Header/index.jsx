@@ -46,7 +46,9 @@ export const Header = () => {
       <nav className="header" ref={navbarRef}>
         <div className="header-container">
           <div className="logo">
-            <img src={Logo} alt="logo" width="110px" />
+            <Link to="/">
+              <img src={Logo} alt="logo" width="110px" />
+            </Link>
           </div>
 
           <i className="uil uil-bars navOpenBtn"></i>
