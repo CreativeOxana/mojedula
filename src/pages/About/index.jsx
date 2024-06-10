@@ -119,14 +119,16 @@ export const About = () => {
         <h3>Jak kontaktovat dulu?</h3>
         <p>
           Na našich stránkách naleznete{' '}
-          <Link to="/find_doula">mapu Českých dul</Link>, kde si můžete vybrat
-          služby duly podle místa, kde ji sháníte.
+          <Link to="/find_doula" className="link">
+            mapu Českých dul
+          </Link>
+          , kde si můžete vybrat služby duly podle místa, kde ji sháníte.
         </p>
         <h3>Chcete se sama stát dulou?</h3>
         <p>
           Veškeré důležité informace o našem výcviku pro vyškolení
           profesionálních dul najdete v sekci vzdělávání. Samozřejmě nás můžete
-          oslovit na kontaktním emailu (ikonka a email)
+          oslovit na kontaktním emailu <i className="fa-solid fa-envelope"></i>
         </p>
       </div>
     </>

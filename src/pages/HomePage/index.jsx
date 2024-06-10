@@ -1,4 +1,5 @@
 // import { CollapseBox } from '../components/CollapseBox';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export const HomePage = () => {
@@ -16,7 +17,10 @@ export const HomePage = () => {
                 šestinedělek. Spolek taktéž pořádá výcviky pro budoucí
                 profesionální duly.
               </div>
-              <div className="card-link">odkaz na informace k spolku</div>
+              <button className="card-button">
+                {' '}
+                <Link to="/about">Zjisti informace o spolku</Link>
+              </button>
             </div>
             <div className="card card-vycvik scale-element">
               <img src="../img/DSC_0037.jpg" alt="" width="200px" />
@@ -27,7 +31,10 @@ export const HomePage = () => {
                 během potratu. Vyhledejte tu pravou dulu pro vás pomocí naší
                 interaktivní mapy.{' '}
               </div>
-              <div className="card-link">odkaz na mapu</div>
+              <button className="card-button">
+                {' '}
+                <Link to="/find_doula">Najdi dulu</Link>
+              </button>
             </div>
             <div className="card scale-element">
               <img src="../img/bonding.jpg" alt="" width="200px" />
@@ -36,7 +43,10 @@ export const HomePage = () => {
                 vhodný kurz probíhající v Praze, přečtěte si, jak probíhá náš
                 výcvik.{' '}
               </div>
-              <div className="card-link">odkaz na výcvik</div>
+              <button className="card-button">
+                {' '}
+                <Link to="/education">Zjisti informace o výcviku</Link>
+              </button>
             </div>
           </div>
           <div className="text-container scale-element">
