@@ -4,10 +4,11 @@ export const Footer = () => {
   return (
     <>
       <footer>
-        <div>Facebook s odkazem a ikonkou</div>
-        <div>Instagram s odkazem a ikonkou</div>
-        <div>Email s ikonkou</div>
-        <div>Diskuzní forum? a odkazem</div>
+        <i className="fa-brands fa-facebook"></i>
+        <p>České duly</p>
+        <i className="fa-brands fa-instagram"></i>
+        <p>České duly</p>
+
         <div className="footer-container">© 2024</div>
       </footer>
     </>

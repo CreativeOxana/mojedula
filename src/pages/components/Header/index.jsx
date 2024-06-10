@@ -76,7 +76,6 @@ export const Header = () => {
             <div className="searchbar">
               <div className="searchbar-label" ref={searchIconRef}>
                 <i className="uil uil-search search-icon" id="searchIcon"></i>
-                Hledejte
               </div>
 
               <div className="searchbar-control">
