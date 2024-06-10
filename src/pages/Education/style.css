@@ -1,0 +1,26 @@
+.education-container {
+  margin: 150px 40px 50px 40px;
+
+}
+
+.reference {
+  font-style: oblique;
+  padding: 20px;
+  text-align: center;
+}
+
+.education-card {
+  border: 1px solid var(--brand-color);
+  border-radius: 40%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.education-card ul {
+  list-style-type: none;
+}
+
+.education-card li {
+  padding: 5px;
+}

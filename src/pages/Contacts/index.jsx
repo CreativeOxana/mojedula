@@ -17,19 +17,17 @@ export const Contacts = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <p>
-        <strong>Email:</strong> info@mojedula.cz, vzdelavani@mojedula.cz{' '}
-      </p>
-      <p>
-        <strong>Facebook:</strong> České duly{' '}
-      </p>
-      <p>
-        <strong>Instagram:</strong> ceske.duly{' '}
-      </p>
-      <p>
-        <strong>Diskusní skupina na FB: </strong>Moje dula – podpora a sdílení s
-        Českými dulami{' '}
-      </p>
+      <i class="fa-solid fa-envelope"></i>
+      <p>info@mojedula.cz, vzdelavani@mojedula.cz</p>
+      <i className="fa-brands fa-facebook"></i>
+      <p>České duly</p>
+      <i className="fa-brands fa-instagram"></i>
+      <p>ceske.duly</p>
+      <i class="fa-solid fa-comments">
+        {' '}
+        <i className="fa-brands fa-facebook"></i>
+      </i>
+      <p>Moje dula – podpora a sdílení s Českými dulami </p>
       <Form />
       <em>
         Kontakt na konkrétní České duly najdete zde zařazené do regionů, ve

@@ -80,8 +80,8 @@ export const Header = () => {
 
               <div className="searchbar-control">
                 <div className="search-box">
-                  <i className="uil uil-search search-icon"></i>
-                  <input type="text" placeholder="Hledám..." />
+                  <i className="uil uil-search search-icon"> </i>
+                  <input type="text" placeholder="Hledám..." />{' '}
                   <button className="close-search">&times;</button>
                 </div>
               </div>

@@ -40,7 +40,7 @@ export default function Form() {
   }
 
   return (
-    <div className="container">
+    <div className="form-container">
       <form onSubmit={(e) => onSubmit(e)}>
         <div className="formcarry-block">
           <label htmlFor="name">Jméno </label>
