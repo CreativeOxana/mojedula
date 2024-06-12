@@ -5,10 +5,15 @@
   justify-content: center;
   margin-bottom: 100px;
   cursor: crosshair;
-  transform: scaleY 300ms ease-in-out;
+
 }
 
-#CZ-JC:hover {
+#czMap path {
+  transition: transform 300ms ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#czMap path:hover {
   fill-opacity: 80%;
-  transform: scaleY(1.02)
 }

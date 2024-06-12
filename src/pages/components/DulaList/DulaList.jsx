@@ -8,7 +8,7 @@ export default function ({ region }) {
       name: 'Berková Lenka, Mgr.',
       regionIds: ['cz-pr', 'cz-st'],
       accretitaion: 'dula absolventka',
-      language: ['český', 'francouzský'],
+      language: ['český, francouzský'],
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export default function ({ region }) {
       name: 'Hájková Kateřina',
       regionIds: ['cz-pr', 'cz-st'],
       accretitaion: 'dula absolventka',
-      language: ['český', 'anglický'],
+      language: ['český, anglický'],
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ export default function ({ region }) {
       name: 'Nerodilová Petra, Ing.',
       regionIds: ['cz-pr', 'cz-st'],
       accretitaion: 'dula absolventka',
-      language: ['český', 'anglický', 'španělský'],
+      language: ['český, anglický, španělský'],
     },
     {
       id: 8,
@@ -64,7 +64,7 @@ export default function ({ region }) {
       name: 'Sokolová Zuzana, DiS.',
       regionIds: ['cz-pr', 'cz-st', 'cz-vy'],
       accretitaion: 'certifikovaná dula',
-      language: ['český', 'anglický'],
+      language: ['český, anglický'],
     },
     {
       id: 10,
