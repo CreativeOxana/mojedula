@@ -5,7 +5,8 @@ export default function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [checkbox, setCheckbox] = useState('');
+  const [events, setEvents] = useState(false);
+  const [education, setEducation] = useState(false);
 
   const [error, setError] = useState('');
 
@@ -19,7 +20,13 @@ export default function Form() {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message, checkbox, checkbox2 }),
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+        events: events === true ? 'checked' : 'not checked',
+        education: education === true ? 'checked' : 'not checked',
+      }),
     })
       .then((response) => response.json())
       .then((response) => {
@@ -77,18 +84,18 @@ export default function Form() {
         <label htmlFor="checkbox"> Události </label>
         <input
           type="checkbox"
-          name="udalosti"
-          checked={checkbox}
-          onChange={(e) => setCheckbox(e.target.checked)}
-          id="checkbox"
+          name="checkbox"
+          checked={events}
+          onChange={(e) => setEvents(e.target.checked)}
+          id="events"
         />
         <label htmlFor="checkbox"> Výcviky </label>
         <input
           type="checkbox"
-          name="vycviky"
-          checked={checkbox}
-          onChange={(e) => setCheckbox(e.target.checked)}
-          id="checkbox2"
+          name="checkbox"
+          checked={education}
+          onChange={(e) => setEducation(e.target.checked)}
+          id="education"
         />
 
         <div className="formcarry-block">
