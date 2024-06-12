@@ -81,6 +81,7 @@ export default function Form() {
             placeholder="Zadejte svou zprávu..."
           ></textarea>
         </div>
+        <p>Označte k odběru, kterých novinek se přihlašujete: </p>
         <label htmlFor="checkbox"> Události </label>
         <input
           type="checkbox"
@@ -97,7 +98,6 @@ export default function Form() {
           onChange={(e) => setEducation(e.target.checked)}
           id="education"
         />
-
         <div className="formcarry-block">
           <button type="submit"> Poslat </button>
         </div>

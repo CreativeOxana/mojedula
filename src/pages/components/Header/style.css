@@ -105,6 +105,7 @@ a {
   .search-box {
     right: 150px;
   }
+
 }
 
 @media screen and (max-width: 950px) {
@@ -126,7 +127,7 @@ a {
 
   .navbar {
     position: relative;
-    max-width: 915px;
+    max-width: 70%;
     justify-content: space-between;
   }
 

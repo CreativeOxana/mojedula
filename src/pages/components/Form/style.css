@@ -5,3 +5,7 @@ textarea {
 .form-container {
   margin: 30px;
 }
+
+.checkbox {
+  font-size: small;
+}
