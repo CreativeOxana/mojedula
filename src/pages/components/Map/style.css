@@ -9,9 +9,7 @@
 }
 
 #czMap path {
-  transition: transform 300ms ease-in-out;
-  transform-box: fill-box;
-  transform-origin: center;
+  transition: fill-opacity 300ms ease-in-out;
   cursor: url("../../../../public/img/pin.png"), default;
 }
 
