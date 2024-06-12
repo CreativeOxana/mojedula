@@ -10,7 +10,7 @@
 
 #czMap path {
   transition: fill-opacity 300ms ease-in-out;
-  cursor: url("../../../../public/img/pin.png"), default;
+  cursor: url("../../../../public/img/pin.png") 18 18, default;
 }
 
 #czMap path:hover {
