@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
-  cursor: crosshair;
+
 
 }
 
@@ -12,6 +12,7 @@
   transition: transform 300ms ease-in-out;
   transform-box: fill-box;
   transform-origin: center;
+  cursor: url("../../../../public/img/pin.png"), default;
 }
 
 #czMap path:hover {
