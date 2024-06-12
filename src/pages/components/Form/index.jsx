@@ -19,7 +19,7 @@ export default function Form() {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({ name, email, message, checkbox, checkbox2 }),
     })
       .then((response) => response.json())
       .then((response) => {
@@ -74,14 +74,22 @@ export default function Form() {
             placeholder="Zadejte svou zprávu..."
           ></textarea>
         </div>
-        <div className="formcarry-block">
-          <label htmlFor="checkbox"> Události </label>
-          <input
-            type="checkbox"
-            onChange={(e) => setCheckbox(e.target.checked)}
-            id="checkbox"
-          />
-        </div>
+        <label htmlFor="checkbox"> Události </label>
+        <input
+          type="checkbox"
+          name="udalosti"
+          checked={checkbox}
+          onChange={(e) => setCheckbox(e.target.checked)}
+          id="checkbox"
+        />
+        <label htmlFor="checkbox"> Výcviky </label>
+        <input
+          type="checkbox"
+          name="vycviky"
+          checked={checkbox}
+          onChange={(e) => setCheckbox(e.target.checked)}
+          id="checkbox2"
+        />
 
         <div className="formcarry-block">
           <button type="submit"> Poslat </button>

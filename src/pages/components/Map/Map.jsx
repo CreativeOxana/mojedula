@@ -15,9 +15,9 @@ export default function ({ sendDataToParent }) {
     <>
       <svg
         className="map"
-        id="czMap"
         xmlns:svg="http://www.w3.org/2000/svg"
         xmlns="http://www.w3.org/2000/svg"
+        fill="#8C698C"
         width="612.45972"
         height="350.61844"
         onClick={onClickPathHandler}
