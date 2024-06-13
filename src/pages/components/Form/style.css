@@ -177,8 +177,3 @@
   border-color: hsl(var(--fc-error-hsl));
   box-shadow: 0px 0px 0px 3px hsla(var(--fc-error-hsl), 12%);
 }
-
-.form-container input {
-  height: 16px;
-  width: 50%;
-}

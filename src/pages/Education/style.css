@@ -1,6 +1,8 @@
 .education-container {
   margin: 150px 40px 50px 40px;
-
+  border: 1px solid var(--brand-color);
+  box-shadow: 0 0 2px 3px var(--brand-color);
+  border-radius: 20px;
 }
 
 .reference {
@@ -10,21 +12,24 @@
 }
 
 h1,
-h2 {
-  margin: 0;
+h2,
+h4 {
+  margin-left: 50px;
+  margin-right: 50px;
   padding-bottom: 20px;
 }
 
 p {
+  margin-left: 50px;
+  margin-right: 50px;
   padding-bottom: 20px;
 }
 
 .education-card {
-  border: 1px solid var(--brand-color);
-  border-radius: 40%;
+  /* border: 3px solid var(--brand-color); */
   text-align: center;
-  margin: 20px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .education-card ul {
