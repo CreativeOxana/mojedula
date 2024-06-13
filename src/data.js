@@ -2,7 +2,7 @@ import image1 from './img/bonding.jpg';
 import image2 from './img/DSC_0037.jpg';
 import image3 from './img/pexels4';
 
-const images = [
+const duly = [
   {
     id: 1,
     image: image1,
@@ -20,4 +20,4 @@ const images = [
   },
 ];
 
-export default images;
+export default duly;

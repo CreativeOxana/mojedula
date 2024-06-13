@@ -81,7 +81,7 @@ export default function Form() {
             placeholder="Zadejte svou zprávu..."
           ></textarea>
         </div>
-        <p>Označte k odběru, kterých novinek se přihlašujete: </p>
+        <p>Přihlašuji se k odběru: </p>
         <label htmlFor="checkbox"> Události </label>
         <input
           type="checkbox"
