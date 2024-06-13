@@ -31,7 +31,7 @@ export const Events = () => {
         <p>
           Bližší informace o jednotlivých událostech získáte na{' '}
           <a href="mailto: info@mojedula.cz">emailu </a>
-          <i class="fa-solid fa-envelope"></i>
+          <i className="fa-solid fa-envelope"></i>
         </p>
       </div>
     </>
