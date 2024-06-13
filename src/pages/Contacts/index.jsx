@@ -19,19 +19,30 @@ export const Contacts = () => {
       ></iframe>
       <i className="fa-solid fa-envelope"></i>
       <p>
-        <a href="mailto: info@mojedula.cz">info@mojedula.cz</a>,
-        <a href="mailto: vzdelavani@mojedula.cz">vzdelavani@mojedula.cz</a>
+        <a href="mailto: info@mojedula.cz" target="_blank">
+          info@mojedula.cz
+        </a>
+        ,
+        <a href="mailto: vzdelavani@mojedula.cz" target="_blank">
+          vzdelavani@mojedula.cz
+        </a>
       </p>
-      <a href="https://www.facebook.com/ceske.duly/?locale=cs_CZ">
+      <a
+        href="https://www.facebook.com/ceske.duly/?locale=cs_CZ"
+        target="_blank"
+      >
         <i className="fa-brands fa-facebook"></i>
       </a>
-      <a href="https://www.facebook.com/ceske.duly/?locale=cs_CZ">
+      <a
+        href="https://www.facebook.com/ceske.duly/?locale=cs_CZ"
+        target="_blank"
+      >
         <p>České duly</p>
       </a>
-      <a href="https://www.instagram.com/ceske.duly/">
+      <a href="https://www.instagram.com/ceske.duly/" target="_blank">
         <i className="fa-brands fa-instagram"></i>
       </a>
-      <a href="https://www.instagram.com/ceske.duly/">
+      <a href="https://www.instagram.com/ceske.duly/" target="_blank">
         <p>ceske.duly</p>
       </a>
       <i className="fa-solid fa-comments">
@@ -39,7 +50,10 @@ export const Contacts = () => {
         <i className="fa-brands fa-facebook"></i>
       </i>
       <p>
-        <a href="https://www.facebook.com/groups/271474671034538/">
+        <a
+          href="https://www.facebook.com/groups/271474671034538/"
+          target="_blank"
+        >
           Moje dula – podpora a sdílení s Českými dulami{' '}
         </a>
       </p>

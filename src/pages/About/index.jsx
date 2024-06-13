@@ -159,17 +159,17 @@ export const About = () => {
           Veškeré důležité informace o našem výcviku pro vyškolení
           profesionálních dul najdete v sekci vzdělávání. Samozřejmě nás můžete
           oslovit na kontaktním emailu{' '}
-          <a href="mailto: vzdelavani@mojedula.cz">
+          <a href="mailto: vzdelavani@mojedula.cz" target="_blank">
             <i className="fa-solid fa-envelope"></i>
           </a>
         </p>
-        <h3>Přejete si podrobnější informace o organizaci?</h3>
+        {/* <h3>Přejete si podrobnější informace o organizaci?</h3>
         <p>
           Podrobné informace o organizaci naleznete na{' '}
           <Link to="/information" className="link">
             tomto odkazu
           </Link>
-        </p>
+        </p> */}
       </div>
     </>
   );

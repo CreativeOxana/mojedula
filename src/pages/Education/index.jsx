@@ -21,7 +21,10 @@ export const Education = () => {
           online u vás doma (bližší info níže).
         </p>
         <button>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfMTYBAZ5AK1qmI3dRgTQg7ODUc7BjC7wKzRhBUK3Zudzm3w/viewform">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdfMTYBAZ5AK1qmI3dRgTQg7ODUc7BjC7wKzRhBUK3Zudzm3w/viewform"
+            target="_blank"
+          >
             Přihlásit
           </a>
         </button>
@@ -172,7 +175,10 @@ export const Education = () => {
         <p>
           Jestli máte jasno a chcete se do výcviku přihlásit, vyplňte motivační
           dopis{' '}
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfMTYBAZ5AK1qmI3dRgTQg7ODUc7BjC7wKzRhBUK3Zudzm3w/viewform?fbclid=IwAR1I2DWNGVwGxldj5AxPz9U5c-ZXNDmAYoXpKxIs7bx0yUFg_eDSklssIJc">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdfMTYBAZ5AK1qmI3dRgTQg7ODUc7BjC7wKzRhBUK3Zudzm3w/viewform?fbclid=IwAR1I2DWNGVwGxldj5AxPz9U5c-ZXNDmAYoXpKxIs7bx0yUFg_eDSklssIJc"
+            target="_blank"
+          >
             ZDE
           </a>{' '}
           a my vás moc rády pozveme na přijímací řízení.

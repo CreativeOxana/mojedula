@@ -16,3 +16,10 @@ footer {
 footer a {
   color: var(--dark-color);
 }
+
+.socials {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}

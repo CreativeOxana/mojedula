@@ -30,7 +30,9 @@ export const Events = () => {
         </ul>
         <p>
           Bližší informace o jednotlivých událostech získáte na{' '}
-          <a href="mailto: info@mojedula.cz">emailu </a>
+          <a href="mailto: info@mojedula.cz" target="_blank">
+            emailu{' '}
+          </a>
           <i className="fa-solid fa-envelope"></i>
         </p>
       </div>
