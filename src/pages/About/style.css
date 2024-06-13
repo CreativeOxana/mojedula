@@ -19,7 +19,7 @@ h1 {
 
 .about-text img {
   border-radius: 20px;
-  width: 500px;
+  width: 55%;
 }
 
 .link {
@@ -28,4 +28,15 @@ h1 {
 
 p a {
   color: var(--brand-color);
+}
+
+.dula {
+  padding-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+p {
+  margin-left: 50px;
+  margin-right: 50px;
 }

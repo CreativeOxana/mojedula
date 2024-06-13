@@ -17,18 +17,3 @@ footer {
 footer a {
   color: var(--dark-color);
 }
-
-.icons-container {
-  display: flex;
-  align-items: center;
-}
-
-.icons-container i {
-  padding-right: 10px;
-  justify-content: space-between;
-  color: var(--dark-color)
-}
-
-.icons-container p {
-  padding-right: 10px;
-}

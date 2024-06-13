@@ -49,7 +49,7 @@ export const About = () => {
             asistentky.
           </p>
         </div>
-        <h1>DULA podle Českých dul</h1>
+        <h1>Dula podle Českých dul</h1>
         <p>
           V našem zapsaném spolku České duly chápeme dulu jako profesionála v
           oblasti pomáhají­cí­ profese, jehož hlavní­ kompetencí­ je pomáhat a
@@ -61,9 +61,9 @@ export const About = () => {
           oblastí­, které nejsou v její­ kompetenci. Má však kontakty na
           odborní­ky z oblastí­ pomáhají­cí­ch profesí­, kteří­ mohou ženu
           podpořit či jí pomoci v pří­padě, že potřeby klientky již do
-          kompetencí­ duly nespadají.{' '}
+          kompetencí­ duly nespadají.
         </p>
-        <p>
+        <p className="no">
           Důležitou kompetencí­ České duly je umět pečovat sama o sebe a svoje
           znalosti použí­vat k tomu, aby se dobře rozví­jela jako profesionál v
           oblasti pomáhají­cí­ profese.
@@ -85,7 +85,7 @@ export const About = () => {
           pak duly konzultantky, které pracují­ s dulami ve výcviku.
         </p>
         <h2>Jaké služby dula nabí­zí­?</h2>
-        <ul>
+        <ul className="dula">
           <li>
             psychickou a emocionální­ podporu ženy v průběhu těhotenství­,
             porodu a šestinedělí­
@@ -116,8 +116,8 @@ export const About = () => {
             těhotných nebo miminek a jiné
           </li>
         </ul>
-        <h3>Co je pro nás důležité?</h3>
-        <ul>
+        <h2>Co je pro nás důležité?</h2>
+        <ul className="dula">
           <li>
             České duly usilují­ o stálé zvyšování­ kvality vzdělávání­ a práce
             dul v ČR, o dodržování­ etických i profesní­ch standardů, o
