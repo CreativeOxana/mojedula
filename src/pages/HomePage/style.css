@@ -31,14 +31,8 @@ body {
   margin: 0 auto;
   border-top-right-radius: 10px;
   width: 100%;
-  aspect-ratio: 1.6;
   object-fit: cover;
-  object-position: 50% 35%;
   box-shadow: 0 5px 20px var(--brand-color);
-}
-
-.card-vycvik {
-  object-position: 10% 20%;
 }
 
 .card .card-text {
@@ -88,18 +82,20 @@ body {
 
 .card-button {
   background-color: var(--brand-color);
-  width: 50%;
-  height: 50%;
-  box-shadow: 0 0 5px var(--dark-color);
-  /* border-radius: 45px; */
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 0 2px var(--dark-color);
   transition: background-color 300ms ease-in-out;
-
+  border-radius: 15px;
+  padding: 5px;
+  border: none;
 }
 
 .card {
   align-items: center;
   padding-bottom: 30px;
 }
+
 
 .card-button:hover {
   background-color: var(--dark-color);

@@ -41,13 +41,16 @@ p {
 }
 
 button {
-
   background-color: var(--brand-color);
-  border-radius: 20px;
-  padding: 10px;
-  /* border: 1px solid #4e0044; */
+  box-shadow: 0 0 2px var(--dark-color);
+  transition: background-color 300ms ease-in-out;
+  border-radius: 15px;
+  padding: 5px;
   border: none;
-  box-shadow: 0 0 5px #4e0044;
+}
+
+button:hover {
+  background-color: var(--dark-color);
 }
 
 button a {

@@ -63,7 +63,7 @@ export const About = () => {
           podpořit či jí pomoci v pří­padě, že potřeby klientky již do
           kompetencí­ duly nespadají.
         </p>
-        <p className="no">
+        <p>
           Důležitou kompetencí­ České duly je umět pečovat sama o sebe a svoje
           znalosti použí­vat k tomu, aby se dobře rozví­jela jako profesionál v
           oblasti pomáhají­cí­ profese.

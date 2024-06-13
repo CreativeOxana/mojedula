@@ -6,7 +6,6 @@ export default function Form() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [events, setEvents] = useState(false);
-  const [education, setEducation] = useState(false);
 
   const [error, setError] = useState('');
 
@@ -25,7 +24,6 @@ export default function Form() {
         email,
         message,
         events: events === true ? 'checked' : 'not checked',
-        education: education === true ? 'checked' : 'not checked',
       }),
     })
       .then((response) => response.json())
@@ -82,9 +80,7 @@ export default function Form() {
           ></textarea>
         </div>
         <div className="formcarry-block">
-          <div>
-            <p>Přihlašuji se k odběru: </p>
-          </div>
+          <p>Přihlašuji se k odběru: </p>
           <label htmlFor="checkbox"> Události </label>
           <input
             type="checkbox"
@@ -93,23 +89,10 @@ export default function Form() {
             onChange={(e) => setEvents(e.target.checked)}
             id="events"
           />
-          <label htmlFor="checkbox"> Výcviky </label>
-          <input
-            type="checkbox"
-            name="checkbox"
-            checked={education}
-            onChange={(e) => setEducation(e.target.checked)}
-            id="education"
-          />
         </div>
         <div className="formcarry-block">
           <button type="submit"> Poslat </button>
         </div>
-        <input
-          type="hidden"
-          name="_next"
-          value="https://yourthank.you/page"
-        ></input>
       </form>
     </div>
   );
