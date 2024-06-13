@@ -19,6 +19,20 @@ export const Events = () => {
           sezonní akce, stejně jako festivaly a další větší události, věnující
           se našim tématům.
         </p>
+        <p>
+          <strong>Události v nejbližší době: </strong>
+        </p>
+        <ul>
+          <li>13.6.2024, 18:00 - Setkání s dulami online</li>
+          <li>16.6.2024, 18:00 - Předporodní příprava</li>
+          <li>20.6.2024, 20:00 - Ženský kruh</li>
+          <li>25.6.2024, 17:00 - Podpůrná skupina</li>
+        </ul>
+        <p>
+          Bližší informace o jednotlivých událostech získáte na{' '}
+          <a href="mailto: info@mojedula.cz">emailu </a>
+          <i class="fa-solid fa-envelope"></i>
+        </p>
       </div>
     </>
   );

@@ -163,6 +163,13 @@ export const About = () => {
             <i className="fa-solid fa-envelope"></i>
           </a>
         </p>
+        <h3>Přejete si podrobnější informace o organizaci?</h3>
+        <p>
+          Podrobné informace o organizaci naleznete na{' '}
+          <Link to="/information" className="link">
+            tomto odkazu
+          </Link>
+        </p>
       </div>
     </>
   );

@@ -38,7 +38,7 @@ body {
 }
 
 .card-vycvik {
-  object-position: 30% 30%;
+  object-position: 10% 20%;
 }
 
 .card .card-text {
@@ -68,7 +68,7 @@ body {
 
 .scale-element:hover,
 .scale-element:focus {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 .text {

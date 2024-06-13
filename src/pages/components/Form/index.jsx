@@ -82,7 +82,9 @@ export default function Form() {
           ></textarea>
         </div>
         <div className="formcarry-block">
-          <p>Přihlašuji se k odběru: </p>
+          <div>
+            <p>Přihlašuji se k odběru: </p>
+          </div>
           <label htmlFor="checkbox"> Události </label>
           <input
             type="checkbox"

@@ -1,9 +1,16 @@
 .events-container {
   margin: 150px 30px 30px 30px;
   text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
 
 }
 
 .events-container p {
   padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.events-container li {
+  list-style: none;
 }

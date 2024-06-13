@@ -8,8 +8,8 @@ export const HomePage = () => {
       <main>
         <div className="container">
           <div className="card-container">
-            <div className="card scale-element">
-              <img src="../img/pexels1.jpg" alt="" width="200px" />
+            <div className="card card-vycvik scale-element">
+              <img src="../img/DSC_0037 (1).jpg" alt="" width="200px" />
               <div className="card-text">
                 {' '}
                 Vítejte na stránkách zapsaného spolku České duly. Náš spolek
@@ -22,8 +22,8 @@ export const HomePage = () => {
                 <Link to="/about">Zjisti více o spolku</Link>
               </button>
             </div>
-            <div className="card card-vycvik scale-element">
-              <img src="../img/DSC_0037.jpg" alt="" width="200px" />
+            <div className="card scale-element">
+              <img src="../img/bonding.jpg" alt="" width="200px" />
               <div className="card-text">
                 Na stránkách pro sebe můžete najít průvodkyni pro období
                 očekávání, pro doprovod k porodu, pro konzultaci s kojením nebo
@@ -37,7 +37,7 @@ export const HomePage = () => {
               </button>
             </div>
             <div className="card scale-element">
-              <img src="../img/bonding.jpg" alt="" width="200px" />
+              <img src="../img/pexels1.jpg" alt="" width="200px" />
               <div className="card-text">
                 Pokud máte zájem stát se profesionální dulou a vyhledáváte
                 vhodný kurz probíhající v Praze, přečtěte si, jak probíhá náš
