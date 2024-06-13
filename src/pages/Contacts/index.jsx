@@ -13,11 +13,11 @@ export const Contacts = () => {
         width="800"
         height="600"
         style={{ border: 0 }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <i class="fa-solid fa-envelope"></i>
+      <i className="fa-solid fa-envelope"></i>
       <p>
         <a href="mailto: info@mojedula.cz">info@mojedula.cz</a>,
         <a href="mailto: vzdelavani@mojedula.cz">vzdelavani@mojedula.cz</a>
@@ -34,7 +34,7 @@ export const Contacts = () => {
       <a href="https://www.instagram.com/ceske.duly/">
         <p>ceske.duly</p>
       </a>
-      <i class="fa-solid fa-comments">
+      <i className="fa-solid fa-comments">
         {' '}
         <i className="fa-brands fa-facebook"></i>
       </i>
