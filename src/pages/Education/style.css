@@ -9,6 +9,16 @@
   text-align: center;
 }
 
+h1,
+h2 {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
 .education-card {
   border: 1px solid var(--brand-color);
   border-radius: 40%;

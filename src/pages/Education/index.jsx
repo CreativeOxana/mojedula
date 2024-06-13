@@ -95,7 +95,7 @@ export const Education = () => {
           dala tolik, že mi pomáhá i v osobním životě.“
         </p>
         <h2>Co dalšího se děje během výcviku</h2>
-        <h5>Intervize</h5>
+        <h4>Intervize</h4>
         <p>
           Již během prvního roku jsou součástí výcviku povinné intervize. V
           menších, intervizních, skupinách, se studentky pravidelně setkávájí,
@@ -107,21 +107,21 @@ export const Education = () => {
           během nich studentky navazují kontakty a přátelství, která jsou v
           tomto oboru velmi důležitá.
         </p>
-        <h5>Supervize</h5>
+        <h4>Supervize</h4>
         <p>
           Od ukončení prvního roku výcviku je možné zúčastnit se také
           supervizních setkání. Ta jsou vedená nestranným odborníkem….Slouží k…
           Pro účast u závěrečné zkoušky je nutné absolvovat mininálně 3
           supervizní setkání.
         </p>
-        <h5>Setkání s praktikujícími dulami</h5>
+        <h4>Setkání s praktikujícími dulami</h4>
         <p>
           Během většiny víkendů mají studentky příležitost potkat se se zkušenou
           dulou. Ta jednak zasadí víkendové téma do konkrétních příkladů z praxe
           a zároveň studentkám odpovídá na jakékoliv jejich otázky ohledně
           života a práce duly.
         </p>
-        <h5>Individuální terapie</h5>
+        <h4>Individuální terapie</h4>
         <p>
           V průběhu výcviku a před absvolvováním závěrečné zkoušky je nutné
           absolvovat alespoň 5 hodin individuálnách terapií. Je výhodou, pokud
@@ -129,7 +129,7 @@ export const Education = () => {
           částí výcviku, která může přinášet a otevírat různá témata. Navazující
           terapie může pomoci vybudovat dobré základy pro budoucí profesi duly.
         </p>
-        <h5>První doprovody s konzultantkou</h5>
+        <h4>První doprovody s konzultantkou</h4>
         <p>
           Součástí výcviku a také nutnou podmínkou pro splnění závěrečné zkoušky
           jsou 3 samostatné doprovody u porodu. Každá studentka má svou
@@ -140,7 +140,7 @@ export const Education = () => {
           komplexní náhled na konkrétní situace a podporu, ale také zpětnou
           vazbu.
         </p>
-        <h5>Závěrečná zkouška</h5>
+        <h4>Závěrečná zkouška</h4>
         <p>
           Při splnění všech podmínek je výcvik zakončen závěrečnou zkouškou.
           Jejím splněním se studentky stávají certifikovanými dulami.{' '}
