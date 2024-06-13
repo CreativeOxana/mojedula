@@ -88,7 +88,9 @@ body {
 
 .card-button {
   background-color: var(--brand-color);
-
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 0 5px var(--dark-color);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export const Education = () => {
@@ -19,7 +20,11 @@ export const Education = () => {
           víkend. A to buď v našem krásném výcvikovém centru v srdci Prahy anebo
           online u vás doma (bližší info níže).
         </p>
-        <button>Přihlásit</button>
+        <button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfMTYBAZ5AK1qmI3dRgTQg7ODUc7BjC7wKzRhBUK3Zudzm3w/viewform">
+            Přihlásit
+          </a>
+        </button>
 
         <img src="img/pexels.jpg" alt="" width="150px" />
 
@@ -166,13 +171,17 @@ export const Education = () => {
         <h2>Jak se přihlásit</h2>
         <p>
           Jestli máte jasno a chcete se do výcviku přihlásit, vyplňte motivační
-          dopis ZDE a my vás moc rády pozveme na přijímací řízení.
+          dopis{' '}
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfMTYBAZ5AK1qmI3dRgTQg7ODUc7BjC7wKzRhBUK3Zudzm3w/viewform?fbclid=IwAR1I2DWNGVwGxldj5AxPz9U5c-ZXNDmAYoXpKxIs7bx0yUFg_eDSklssIJc">
+            ZDE
+          </a>{' '}
+          a my vás moc rády pozveme na přijímací řízení.
         </p>
         <p>Příští výcvik je plánovaný na rok 2025 – 2027</p>
         <p>
           Dostalo se vám málo informací? Chcete toho o výcviku u Českých dul
-          vědět víc? Nebojte se nás kontaktovat a na cokoli zeptat: Kontaktní
-          formulář (Link do Kontaktů)
+          vědět víc? Nebojte se nás kontaktovat a na cokoli zeptat:{' '}
+          <Link to="/contacts">Kontaktní formulář </Link>
         </p>
         <img src="img/pexels1.jpg" alt="" width="150px" />
       </div>

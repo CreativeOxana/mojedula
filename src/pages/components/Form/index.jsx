@@ -81,23 +81,25 @@ export default function Form() {
             placeholder="Zadejte svou zprávu..."
           ></textarea>
         </div>
-        <p>Přihlašuji se k odběru: </p>
-        <label htmlFor="checkbox"> Události </label>
-        <input
-          type="checkbox"
-          name="checkbox"
-          checked={events}
-          onChange={(e) => setEvents(e.target.checked)}
-          id="events"
-        />
-        <label htmlFor="checkbox"> Výcviky </label>
-        <input
-          type="checkbox"
-          name="checkbox"
-          checked={education}
-          onChange={(e) => setEducation(e.target.checked)}
-          id="education"
-        />
+        <div className="formcarry-block">
+          <p>Přihlašuji se k odběru: </p>
+          <label htmlFor="checkbox"> Události </label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            checked={events}
+            onChange={(e) => setEvents(e.target.checked)}
+            id="events"
+          />
+          <label htmlFor="checkbox"> Výcviky </label>
+          <input
+            type="checkbox"
+            name="checkbox"
+            checked={education}
+            onChange={(e) => setEducation(e.target.checked)}
+            id="education"
+          />
+        </div>
         <div className="formcarry-block">
           <button type="submit"> Poslat </button>
         </div>

@@ -116,6 +116,36 @@ export const About = () => {
             těhotných nebo miminek a jiné
           </li>
         </ul>
+        <h3>Co je pro nás důležité?</h3>
+        <ul>
+          <li>
+            České duly usilují­ o stálé zvyšování­ kvality vzdělávání­ a práce
+            dul v ČR, o dodržování­ etických i profesní­ch standardů, o
+            zlepšování­ informovanosti laické i odborné veřejnosti.
+          </li>
+          <li>
+            České duly podporují­ takové změny v systému českého porodnictví­,
+            které vycházejí­ z potřeb žen a novorozenců. České duly usilují­ o
+            profesionalizaci profese duly.
+          </li>
+          <li>Organizace České duly pomáhá ženám nají­t kvalifikovanou dulu</li>
+          <li>
+            Pořádá základní­ i postgraduální­ kurzy pro duly, spolupracuje s
+            odbornými a dobrovolnými organizacemi podobného zaměření­,
+            spolupracuje se zahraniční­mi organizacemi s obdobnými cí­li,
+            vytváří­ a publikuje materiály, které přibližují­ laické i odborné
+            veřejnosti práci dul.
+          </li>
+          <li>
+            Spolek České duly poskytuje profesní zázemí svým členkám. Organizuje
+            pravidelné supervize a vytváří bezpečné prostředí pro vzájemnou
+            podporu a sdílení.
+          </li>
+          <li>
+            Spolek podporuje studentky a duly tak, aby mohly svou práci
+            vykonávat profesionálně, nezaujatě a s láskou.
+          </li>
+        </ul>
         <h3>Jak kontaktovat dulu?</h3>
         <p>
           Na našich stránkách naleznete{' '}
@@ -128,7 +158,10 @@ export const About = () => {
         <p>
           Veškeré důležité informace o našem výcviku pro vyškolení
           profesionálních dul najdete v sekci vzdělávání. Samozřejmě nás můžete
-          oslovit na kontaktním emailu <i className="fa-solid fa-envelope"></i>
+          oslovit na kontaktním emailu{' '}
+          <a href="mailto: vzdelavani@mojedula.cz">
+            <i className="fa-solid fa-envelope"></i>
+          </a>
         </p>
       </div>
     </>

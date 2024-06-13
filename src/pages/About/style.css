@@ -25,3 +25,7 @@ h1 {
 .link {
   color: var(--brand-color);
 }
+
+p a {
+  color: var(--brand-color);
+}
