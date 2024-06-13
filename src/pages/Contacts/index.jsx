@@ -38,13 +38,14 @@ export const Contacts = () => {
         {' '}
         <i className="fa-brands fa-facebook"></i>
       </i>
-      <p>Moje dula – podpora a sdílení s Českými dulami </p>
+      <p>
+        <a href="https://www.facebook.com/groups/271474671034538/">
+          Moje dula – podpora a sdílení s Českými dulami{' '}
+        </a>
+      </p>
       <Form />
-      <em>
-        Kontakt na konkrétní České duly najdete zde zařazené do regionů, ve
-        kterých působí.
-      </em>{' '}
-      (odkaz na mapu)
+      Kontakt na konkrétní České duly najdete zde zařazené do regionů, ve
+      kterých působí. (odkaz na mapu)
     </div>
   );
 };

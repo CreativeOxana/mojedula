@@ -15,3 +15,7 @@ iframe {
 .contact a {
   color: var(--brand-color);
 }
+
+i {
+  color: var(--dark-color);
+}

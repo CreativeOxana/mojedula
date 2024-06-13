@@ -3,14 +3,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--brand-color);
+
 }
 
 footer {
   margin-top: 20px;
   /* background-color: var(--background-color); */
   text-align: center;
+  margin-bottom: 20px;
 }
 
 footer a {
-  color: var(--brand-color)
+  color: var(--dark-color);
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.icons-container i {
+  padding-right: 10px;
+  justify-content: space-between;
+  color: var(--dark-color)
+}
+
+.icons-container p {
+  padding-right: 10px;
 }

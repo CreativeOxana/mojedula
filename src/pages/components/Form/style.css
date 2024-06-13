@@ -1,7 +1,6 @@
-/* textarea {
-  resize: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
+/* 
 .form-container {
   margin: 30px;
 }
@@ -10,7 +9,6 @@
   font-size: small;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 .form-container {
   box-sizing: border-box;
@@ -40,7 +38,7 @@
   --fc-border-hover-color: #DDE0EE;
   --fc-field-hover-text-color: #B3B8D0;
 
-  --fc-border-active-color: #1463FF;
+  --fc-border-active-color: #8C698C;
 }
 
 .form-container * {
@@ -76,6 +74,7 @@
   min-height: 188px;
   max-width: 100%;
   padding-top: 12px;
+  resize: none;
 }
 
 .form-container input::placeholder,
@@ -108,7 +107,6 @@
 
 .form-container select {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.9997 14.5001L8.46387 10.9642L9.64303 9.78589L11.9997 12.1434L14.3564 9.78589L15.5355 10.9642L11.9997 14.5001Z' fill='%236C6F93'/%3E%3C/svg%3E%0A");
-  /* background-position: calc(100% - 20px) calc(1em + 4px), calc(100% - 15px) calc(1em + 4px); */
   background-size: 24px 24px;
   background-position: 98%;
   background-repeat: no-repeat;
@@ -130,6 +128,7 @@
   background-color: hsla(var(--fc-primary-hsl));
   color: #fff;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 .form-container button {
@@ -143,16 +142,16 @@
   border: 0;
   border-radius: 6px;
   box-sizing: border-box;
-  background-color: hsla(var(--fc-primary-hsl));
   color: #fff;
   cursor: pointer;
   box-shadow: 0 0 0 0 transparent;
+  background-color: #8C698C;
 
   transition: 125ms all;
 }
 
 .form-container button:hover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), hsla(var(--fc-primary-hsl));
+  background: var(--dark-color);
 }
 
 .form-container button:focus {

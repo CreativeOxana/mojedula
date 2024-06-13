@@ -31,7 +31,7 @@ export default function Form() {
       .then((response) => response.json())
       .then((response) => {
         if (response.code === 200) {
-          alert('We received your submission, thank you!');
+          alert('Děkujeme vám za zprávu, v brzké době vás kontaktujeme.');
         } else if (response.code === 422) {
           // Field validation failed
           setError(response.message);
@@ -103,6 +103,11 @@ export default function Form() {
         <div className="formcarry-block">
           <button type="submit"> Poslat </button>
         </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourthank.you/page"
+        ></input>
       </form>
     </div>
   );
