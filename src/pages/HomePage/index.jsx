@@ -19,7 +19,7 @@ export const HomePage = () => {
               </div>
               <button className="card-button">
                 {' '}
-                <Link to="/about">Zjisti informace o spolku</Link>
+                <Link to="/about">Zjisti více o spolku</Link>
               </button>
             </div>
             <div className="card card-vycvik scale-element">
@@ -33,7 +33,7 @@ export const HomePage = () => {
               </div>
               <button className="card-button">
                 {' '}
-                <Link to="/find_doula">Najdi dulu</Link>
+                <Link to="/find_doula">Najdi dulu pro sebe</Link>
               </button>
             </div>
             <div className="card scale-element">
@@ -45,7 +45,7 @@ export const HomePage = () => {
               </div>
               <button className="card-button">
                 {' '}
-                <Link to="/education">Zjisti informace o výcviku</Link>
+                <Link to="/education">Zjisti více o výcviku</Link>
               </button>
             </div>
           </div>

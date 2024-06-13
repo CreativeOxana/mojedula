@@ -91,6 +91,18 @@ body {
   width: 50%;
   height: 50%;
   box-shadow: 0 0 5px var(--dark-color);
+  /* border-radius: 45px; */
+  transition: background-color 300ms ease-in-out;
+
+}
+
+.card {
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.card-button:hover {
+  background-color: var(--dark-color);
 }
 
 @media screen and (min-width: 768px) {
