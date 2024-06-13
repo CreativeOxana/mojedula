@@ -3,15 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--brand-color);
+  color: var(--dark-color);
 
 }
 
 footer {
-  margin-top: 20px;
-
+  background-color: rgba(185, 165, 204, 0.4);
   text-align: center;
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 footer a {
