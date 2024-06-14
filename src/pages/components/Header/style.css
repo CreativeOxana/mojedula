@@ -6,7 +6,7 @@
   width: 100%;
   padding: 15px 100px;
   background-color: var(--background-color);
-  box-shadow: 0 4px 10px var(--brand-color);
+  box-shadow: 0 4px 20px var(--brand-color);
   z-index: 2;
 }
 

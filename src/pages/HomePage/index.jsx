@@ -6,7 +6,7 @@ export const HomePage = () => {
   return (
     <div className="app-container">
       <main>
-        <div className="card-app">
+        <div className="app-card">
           <div className="card-container">
             <div className="card card-vycvik scale-element">
               <img src="../img/pages/ceske-duly.jpg" alt="" width="200px" />
@@ -51,7 +51,6 @@ export const HomePage = () => {
           </div>
           <div className="text-container scale-element">
             <h1>Kdo je dula</h1>
-            {/* <CollapseBox title="Kdo je dula "> */}
             <p className="text">
               Poskytuje emocionální podporu během těhotenství, porodu a v
               průběhu šestinedělí ženě a její rodině. Drží ženy v sebejistotě a
@@ -79,7 +78,6 @@ export const HomePage = () => {
               jak při porodu v nemocnici, tak v porodní­m domě nebo při porodu v
               domácnosti (vždy za pří­tomnosti porodní­ asistentky).
             </p>
-            {/* </CollapseBox> */}
           </div>
         </div>
       </main>

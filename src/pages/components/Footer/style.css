@@ -4,11 +4,8 @@ footer {
   text-align: center;
   padding-top: 20px;
   transition: transform 350ms ease-in-out;
+  box-shadow: 0 -4px 20px var(--brand-color);
 }
-
-/* footer a {
-  color: var(--dark-color);
-} */
 
 footer i:hover {
   transform: scale(1.5);

@@ -1,6 +1,6 @@
-.container {
-  /* margin: 150px 40px 50px 40px; */
-}
+/* .education-container {
+  margin: 120px 300px 80px 300px;
+} */
 
 .reference {
   font-style: oblique;
@@ -11,7 +11,6 @@
 h1,
 h2,
 h4 {
-  margin-left: 50px;
   margin-right: 50px;
   padding-bottom: 20px;
 }
@@ -47,13 +46,12 @@ button {
   color: white;
   transition: background-color 300ms ease-in-out;
   border-radius: 15px;
-  padding: 5px;
+  padding: 12px;
   border: none;
 }
 
 button:hover {
   background-color: var(--dark-color);
-  color: white;
 }
 
 button a {

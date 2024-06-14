@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import duly from '../../../../api/duly.json';
+import './style.css';
 
 export default function ({ region }) {
   const dulas = [
@@ -80,15 +80,13 @@ export default function ({ region }) {
 
   return (
     <>
-      <ul>
+      <ul className="container">
         {currentDulas.map((cd, index) => (
-          <>
-            <ul>
-              <li key={index}>
-                {cd.name}, {cd.accretitaion}, {cd.language}
-              </li>
-            </ul>
-          </>
+          <ul>
+            <li key={index}>
+              {cd.name}, {cd.accretitaion}, jazyky: {cd.language}
+            </li>
+          </ul>
         ))}
       </ul>
     </>

@@ -8,84 +8,78 @@ export const About = () => {
         <h1>Kdo je dula</h1>
         <div className="box">
           <img src="img/pexels2.jpg" alt="" width="300px" />
-        </div>
-        <div className="text">
-          <p>
-            Dula poskytuje ženě a její rodině podporu během těhotenství, porodu
-            i šestinedělí. Doprovází­ je na jejich individuální cestě a pomáhá
-            jim naplnit jejich představy o tomto životním období. Dula podporuje
-            ženy v jejich rozhodnutích, v jejich vlastní sebejistotě a
-            sebedůvěře. Dula vrací kompetence do rukou žen.
-          </p>
-          <p>
-            Při porodu dula pomáhá vytvořit takovou atmosféru, kdy se žena
-            cí­tí­ bezpečně, může se uvolnit a plně se soustředit na sebe a
-            porod samotný. Díky kontinuální péči zná rodičku i její­ přání­ a
-            představy týkají­cí­ se porodu, a může jí­ proto poskytnout citlivý
-            a individuální druh podpory. Snaží­ se ženě pomoci projí­t porodní­
-            zkušeností­ tak, aby její­ zážitek byl co možná nejlepší­ bez ohledu
-            na to, jak se konkrétní porodní příběh odvíjí. Dula posiluje
-            sebedůvěru ženy a pomáhá jí­ lépe zvládnout to, co porod v daný
-            moment přináší. Svou plnou přítomností dula snižuje strach a napětí,
-            pomáhá ženě zvládnout bolest i nečekané informace nebo události a
-            utvrzuje ji v jejích schopnostech­.{' '}
-          </p>
-          <p>
-            Dula chápe a respektuje fyziologii porodu i emocionální­ potřeby
-            rodí­cí­ ženy. Uznává porod jako jeden z klí­čových okamžiků životě
-            ženy. Uvědomuje si, že způsob, jakým žena, partner a dí­tě porod
-            prožijí­, je pro ně velmi zásadní­ a důležité v mnoha rovinách.{' '}
-          </p>
-          <p>
-            Podporuje ženu i partnera tak, aby byl porod v jejich rukou a
-            kompetencích. Dává prostor jejich vztahu, jejich jedinečné
-            zkušenosti a prožitku. Dula ženě, partnerovi nebo oběma dodává dle
-            situace a potřeby nejen odvahu, ale také možnosti a informace, čas a
-            prostor.
-          </p>
-          <p>
-            Dula neposkytuje zdravotnické služby. Doplňuje práci lékařů a
-            porodní­ch asistentek, avšak nezasahuje do jejich kompetencí­. Je
-            připravena ženu doprovázet jak při porodu v nemocnici, tak v
-            porodní­m domě nebo při porodu v domácnosti za pří­tomnosti porodní­
-            asistentky.
-          </p>
+          <div className="text">
+            <p>
+              Dula poskytuje ženě a její rodině podporu během těhotenství,
+              porodu i šestinedělí. Doprovází­ je na jejich individuální cestě a
+              pomáhá jim naplnit jejich představy o tomto životním období. Dula
+              podporuje ženy v jejich rozhodnutích, v jejich vlastní sebejistotě
+              a sebedůvěře. Dula vrací kompetence do rukou žen.
+              <br /> <br />
+              Při porodu dula pomáhá vytvořit takovou atmosféru, kdy se žena
+              cí­tí­ bezpečně, může se uvolnit a plně se soustředit na sebe a
+              porod samotný. Díky kontinuální péči zná rodičku i její­ přání­ a
+              představy týkají­cí­ se porodu, a může jí­ proto poskytnout
+              citlivý a individuální druh podpory. Snaží­ se ženě pomoci projí­t
+              porodní­ zkušeností­ tak, aby její­ zážitek byl co možná nejlepší­
+              bez ohledu na to, jak se konkrétní porodní příběh odvíjí. Dula
+              posiluje sebedůvěru ženy a pomáhá jí­ lépe zvládnout to, co porod
+              v daný moment přináší. Svou plnou přítomností dula snižuje strach
+              a napětí, pomáhá ženě zvládnout bolest i nečekané informace nebo
+              události a utvrzuje ji v jejích schopnostech­. <br /> <br />
+              Dula chápe a respektuje fyziologii porodu i emocionální­ potřeby
+              rodí­cí­ ženy. Uznává porod jako jeden z klí­čových okamžiků
+              životě ženy. Uvědomuje si, že způsob, jakým žena, partner a dí­tě
+              porod prožijí­, je pro ně velmi zásadní­ a důležité v mnoha
+              rovinách.
+              <br /> <br />
+              Podporuje ženu i partnera tak, aby byl porod v jejich rukou a
+              kompetencích. Dává prostor jejich vztahu, jejich jedinečné
+              zkušenosti a prožitku. Dula ženě, partnerovi nebo oběma dodává dle
+              situace a potřeby nejen odvahu, ale také možnosti a informace, čas
+              a prostor.
+              <br /> <br />
+              Dula neposkytuje zdravotnické služby. Doplňuje práci lékařů a
+              porodní­ch asistentek, avšak nezasahuje do jejich kompetencí­. Je
+              připravena ženu doprovázet jak při porodu v nemocnici, tak v
+              porodní­m domě nebo při porodu v domácnosti za pří­tomnosti
+              porodní­ asistentky. <br /> <br />
+            </p>
+          </div>
         </div>
         <h1>Dula podle Českých dul</h1>
-        <p>
-          V našem zapsaném spolku České duly chápeme dulu jako profesionála v
-          oblasti pomáhají­cí­ profese, jehož hlavní­ kompetencí­ je pomáhat a
-          provázet ženu na její­ individuální­ cestě k vlastní­mu porodu v
-          takové mí­ře, na kterou je žena sama připravena a kterou si sama
-          zvolí. Dula by měla být s klientkou v dobrém kontaktu a provázet ji
-          celým předporodní­m, porodní­m a poporodní­m procesem v mí­ře
-          stanovené vzájemným kontraktem. Česká dula nikdy nezasahuje do
-          oblastí­, které nejsou v její­ kompetenci. Má však kontakty na
-          odborní­ky z oblastí­ pomáhají­cí­ch profesí­, kteří­ mohou ženu
-          podpořit či jí pomoci v pří­padě, že potřeby klientky již do
-          kompetencí­ duly nespadají.
-        </p>
-        <p>
-          Důležitou kompetencí­ České duly je umět pečovat sama o sebe a svoje
-          znalosti použí­vat k tomu, aby se dobře rozví­jela jako profesionál v
-          oblasti pomáhají­cí­ profese.
-        </p>
-        <p>
-          Česká dula má rámcové znalosti z oboru psychologie, medicí­ny,
-          legislativy, kojení­ a péče o dí­tě. Při vzdělávání­ Českých dul je
-          důraz kladen na dobrou znalost hranic profese a také sebezkušenostní­
-          práci. České duly jsou vázány etickým kodexem, procházejí­ pravidelnou
-          supervizí­ a následným vzdělávání­m.
-        </p>
-        <p>
-          Náš spolek eviduje duly s různým stupněm akreditace. Certifikované
-          České duly (duly, které splnily veškeré podmí­nky pro zí­skání­
-          osvědčení­ – certifikaci), duly absolventky (které absolvovaly celou
-          prezenční­ část kurzu, ale prozatí­m nesplňují­ některé z podmí­nek
-          pro udělení­ certifikátu), duly ve výcviku (duly, které jsou v
-          současné době účastnicemi kurzu), nejvyšší­m stupněm akreditace jsou
-          pak duly konzultantky, které pracují­ s dulami ve výcviku.
-        </p>
+        <div className="text">
+          <p>
+            V našem zapsaném spolku České duly chápeme dulu jako profesionála v
+            oblasti pomáhají­cí­ profese, jehož hlavní­ kompetencí­ je pomáhat a
+            provázet ženu na její­ individuální­ cestě k vlastní­mu porodu v
+            takové mí­ře, na kterou je žena sama připravena a kterou si sama
+            zvolí. Dula by měla být s klientkou v dobrém kontaktu a provázet ji
+            celým předporodní­m, porodní­m a poporodní­m procesem v mí­ře
+            stanovené vzájemným kontraktem. Česká dula nikdy nezasahuje do
+            oblastí­, které nejsou v její­ kompetenci. Má však kontakty na
+            odborní­ky z oblastí­ pomáhají­cí­ch profesí­, kteří­ mohou ženu
+            podpořit či jí pomoci v pří­padě, že potřeby klientky již do
+            kompetencí­ duly nespadají. <br /> <br />
+            Důležitou kompetencí­ České duly je umět pečovat sama o sebe a svoje
+            znalosti použí­vat k tomu, aby se dobře rozví­jela jako profesionál
+            v oblasti pomáhají­cí­ profese. <br /> <br />
+            Česká dula má rámcové znalosti z oboru psychologie, medicí­ny,
+            legislativy, kojení­ a péče o dí­tě. Při vzdělávání­ Českých dul je
+            důraz kladen na dobrou znalost hranic profese a také
+            sebezkušenostní­ práci. České duly jsou vázány etickým kodexem,
+            procházejí­ pravidelnou supervizí­ a následným vzdělávání­m. <br />{' '}
+            <br />
+            Náš spolek eviduje duly s různým stupněm akreditace. Certifikované
+            České duly (duly, které splnily veškeré podmí­nky pro zí­skání­
+            osvědčení­ – certifikaci), duly absolventky (které absolvovaly celou
+            prezenční­ část kurzu, ale prozatí­m nesplňují­ některé z podmí­nek
+            pro udělení­ certifikátu), duly ve výcviku (duly, které jsou v
+            současné době účastnicemi kurzu), nejvyšší­m stupněm akreditace jsou
+            pak duly konzultantky, které pracují­ s dulami ve výcviku. <br />{' '}
+            <br />
+          </p>
+        </div>
         <h2>Jaké služby dula nabí­zí­?</h2>
         <ul className="dula-services">
           <li>
@@ -101,7 +95,7 @@ export const About = () => {
           <li>
             možnosti nefarmakologické úlevy od bolesti (polohování, teplo,
             provázení slovem, práce s dechem, popřípadě práce s masážemi,
-            aromaterapií, rebozem, porodní napářkou atd…)
+            aromaterapií, rebozem, porodní napářkou atd.)
           </li>
           <li>zapojení partnera dle potřeb a přání rodiny</li>
           <li>vytváření prostoru pro komunikaci mezi rodičkou a personálem</li>
@@ -148,23 +142,28 @@ export const About = () => {
             vykonávat profesionálně, nezaujatě a s láskou.
           </li>
         </ul>
+
         <h3>Jak kontaktovat dulu?</h3>
-        <p>
-          Na našich stránkách naleznete{' '}
-          <Link to="/find_doula" className="link">
-            mapu Českých dul
-          </Link>
-          , kde si můžete vybrat služby duly podle místa, kde ji sháníte.
-        </p>
+        <div className="text">
+          <p>
+            Na našich stránkách naleznete{' '}
+            <Link to="/find_doula" className="link">
+              mapu Českých dul
+            </Link>
+            , kde si můžete vybrat služby duly podle místa, kde ji sháníte.
+          </p>
+        </div>
         <h3>Chcete se sama stát dulou?</h3>
-        <p>
-          Veškeré důležité informace o našem výcviku pro vyškolení
-          profesionálních dul najdete v sekci vzdělávání. Samozřejmě nás můžete
-          oslovit na kontaktním emailu{' '}
-          <a href="mailto: vzdelavani@mojedula.cz" target="_blank">
-            <i className="fa-solid fa-envelope"></i>
-          </a>
-        </p>
+        <div className="text">
+          <p>
+            Veškeré důležité informace o našem výcviku pro vyškolení
+            profesionálních dul najdete v sekci vzdělávání. <br />
+            Samozřejmě nás můžete oslovit na kontaktním emailu{' '}
+            <a href="mailto: vzdelavani@mojedula.cz" target="_blank">
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+          </p>
+        </div>
         {/* <h3>Přejete si podrobnější informace o organizaci?</h3>
         <p>
           Podrobné informace o organizaci naleznete na{' '}

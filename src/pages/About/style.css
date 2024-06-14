@@ -5,23 +5,18 @@
   align-items: center;
   justify-content: center;
   text-align: left;
+  /* margin: 120px 300px 80px 300px; */
 }
 
-h1 {
-  margin: 20px;
-}
-
-.about-text img {
+.box img {
   border-radius: 20px;
-  width: 55%;
-}
-
-.link {
-  color: var(--brand-color);
+  width: 33%;
+  margin: 20px;
 }
 
 p a {
   color: var(--brand-color);
+
 }
 
 .dula {
@@ -39,16 +34,24 @@ p {
   border: 1px solid var(--brand-color);
   box-shadow: 0 0 2px 3px var(--brand-color);
   border-radius: 20px;
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
   padding: 30px 70px 30px 70px;
   margin-bottom: 50px;
 }
 
-.box {
-  display: flex;
+.dula-services li {
+  padding: 5px;
 }
 
-.text {
-  flex-direction: column;
+img {
+  float: left;
+}
+
+.dula {
+  width: 90%;
+}
+
+.dula li {
+  padding: 5px;
 }

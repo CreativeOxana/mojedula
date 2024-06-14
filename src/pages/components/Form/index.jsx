@@ -46,6 +46,7 @@ export default function Form() {
 
   return (
     <div className="form-container">
+      <h3>Máte konkrétní dotaz? Napište nám </h3>
       <form onSubmit={(e) => onSubmit(e)}>
         <div className="formcarry-block">
           <label htmlFor="name">Jméno </label>

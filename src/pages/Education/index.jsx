@@ -189,7 +189,6 @@ export const Education = () => {
           vědět víc? Nebojte se nás kontaktovat a na cokoli zeptat:{' '}
           <Link to="/contacts">Kontaktní formulář </Link>
         </p>
-        <img src="img/pexels1.jpg" alt="" width="150px" />
       </div>
     </>
   );

@@ -1,18 +1,21 @@
 .container {
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  direction: column;
   align-items: center;
   justify-content: center;
   transition: transform 350ms ease-in-out;
+  margin-top: 120px;
+  /* margin-left: 300px;
+  margin-bottom: 80px; */
 }
 
 iframe {
-  margin: 20px;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
-.container a {
+.contact-container a {
   color: var(--brand-color);
 }
 
@@ -22,4 +25,8 @@ i {
 
 i:hover {
   transform: scale(1.5);
+}
+
+h1 {
+  margin: 0;
 }
