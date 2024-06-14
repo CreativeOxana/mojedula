@@ -6,7 +6,9 @@ export const About = () => {
     <>
       <div className="container">
         <h1>Kdo je dula</h1>
-        <img src="img/pexels2.jpg" alt="" width="300px" />
+        <div className="box">
+          <img src="img/pexels2.jpg" alt="" width="300px" />
+        </div>
         <div className="text">
           <p>
             Dula poskytuje ženě a její rodině podporu během těhotenství, porodu

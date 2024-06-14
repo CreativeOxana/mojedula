@@ -44,3 +44,11 @@ p {
   padding: 30px 70px 30px 70px;
   margin-bottom: 50px;
 }
+
+.box {
+  display: flex;
+}
+
+.text {
+  flex-direction: column;
+}
