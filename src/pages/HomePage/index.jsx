@@ -49,7 +49,7 @@ export const HomePage = () => {
               </button>
             </div>
           </div>
-          <div className="text-container scale-element">
+          <div className="text-container">
             <h1>Kdo je dula</h1>
             {/* <CollapseBox title="Kdo je dula "> */}
             <p className="text">
