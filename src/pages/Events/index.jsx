@@ -22,7 +22,7 @@ export const Events = () => {
         <p>
           <strong>Události v nejbližší době: </strong>
         </p>
-        <ul>
+        <ul className="event-dates">
           <li>13.6.2024, 18:00 - Setkání s dulami online</li>
           <li>16.6.2024, 18:00 - Předporodní příprava</li>
           <li>20.6.2024, 20:00 - Ženský kruh</li>

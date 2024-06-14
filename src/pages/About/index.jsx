@@ -85,7 +85,7 @@ export const About = () => {
           pak duly konzultantky, které pracují­ s dulami ve výcviku.
         </p>
         <h2>Jaké služby dula nabí­zí­?</h2>
-        <ul className="dula">
+        <ul className="dula-services">
           <li>
             psychickou a emocionální­ podporu ženy v průběhu těhotenství­,
             porodu a šestinedělí­

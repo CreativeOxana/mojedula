@@ -3,7 +3,6 @@
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-
 }
 
 .events-container p {
@@ -13,4 +12,13 @@
 
 .events-container li {
   list-style: none;
+}
+
+.event-dates {
+  border: 1px solid var(--brand-color);
+  box-shadow: 0 0 2px 3px var(--brand-color);
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
 }
