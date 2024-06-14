@@ -1,9 +1,9 @@
-.map-container {
+.container {
   display: flex;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 
 
 }

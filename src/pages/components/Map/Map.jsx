@@ -12,7 +12,7 @@ export default function ({ sendDataToParent }) {
   };
 
   return (
-    <div className="map-container">
+    <div className="container">
       <svg
         id="czMap"
         xmlns:svg="http://www.w3.org/2000/svg"
