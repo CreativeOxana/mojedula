@@ -17,7 +17,7 @@ export const Contacts = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <i className="fa-solid fa-envelope"></i>
+      <i className="fa-solid fa-envelope fa-lg"></i>
       <p>
         <a href="mailto: info@mojedula.cz" target="_blank">
           info@mojedula.cz
@@ -31,7 +31,7 @@ export const Contacts = () => {
         href="https://www.facebook.com/ceske.duly/?locale=cs_CZ"
         target="_blank"
       >
-        <i className="fa-brands fa-facebook"></i>
+        <i className="fa-brands fa-facebook fa-lg"></i>
       </a>
       <a
         href="https://www.facebook.com/ceske.duly/?locale=cs_CZ"
@@ -40,15 +40,12 @@ export const Contacts = () => {
         <p>České duly</p>
       </a>
       <a href="https://www.instagram.com/ceske.duly/" target="_blank">
-        <i className="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-instagram fa-lg"></i>
       </a>
       <a href="https://www.instagram.com/ceske.duly/" target="_blank">
         <p>ceske.duly</p>
       </a>
-      <i className="fa-solid fa-comments">
-        {' '}
-        <i className="fa-brands fa-facebook"></i>
-      </i>
+      <i className="fa-solid fa-comments fa-lg"></i>
       <p>
         <a
           href="https://www.facebook.com/groups/271474671034538/"

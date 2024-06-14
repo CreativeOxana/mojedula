@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: transform 350ms ease-in-out;
 }
 
 iframe {
@@ -17,4 +18,8 @@ iframe {
 
 i {
   color: var(--dark-color);
+}
+
+i:hover {
+  transform: scale(1.5);
 }
