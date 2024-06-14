@@ -17,10 +17,12 @@ export const Footer = () => {
           </a>
 
           <a href="mailto: info@mojedula.cz" target="_blank">
-            <i class="fa-solid fa-envelope fa-xl"></i>
+            <i className="fa-solid fa-envelope fa-xl"></i>
           </a>
         </div>
-        <div className="copyright">© 2024</div>
+        <div className="copyright">
+          <i class="fa-regular fa-copyright"></i> 2024
+        </div>
       </footer>
     </>
   );

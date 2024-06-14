@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Form from '../components/Form/index.jsx';
 import './style.css';
 
@@ -17,7 +18,9 @@ export const Contacts = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      <i className="fa-solid fa-envelope fa-lg"></i>
+      <a href="mailto: info@mojedula.cz" target="_blank">
+        <i className="fa-solid fa-envelope fa-lg"></i>
+      </a>
       <p>
         <a href="mailto: info@mojedula.cz" target="_blank">
           info@mojedula.cz
@@ -28,24 +31,11 @@ export const Contacts = () => {
         </a>
       </p>
       <a
-        href="https://www.facebook.com/ceske.duly/?locale=cs_CZ"
+        href="https://www.facebook.com/groups/271474671034538/"
         target="_blank"
       >
-        <i className="fa-brands fa-facebook fa-lg"></i>
+        <i className="fa-solid fa-comments fa-lg"></i>
       </a>
-      <a
-        href="https://www.facebook.com/ceske.duly/?locale=cs_CZ"
-        target="_blank"
-      >
-        <p>České duly</p>
-      </a>
-      <a href="https://www.instagram.com/ceske.duly/" target="_blank">
-        <i className="fa-brands fa-instagram fa-lg"></i>
-      </a>
-      <a href="https://www.instagram.com/ceske.duly/" target="_blank">
-        <p>ceske.duly</p>
-      </a>
-      <i className="fa-solid fa-comments fa-lg"></i>
       <p>
         <a
           href="https://www.facebook.com/groups/271474671034538/"
@@ -54,9 +44,12 @@ export const Contacts = () => {
           Moje dula – podpora a sdílení s Českými dulami{' '}
         </a>
       </p>
+      <p>
+        Kontakt na konkrétní České duly najdete{' '}
+        <Link to={'/find_doula'}>na mapě </Link> zařazené do regionů, ve kterých
+        působí.
+      </p>
       <Form />
-      Kontakt na konkrétní České duly najdete zde zařazené do regionů, ve
-      kterých působí. (odkaz na mapu)
     </div>
   );
 };

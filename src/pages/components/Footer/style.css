@@ -1,18 +1,17 @@
 footer {
-  background-color: rgba(140, 105, 140, 0.4);
-  /* background: rgb(140, 105, 140); */
-  background: radial-gradient(circle, rgba(255, 248, 248, 1) 0%, rgba(140, 105, 140, 0.4) 100%);
+  /* background-color: rgba(140, 105, 140, 0.35); */
+  background-color: var(--brand-color);
   text-align: center;
   padding-top: 20px;
   transition: transform 350ms ease-in-out;
 }
 
-footer a {
+/* footer a {
   color: var(--dark-color);
-}
+} */
 
 footer i:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .socials {
@@ -23,10 +22,20 @@ footer i:hover {
 
 }
 
+.socials i {
+  color: var(--background-color);
+}
+
 .copyright {
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--dark-color);
+  color: var(--background-color);
+  padding-bottom: 20px;
+}
+
+.copyright i {
+  color: var(--background-color);
+  margin-right: 6px;
 }
