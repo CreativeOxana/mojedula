@@ -1,7 +1,7 @@
 footer {
-  background-color: rgba(140, 105, 140, 0.6);
+  background-color: rgba(140, 105, 140, 0.4);
   /* background: rgb(140, 105, 140); */
-  background: radial-gradient(circle, rgba(255, 248, 248, 1) 0%, rgba(140, 105, 140, 0.6) 50%);
+  background: radial-gradient(circle, rgba(255, 248, 248, 1) 0%, rgba(140, 105, 140, 0.4) 100%);
   text-align: center;
   padding-top: 20px;
 }
