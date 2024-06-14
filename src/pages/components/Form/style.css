@@ -66,7 +66,7 @@
   padding: 8px 12px;
 
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   transition: 125ms background, 125ms color, 125ms box-shadow;
 }
 
@@ -179,8 +179,8 @@
 }
 
 input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   accent-color: var(--dark-color);
   padding: 0.4rem;
 }
