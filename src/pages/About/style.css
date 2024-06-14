@@ -15,7 +15,7 @@
 }
 
 p a {
-  color: var(--brand-color);
+  color: var(--dark-color);
 
 }
 
@@ -28,6 +28,10 @@ p a {
 p {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+p i {
+  margin-left: 10px;
 }
 
 .dula-services {
@@ -54,4 +58,8 @@ img {
 
 .dula li {
   padding: 5px;
+}
+
+.text h3 {
+  margin-bottom: 0;
 }

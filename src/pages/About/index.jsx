@@ -143,8 +143,8 @@ export const About = () => {
           </li>
         </ul>
 
-        <h3>Jak kontaktovat dulu?</h3>
         <div className="text">
+          <h3>Jak kontaktovat dulu?</h3>
           <p>
             Na našich stránkách naleznete{' '}
             <Link to="/find_doula" className="link">
@@ -153,13 +153,17 @@ export const About = () => {
             , kde si můžete vybrat služby duly podle místa, kde ji sháníte.
           </p>
         </div>
-        <h3>Chcete se sama stát dulou?</h3>
+
         <div className="text">
+          <h3>Chcete se sama stát dulou?</h3>
           <p>
             Veškeré důležité informace o našem výcviku pro vyškolení
-            profesionálních dul najdete v sekci vzdělávání. <br />
-            Samozřejmě nás můžete oslovit na kontaktním emailu{' '}
+            profesionálních dul najdete v sekci{' '}
+            <Link to="/education">vzdělávání. </Link> <br />
+            <br />
+            Samozřejmě nás můžete oslovit také na kontaktním{' '}
             <a href="mailto: vzdelavani@mojedula.cz" target="_blank">
+              emailu
               <i className="fa-solid fa-envelope"></i>
             </a>
           </p>
