@@ -5,6 +5,7 @@
   justify-content: center;
   color: var(--dark-color);
 
+
 }
 
 footer {
@@ -24,4 +25,5 @@ footer a {
   gap: 20px;
   align-items: center;
   justify-content: center;
+
 }
