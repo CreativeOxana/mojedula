@@ -1,5 +1,5 @@
-.education-container {
-  margin: 150px 40px 50px 40px;
+.container {
+  /* margin: 150px 40px 50px 40px; */
 }
 
 .reference {
@@ -44,6 +44,7 @@ p {
 button {
   background-color: var(--brand-color);
   box-shadow: 0 0 2px var(--dark-color);
+  color: white;
   transition: background-color 300ms ease-in-out;
   border-radius: 15px;
   padding: 5px;
@@ -52,6 +53,7 @@ button {
 
 button:hover {
   background-color: var(--dark-color);
+  color: white;
 }
 
 button a {

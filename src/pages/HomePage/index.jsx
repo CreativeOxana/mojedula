@@ -6,7 +6,7 @@ export const HomePage = () => {
   return (
     <div className="app-container">
       <main>
-        <div className="container">
+        <div className="card-app">
           <div className="card-container">
             <div className="card card-vycvik scale-element">
               <img src="../img/pages/ceske-duly.jpg" alt="" width="200px" />

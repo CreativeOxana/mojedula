@@ -4,7 +4,7 @@ body {
   background: linear-gradient(11deg, rgb(247, 235, 247) 0%, rgb(245, 245, 245) 100%);
 }
 
-.container {
+.card-app {
   display: flex;
   flex-direction: column;
   align-items: center;

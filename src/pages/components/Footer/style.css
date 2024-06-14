@@ -1,13 +1,3 @@
-.footer-container {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--dark-color);
-
-
-}
-
 footer {
   background-color: rgba(140, 105, 140, 0.6);
   /* background: rgb(140, 105, 140); */
@@ -26,4 +16,12 @@ footer a {
   align-items: center;
   justify-content: center;
 
+}
+
+.copyright {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-color);
 }

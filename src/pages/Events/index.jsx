@@ -3,7 +3,7 @@ import './style.css';
 export const Events = () => {
   return (
     <>
-      <div className="events-container">
+      <div className="container">
         <p>
           <strong>České duly z.s.</strong> pořádají postgraduální kurzy,
           semináře a workshopy.

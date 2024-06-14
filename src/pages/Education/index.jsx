@@ -4,7 +4,7 @@ import './style.css';
 export const Education = () => {
   return (
     <>
-      <div className="education-container">
+      <div className="container">
         <h1>Výcvik Českých dul</h1>
         <p>
           Láká vás stát se dulou? Provázet ženy těhotenstvím, být jim podporou

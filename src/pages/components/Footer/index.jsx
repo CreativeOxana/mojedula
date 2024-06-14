@@ -20,7 +20,7 @@ export const Footer = () => {
             <i class="fa-solid fa-envelope fa-xl"></i>
           </a>
         </div>
-        <div className="footer-container">© 2024</div>
+        <div className="copyright">© 2024</div>
       </footer>
     </>
   );

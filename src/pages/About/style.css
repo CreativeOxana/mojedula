@@ -1,13 +1,10 @@
-.about-text {
-  margin-top: 120px;
+.container {
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 h1 {
