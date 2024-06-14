@@ -13,13 +13,12 @@ body {
 
 .card-container {
   margin-top: 150px;
-
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 450px;
   /* padding: 10px; */
   border: 1px solid var(--brand-color);
   box-shadow: 0 0 2px 5px var(--brand-color);
@@ -99,17 +98,34 @@ body {
 
 .card-button:hover {
   background-color: var(--dark-color);
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .card .card-text {
+    font-size: 14px;
+  }
+
+  .card {
+    margin-bottom: 35px;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
-  .card-container {
+  /* .card-container {
     display: flex;
     gap: 30px;
     align-items: flex-start;
     justify-content: center;
-  }
+  } */
 
   .card {
-    flex-basis: 33%;
+    /* flex-basis: 33%; */
+    margin-bottom: 35px;
+  }
+
+  .card .card-text {
+    font-size: 14px;
   }
 }

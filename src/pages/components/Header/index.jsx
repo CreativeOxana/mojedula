@@ -4,41 +4,45 @@ import './style.css';
 import Logo from '/img/logo.png';
 
 export const Header = () => {
+  const handleNavClick = () => {
+    navbarRef.current.classList.remove('openNav');
+  };
+
   const navbarRef = useRef(null);
-  const searchIconRef = useRef(null);
+  // const searchIconRef = useRef(null);
 
   useEffect(() => {
-    searchIconRef.current.addEventListener('click', () => {
-      navbarRef.current.classList.toggle('openSearch');
-      navbarRef.current.classList.remove('openNav');
-      if (navbarRef.current.classList.contains('openSearch')) {
-        return searchIconRef.current.classList.replace(
-          'uil-search',
-          'uil-times',
-        );
-      }
-      searchIconRef.current.classList.replace('uil-times', 'uil-search');
-    });
+    // searchIconRef.current.addEventListener('click', () => {
+    //   navbarRef.current.classList.toggle('openSearch');
+    //   navbarRef.current.classList.remove('openNav');
+    //   if (navbarRef.current.classList.contains('openSearch')) {
+    //     return searchIconRef.current.classList.replace(
+    //       'uil-search',
+    //       'uil-times',
+    //     );
+    //   }
+    //   searchIconRef.current.classList.replace('uil-times', 'uil-search');
+    // });
 
     const navOpenBtn = document.querySelector('.navOpenBtn');
     const navCloseBtn = document.querySelector('.navCloseBtn');
 
     navOpenBtn.addEventListener('click', () => {
       navbarRef.current.classList.toggle('openNav');
-      navbarRef.current.classList.remove('openSearch');
-      searchIconRef.current.classList.replace('uil-times', 'uil-search');
+      // navbarRef.current.classList.remove('openSearch');
+      // searchIconRef.current.classList.replace('uil-times', 'uil-search');
     });
 
     navCloseBtn.addEventListener('click', () => {
       navbarRef.current.classList.remove('openNav');
     });
 
-    const closeSearch = document.querySelector('.close-search');
+    // const closeSearch = document.querySelector('.close-search');
 
-    closeSearch.addEventListener('click', () => {
-      navbarRef.current.classList.toggle('openNav');
-      navbarRef.current.classList.remove('openSearch');
-    });
+    // closeSearch.addEventListener('click', () => {
+    //   navbarRef.current.classList.toggle('openNav');
+    //   navbarRef.current.classList.remove('openSearch');
+    // });
   }, []);
 
   return (
@@ -56,24 +60,24 @@ export const Header = () => {
           <div className="navbar">
             <ul className="nav">
               <i className="uil uil-bars navCloseBtn"></i>
-              <li className="about">
+              <li className="about" onClick={handleNavClick}>
                 <Link to="/about">O nás</Link>
               </li>
-              <li className="education">
+              <li className="education" onClick={handleNavClick}>
                 <Link to="/education">Vzdělávání</Link>
               </li>
-              <li className="events">
+              <li className="events" onClick={handleNavClick}>
                 <Link to="/events">Události</Link>
               </li>
-              <li className="find_doula">
+              <li className="find_doula" onClick={handleNavClick}>
                 <Link to="/find_doula">Najít dulu</Link>
               </li>
-              <li className="contacts">
+              <li className="contacts" onClick={handleNavClick}>
                 <Link to="/contacts">Kontakty</Link>
               </li>
             </ul>
 
-            <div className="searchbar">
+            {/* <div className="searchbar">
               <div className="searchbar-label" ref={searchIconRef}>
                 <i className="uil uil-search search-icon" id="searchIcon"></i>
               </div>
@@ -84,8 +88,8 @@ export const Header = () => {
                   <input type="text" placeholder="Hledám..." />{' '}
                   <button className="close-search">&times;</button>
                 </div>
-              </div>
-            </div>
+              </div> 
+            </div> */}
           </div>
         </div>
       </nav>
