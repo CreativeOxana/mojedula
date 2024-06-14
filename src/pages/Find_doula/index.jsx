@@ -1,6 +1,5 @@
 import Map from '../components/Map/Map';
 import DulaList from '../components/DulaList/DulaList';
-
 import { useState } from 'react';
 
 export const Find_doula = () => {
