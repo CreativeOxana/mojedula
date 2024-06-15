@@ -6,7 +6,7 @@ export const About = () => {
     <>
       <div className="container">
         <h1>Kdo je dula</h1>
-        <div className="box">
+        <div className="box-about">
           <img src="img/pexels2.jpg" alt="" width="300px" />
           <div className="text">
             <p>
