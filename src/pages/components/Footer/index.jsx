@@ -21,7 +21,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="copyright">
-          <i class="fa-regular fa-copyright"></i> 2024
+          <i className="fa-regular fa-copyright"></i> 2024
         </div>
       </footer>
     </>
