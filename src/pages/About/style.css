@@ -63,3 +63,5 @@ img {
 .text h3 {
   margin-bottom: 0;
 }
+
+@media screen and (min-width:320px) and (max-width: 758px) {}

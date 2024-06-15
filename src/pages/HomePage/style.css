@@ -96,36 +96,57 @@ body {
 }
 
 
-.card-button:hover {
+.card-button:hover,
+.card-button:focus {
   background-color: var(--dark-color);
 
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
-  .card .card-text {
+
+  .card .card-text,
+  .text-container {
     font-size: 14px;
+  }
+
+  .text-container {
+    width: 100vh;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .text-container h1 {
+    padding-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .card {
     margin-bottom: 35px;
+  }
+
+  .card-button {
+    width: 50%;
+  }
+
+  .card-button a {
+    font-size: 14px;
+    font-weight: 600;
   }
 
 }
 
-@media screen and (min-width: 768px) {
-  /* .card-container {
+@media screen and (min-width: 1000px) {
+  .card-container {
     display: flex;
     gap: 30px;
     align-items: flex-start;
     justify-content: center;
-  } */
+  }
 
   .card {
-    /* flex-basis: 33%; */
-    margin-bottom: 35px;
+    flex-basis: 33%;
   }
 
-  .card .card-text {
-    font-size: 14px;
-  }
 }

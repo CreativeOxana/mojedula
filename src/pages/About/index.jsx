@@ -22,16 +22,16 @@ export const About = () => {
               představy týkají­cí­ se porodu, a může jí­ proto poskytnout
               citlivý a individuální druh podpory. Snaží­ se ženě pomoci projí­t
               porodní­ zkušeností­ tak, aby její­ zážitek byl co možná nejlepší­
-              bez ohledu na to, jak se konkrétní porodní příběh odvíjí. Dula
-              posiluje sebedůvěru ženy a pomáhá jí­ lépe zvládnout to, co porod
-              v daný moment přináší. Svou plnou přítomností dula snižuje strach
-              a napětí, pomáhá ženě zvládnout bolest i nečekané informace nebo
-              události a utvrzuje ji v jejích schopnostech­. <br /> <br />
-              Dula chápe a respektuje fyziologii porodu i emocionální­ potřeby
-              rodí­cí­ ženy. Uznává porod jako jeden z klí­čových okamžiků
-              životě ženy. Uvědomuje si, že způsob, jakým žena, partner a dí­tě
-              porod prožijí­, je pro ně velmi zásadní­ a důležité v mnoha
-              rovinách.
+              bez ohledu na to, jak se konkrétní porodní příběh odvíjí. <br />
+              <br />
+              Dula posiluje sebedůvěru ženy a pomáhá jí­ lépe zvládnout to, co
+              porod v daný moment přináší. Svou plnou přítomností dula snižuje
+              strach a napětí, pomáhá ženě zvládnout bolest i nečekané informace
+              nebo události a utvrzuje ji v jejích schopnostech­. Dula chápe a
+              respektuje fyziologii porodu i emocionální­ potřeby rodí­cí­ ženy.
+              Uznává porod jako jeden z klí­čových okamžiků životě ženy.
+              Uvědomuje si, že způsob, jakým žena, partner a dí­tě porod
+              prožijí­, je pro ně velmi zásadní­ a důležité v mnoha rovinách.
               <br /> <br />
               Podporuje ženu i partnera tak, aby byl porod v jejich rukou a
               kompetencích. Dává prostor jejich vztahu, jejich jedinečné
@@ -56,11 +56,12 @@ export const About = () => {
             takové mí­ře, na kterou je žena sama připravena a kterou si sama
             zvolí. Dula by měla být s klientkou v dobrém kontaktu a provázet ji
             celým předporodní­m, porodní­m a poporodní­m procesem v mí­ře
-            stanovené vzájemným kontraktem. Česká dula nikdy nezasahuje do
-            oblastí­, které nejsou v její­ kompetenci. Má však kontakty na
-            odborní­ky z oblastí­ pomáhají­cí­ch profesí­, kteří­ mohou ženu
-            podpořit či jí pomoci v pří­padě, že potřeby klientky již do
-            kompetencí­ duly nespadají. <br /> <br />
+            stanovené vzájemným kontraktem.
+            <br /> <br />
+            Česká dula nikdy nezasahuje do oblastí­, které nejsou v její­
+            kompetenci. Má však kontakty na odborní­ky z oblastí­ pomáhají­cí­ch
+            profesí­, kteří­ mohou ženu podpořit či jí pomoci v pří­padě, že
+            potřeby klientky již do kompetencí­ duly nespadají. <br /> <br />
             Důležitou kompetencí­ České duly je umět pečovat sama o sebe a svoje
             znalosti použí­vat k tomu, aby se dobře rozví­jela jako profesionál
             v oblasti pomáhají­cí­ profese. <br /> <br />
@@ -68,7 +69,7 @@ export const About = () => {
             legislativy, kojení­ a péče o dí­tě. Při vzdělávání­ Českých dul je
             důraz kladen na dobrou znalost hranic profese a také
             sebezkušenostní­ práci. České duly jsou vázány etickým kodexem,
-            procházejí­ pravidelnou supervizí­ a následným vzdělávání­m. <br />{' '}
+            procházejí­ pravidelnou supervizí­ a následným vzdělávání­m. <br />
             <br />
             Náš spolek eviduje duly s různým stupněm akreditace. Certifikované
             České duly (duly, které splnily veškeré podmí­nky pro zí­skání­
@@ -76,7 +77,7 @@ export const About = () => {
             prezenční­ část kurzu, ale prozatí­m nesplňují­ některé z podmí­nek
             pro udělení­ certifikátu), duly ve výcviku (duly, které jsou v
             současné době účastnicemi kurzu), nejvyšší­m stupněm akreditace jsou
-            pak duly konzultantky, které pracují­ s dulami ve výcviku. <br />{' '}
+            pak duly konzultantky, které pracují­ s dulami ve výcviku. <br />
             <br />
           </p>
         </div>
