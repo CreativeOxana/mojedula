@@ -29,8 +29,6 @@ export const Education = () => {
           </a>
         </button>
 
-        <img src="img/pexels.jpg" alt="" width="150px" />
-
         <p className="reference">
           „Ze začátku mi to přišlo dlouhé – 2 roky! Ale nesmírně rychle to
           uteklo a bylo to velmi přínosné. Moc se mi líbily příklady z dulí
@@ -62,7 +60,6 @@ export const Education = () => {
           přístupnější jak pro ženy, co dojíždí velkou vzdálenost, tak i pro
           ženy s malými miminky či před porodem.
         </p>
-        <img src="img/pexels4.jpg" alt="" width="150px" />
         <p className="reference">
           „Jednoduše pozitivní. Nové vztahy, nové vize, nová přátelství, sdílení
           a intimita.“
@@ -87,7 +84,6 @@ export const Education = () => {
           profesionálů. Navzdory častým počátečním obavám to nakonec mezi
           studentkami bývá velmi oblíbená část kurzu.
         </p>
-        <img src="img/pexels1.jpg" alt="" width="150px" />
         <p className="reference">
           „Nevěděla jsem, co si představit pod slovem sebezkušenost. Ale nakonec
           mě praktická cvičení překvapila tím, jaké pocity po nich každá z nás
@@ -149,7 +145,10 @@ export const Education = () => {
           Jejím splněním se studentky stávají certifikovanými dulami.{' '}
         </p>
         <div className="education-card">
-          <p>Zde vám přinášíme shrnutí, co vás v našem výcviku čeká: </p>
+          <p>
+            Zde vám přinášíme <strong>shrnutí</strong>, co vás v našem výcviku
+            čeká:{' '}
+          </p>
           <ul>
             <li>11 víkendových setkání</li>
             <li>154 hodin výcviku</li>
@@ -160,7 +159,6 @@ export const Education = () => {
             <li>3 konzultované doprovody k porodu</li>
           </ul>
         </div>
-        <img src="img/pexels2.jpg" alt="" width="150px" />
         <p className="reference">
           „Ještě stále mi úplně nedochází, jak moc mě výcvik změnil. Rozhodně mé
           nejlepší rozhodnutí, co se týče vzdělání. Úžasný seberozvoj, skvělé
