@@ -12,7 +12,7 @@ export const Contacts = () => {
         </p>
         <div>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.4254439855504!2d14.402681294756313!3d50.097043239337275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94df6a700001%3A0x7530a92d540647b!2sBadeniho%20290%2F1%2C%20160%2000%20Praha%206-Letn%C3%A1!5e0!3m2!1scs!2scz!4v1718312627448!5m2!1scs!2scz "
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.4254439855504!2d14.402681294756313!3d50.097043239337275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94df6a700001%3A0x7530a92d540647b!2sBadeniho%20290%2F1%2C%20160%2000%20Praha%206-Letn%C3%A1!5e0!3m2!1scs!2scz!4v1718312627448!5m2!1scs!2scz"
             width="500"
             height="400"
             style={{ border: 0 }}

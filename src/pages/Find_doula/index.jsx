@@ -8,12 +8,6 @@ export const Find_doula = () => {
   function handleDataFromChild(data) {
     setRegionId(data);
   }
-  // const fetchDuly = async () => {
-  //   const response = await fetch(`localhost:4000/api/duly`);
-  //   const json = await response.json();
-  //   const duly = json.data;
-  // };
-  // fetchDuly();
 
   return (
     <>
@@ -21,14 +15,6 @@ export const Find_doula = () => {
         <Map sendDataToParent={handleDataFromChild} />
         <DulaList region={regionId} />
       </div>
-      {/* {response.map((item) => (
-        <>
-          <p key={item.id}>{item.jméno}</p>
-          <p>{item.region}</p>
-          <p>{item.akreditace}</p>
-          <p>{item.jazyk}</p>
-        </>
-      ))} */}
     </>
   );
 };

@@ -1,10 +1,12 @@
 import duly from '../../../../api/duly.json';
 import './style.css';
+import berkova from '../../../../public/img/duly/lenka_berkova.jpg';
 
 export default function ({ region }) {
   const dulas = [
     {
       id: 1,
+      image: { berkova },
       name: 'Berková Lenka, Mgr.',
       regionIds: ['cz-pr', 'cz-st'],
       accretitaion: 'dula absolventka',
@@ -137,9 +139,9 @@ export default function ({ region }) {
   return (
     <>
       <ul className="container">
-        {currentDulas.map((cd, index) => (
-          <ul>
-            <li key={index}>
+        {currentDulas.map((cd, id) => (
+          <ul key={id}>
+            <li>
               {cd.name}, {cd.accretitaion}, jazyky: {cd.language}
             </li>
           </ul>
