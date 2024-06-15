@@ -96,10 +96,10 @@ export default function ({ region }) {
     },
     {
       id: 14,
-      name: 'Příhodová Anežka, Msc.',
-      regionIds: ['cz-pa', 'cz-kr'],
-      accretitaion: 'dula absolventka',
-      language: ['český, anglický'],
+      name: 'Shcherbyna Kseniya',
+      regionIds: ['cz-jm'],
+      accretitaion: 'certifikovaná dula',
+      language: ['český, anglický, ruský'],
     },
     {
       id: 15,
