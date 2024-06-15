@@ -1,8 +1,14 @@
 .container {
   margin-top: 0;
-  margin-bottom: 250px;
 }
 
 .container li {
   margin-bottom: 5px;
+}
+
+.box {
+  border: 1px solid var(--brand-color);
+  box-shadow: 0 0 2px 3px var(--brand-color);
+  border-radius: 20px;
+  margin-bottom: 300px;
 }

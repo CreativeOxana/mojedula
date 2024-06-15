@@ -138,7 +138,7 @@ export default function ({ region }) {
 
   return (
     <>
-      <ul className="container">
+      <ul className="container box">
         {currentDulas.map((cd, id) => (
           <ul key={id}>
             <li>
