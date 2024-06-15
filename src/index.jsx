@@ -8,7 +8,6 @@ import { Find_doula } from './pages/Find_doula';
 import { Contacts } from './pages/Contacts';
 import { App } from './pages/components/App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Information } from './pages/components/Information';
 
 const router = createBrowserRouter([
   {
@@ -22,10 +21,6 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
-      },
-      {
-        path: '/information',
-        element: <Information />,
       },
       {
         path: '/education',
