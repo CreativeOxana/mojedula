@@ -35,3 +35,24 @@ body {
   margin-bottom: 80px;
   flex-grow: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .text {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+  }
+}
