@@ -183,7 +183,9 @@ export const Education = () => {
           </a>{' '}
           a my vás moc rády pozveme na přijímací řízení.
         </p>
-        <p>Příští výcvik je plánovaný na rok 2025 – 2027</p>
+        <p>
+          Příští výcvik je plánovaný na rok <strong>2025 – 2027</strong>
+        </p>
         <p>
           Dostalo se vám málo informací? Chcete toho o výcviku u Českých dul
           vědět víc? Nebojte se nás kontaktovat a na cokoli zeptat:{' '}
