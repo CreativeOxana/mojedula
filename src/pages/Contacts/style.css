@@ -16,7 +16,11 @@ iframe {
   opacity: 0.65;
 }
 
-.contact-container a {
+.contact p {
+  text-align: center;
+}
+
+.contact a {
   color: var(--brand-color);
 }
 
