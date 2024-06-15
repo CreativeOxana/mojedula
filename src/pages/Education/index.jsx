@@ -33,8 +33,7 @@ export const Education = () => {
           „Ze začátku mi to přišlo dlouhé – 2 roky! Ale nesmírně rychle to
           uteklo a bylo to velmi přínosné. Moc se mi líbily příklady z dulí
           praxe.“
-        </p>
-        <p className="reference">
+          <br /> <br />
           „Děkuji za šanci výcvik absolvovat, pracovat na sobě a za čas, který
           jste nám všechny věnovaly.“
         </p>
@@ -63,8 +62,7 @@ export const Education = () => {
         <p className="reference">
           „Jednoduše pozitivní. Nové vztahy, nové vize, nová přátelství, sdílení
           a intimita.“
-        </p>
-        <p className="reference">
+          <br /> <br />
           „Výcvik je koncipován profesionálně, ale zároveň pozitivně a vtipně.
           Lektorky byly na lekce perfektně připravené. Jsme moc šťastná, že jsem
           se pro výcvik rozhodla.“
@@ -87,9 +85,7 @@ export const Education = () => {
         <p className="reference">
           „Nevěděla jsem, co si představit pod slovem sebezkušenost. Ale nakonec
           mě praktická cvičení překvapila tím, jaké pocity po nich každá z nás
-          měla a jak je každá jedna vnímala odlišně.“
-        </p>
-        <p className="reference">
+          měla a jak je každá jedna vnímala odlišně.“ <br /> <br />
           „Je mi líto, že výcvik už skončil. Celá sebezkušenostní část mi toho
           dala tolik, že mi pomáhá i v osobním životě.“
         </p>
@@ -109,9 +105,9 @@ export const Education = () => {
         <h4>Supervize</h4>
         <p>
           Od ukončení prvního roku výcviku je možné zúčastnit se také
-          supervizních setkání. Ta jsou vedená nestranným odborníkem….Slouží k…
-          Pro účast u závěrečné zkoušky je nutné absolvovat mininálně 3
-          supervizní setkání.
+          supervizních setkání. Ta jsou vedená nestranným odborníkem. Pro účast
+          u závěrečné zkoušky je nutné absolvovat mininálně 3 supervizní
+          setkání.
         </p>
         <h4>Setkání s praktikujícími dulami</h4>
         <p>
@@ -163,8 +159,7 @@ export const Education = () => {
           „Ještě stále mi úplně nedochází, jak moc mě výcvik změnil. Rozhodně mé
           nejlepší rozhodnutí, co se týče vzdělání. Úžasný seberozvoj, skvělé
           ženy, podpora, bezpečí. Děkuji z celého srdce.“
-        </p>
-        <p className="reference">
+          <br /> <br />
           „Organizace kurzu je velmi dobrá a vede ho skvělý tým. Během
           sebezkušenosti jsme měli úžasné lektory a poznatky z ní využívám i v
           běžném životě.“
