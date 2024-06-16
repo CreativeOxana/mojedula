@@ -13,3 +13,12 @@
 #czMap path:hover {
   fill-opacity: 80%;
 }
+
+@media screen and (max-width: 1200px) {
+  .container.map {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+}

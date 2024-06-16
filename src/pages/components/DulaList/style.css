@@ -26,35 +26,34 @@
 
 }
 
-@media screen and (min-width: 391px) and (max-width: 559px) {
+@media screen and (min-width: 391px) and (max-width: 469px) {
   svg {
-    transform: scale(0.6);
+    transform: scale(0.63);
+  }
+
+}
+
+@media screen and (min-width: 470px) and (max-width: 559px) {
+  svg {
+    transform: scale(0.7);
   }
 
 }
 
 @media screen and (min-width: 560px) and (max-width: 629px) {
   svg {
-    transform: scale(0.7);
-  }
-
-
-}
-
-@media screen and (min-width: 630px) and (max-width: px) {
-  svg {
     transform: scale(0.8);
   }
 
+
 }
 
-@media screen and (min-width: 630px) and (max-width: px) {
+@media screen and (min-width: 630px) and (max-width: 800px) {
   svg {
     transform: scale(0.9);
   }
 
 }
-
 
 
 @media screen and (max-width: 629px) {

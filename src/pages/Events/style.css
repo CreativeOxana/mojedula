@@ -1,5 +1,4 @@
 .container.events {
-  /* margin: 150px 30px 30px 30px; */
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
@@ -23,6 +22,10 @@
   margin-top: 20px;
 }
 
+.container.events i {
+  color: var(--dark-color);
+}
+
 .event-dates {
   border: 1px solid var(--brand-color);
   box-shadow: 0 0 2px 3px var(--brand-color);
@@ -32,6 +35,16 @@
   margin: 0 auto;
   text-align: center;
 
+}
+
+@media screen and (max-width: 1200px) {
+  .container.events {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

@@ -9,7 +9,6 @@ export const App = () => {
     <div className="app-box">
       <Header />
       <Outlet />
-
       <Footer />
     </div>
   );
