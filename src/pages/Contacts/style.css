@@ -36,6 +36,52 @@ i:hover {
     margin-left: 20px;
     margin-right: 20px;
     padding: 0;
+
+  }
+
+  .contacts {
+    width: 100%;
+  }
+
+  .container.contact .form-container {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 390px) {
+    .map iframe {
+      transform: scale(0.65);
+    }
+
+  }
+
+  @media screen and (min-width: 391px) and (max-width: 493px) {
+    .map iframe {
+      transform: scale(0.75);
+    }
+
+  }
+
+
+  @media screen and (min-width: 494px) and (max-width: 559px) {
+    .map iframe {
+      transform: scale(0.9);
+    }
+
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 629px) {
+    .map iframe {
+      transform: scale(0.8);
+    }
+
+
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 800px) {
+    .map iframe {
+      transform: scale(0.9);
+    }
+
   }
 
   /* .container.contact iframe {
@@ -57,5 +103,6 @@ i:hover {
 
   .container.contact .form-container {
     margin: 0;
+
   }
 }
