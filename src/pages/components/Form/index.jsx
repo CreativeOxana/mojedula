@@ -29,7 +29,11 @@ export default function Form() {
       .then((response) => response.json())
       .then((response) => {
         if (response.code === 200) {
-          alert('Děkujeme vám za zprávu. V brzké době vás kontaktujeme.');
+          alert('Děkujeme Vám za zprávu. V brzké době Vás kontaktujeme.');
+          setName('');
+          setEmail('');
+          setMessage('');
+          setEvents(false);
         } else if (response.code === 422) {
           // Field validation failed
           setError(response.message);
@@ -56,6 +60,7 @@ export default function Form() {
             onChange={(e) => setName(e.target.value)}
             id="name"
             placeholder="Zadejte své celé jméno"
+            autoComplete="on"
           />
         </div>
 
@@ -67,6 +72,7 @@ export default function Form() {
             onChange={(e) => setEmail(e.target.value)}
             id="email"
             placeholder="john@doe.com"
+            autoComplete="on"
           />
         </div>
 
@@ -85,7 +91,7 @@ export default function Form() {
             <strong>Přihlašuji se k odběru: </strong>
           </p>
           <div className="checkbox">
-            <label htmlFor="checkbox"> Události </label>
+            <label htmlFor="events"> Události </label>
             <input
               type="checkbox"
               name="checkbox"

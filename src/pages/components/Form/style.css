@@ -124,13 +124,13 @@
 }
 
 .form-container button:focus {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), hsla(var(--fc-primary-hsl));
+  background-color: var(--dark-color);
   border-inline: 1px solid inline rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 0px 3px rgba(var(--fc-primary-hsl), 12%);
+  box-shadow: 0px 0px 0px 3px rgba(var(--dark-color), 12%);
 }
 
 .form-container button:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), hsla(var(--fc-primary-hsl));
+  background: var(--dark-color);
 }
 
 .form-container button:disabled {
