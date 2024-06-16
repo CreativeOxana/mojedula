@@ -3,7 +3,7 @@ import './style.css';
 export const Events = () => {
   return (
     <>
-      <div className="container">
+      <div className="container events">
         <p>
           <strong>České duly z.s.</strong> pořádají postgraduální kurzy,
           semináře a workshopy.
@@ -24,10 +24,18 @@ export const Events = () => {
           <strong>Události, na které se můžete těšit: </strong>
         </h3>
         <ul className="event-dates">
-          <li>24.6.2024, 18:00 - Setkání s dulami online</li>
-          <li>26.6.2024, 18:00 - Předporodní příprava</li>
-          <li>28.6.2024, 20:00 - Ženský kruh</li>
-          <li>1.7.2024, 17:00 - Podpůrná skupina</li>
+          <li>
+            <strong>24.6.2024, 18:00 </strong>- Setkání s dulami online
+          </li>
+          <li>
+            <strong>26.6.2024, 18:00 </strong>- Předporodní příprava
+          </li>
+          <li>
+            <strong>28.6.2024, 20:00</strong> - Ženský kruh
+          </li>
+          <li>
+            <strong>1.7.2024, 17:00</strong> - Podpůrná skupina
+          </li>
         </ul>
         <div className="image">
           <img

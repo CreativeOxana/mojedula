@@ -1,8 +1,15 @@
 import duly from '../../../../api/duly.json';
 import Modal from '../Modal';
+import { useState } from 'react';
 import './style.css';
 
 export default function ({ region }) {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleToggleModal = () => {
+    setShowModal(!showModal);
+  };
+
   const dulas = [
     {
       id: 1,
@@ -137,15 +144,14 @@ export default function ({ region }) {
 
   return (
     <>
-      <ul className="container box">
+      <ul className="container dula box">
         {currentDulas.map((cd, id) => (
-          <ul key={id}>
-            <li>
-              {cd.name}, {cd.accretitaion}, jazyky: {cd.language}
-            </li>
-          </ul>
+          <li key={id} onClick={handleToggleModal}>
+            {cd.name}, {cd.accretitaion}, jazyky: {cd.language}
+          </li>
         ))}
       </ul>
+      {showModal && <Modal />}
     </>
   );
 }

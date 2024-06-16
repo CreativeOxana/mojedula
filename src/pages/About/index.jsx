@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const About = () => {
   return (
     <>
-      <div className="container">
+      <div className="container about">
         <h1>Kdo je dula</h1>
         <div className="about-box">
           <img
