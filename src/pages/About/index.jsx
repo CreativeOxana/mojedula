@@ -7,7 +7,11 @@ export const About = () => {
       <div className="container">
         <h1>Kdo je dula</h1>
         <div className="about-box">
-          <img src="img/pexels2.jpg" alt="" width="300px" />
+          <img
+            src="img/pages/pregnant-woman.jpg"
+            alt="pregnant-woman"
+            width="300px"
+          />
           <div className="text">
             <p>
               Dula poskytuje ženě a její rodině podporu během těhotenství,

@@ -140,21 +140,6 @@ export const Education = () => {
           Při splnění všech podmínek je výcvik zakončen závěrečnou zkouškou.
           Jejím splněním se studentky stávají certifikovanými dulami.{' '}
         </p>
-        <div className="education-card">
-          <p>
-            Zde vám přinášíme <strong>shrnutí</strong>, co vás v našem výcviku
-            čeká:{' '}
-          </p>
-          <ul>
-            <li>11 víkendových setkání</li>
-            <li>154 hodin výcviku</li>
-            <li>70 hodin sebezkušenosti</li>
-            <li>30 hodin intervize</li>
-            <li>5 hodin individuální terapie</li>
-            <li>3 skupinové supervize</li>
-            <li>3 konzultované doprovody k porodu</li>
-          </ul>
-        </div>
         <p className="reference">
           „Ještě stále mi úplně nedochází, jak moc mě výcvik změnil. Rozhodně mé
           nejlepší rozhodnutí, co se týče vzdělání. Úžasný seberozvoj, skvělé
@@ -164,6 +149,36 @@ export const Education = () => {
           sebezkušenosti jsme měli úžasné lektory a poznatky z ní využívám i v
           běžném životě.“
         </p>
+        <div className="education-card">
+          <p>
+            Zde vám přinášíme <strong>shrnutí</strong>, co vás v našem výcviku
+            čeká:{' '}
+          </p>
+          <ul>
+            <li>
+              <strong>11 </strong>víkendových setkání
+            </li>
+            <li>
+              <strong>154</strong> hodin výcviku
+            </li>
+            <li>
+              <strong>70</strong> hodin sebezkušenosti
+            </li>
+            <li>
+              <strong>30 </strong>hodin intervize
+            </li>
+            <li>
+              <strong>5</strong> hodin individuální terapie
+            </li>
+            <li>
+              <strong>3</strong> skupinové supervize
+            </li>
+            <li>
+              <strong>3</strong> konzultované doprovody k porodu
+            </li>
+          </ul>
+        </div>
+
         <h2>Jak se přihlásit</h2>
         <p>
           Jestli máte jasno a chcete se do výcviku přihlásit, vyplňte motivační

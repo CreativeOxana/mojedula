@@ -14,6 +14,15 @@
   list-style: none;
 }
 
+.container img {
+  border-radius: 20px;
+
+}
+
+.container .image {
+  margin-top: 20px;
+}
+
 .event-dates {
   border: 1px solid var(--brand-color);
   box-shadow: 0 0 2px 3px var(--brand-color);
@@ -21,4 +30,5 @@
   padding: 20px;
   width: 50%;
   margin: 0 auto;
+  text-align: center;
 }

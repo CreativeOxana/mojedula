@@ -29,7 +29,7 @@ export default function Form() {
       .then((response) => response.json())
       .then((response) => {
         if (response.code === 200) {
-          alert('Děkujeme vám za zprávu, v brzké době vás kontaktujeme.');
+          alert('Děkujeme vám za zprávu. V brzké době vás kontaktujeme.');
         } else if (response.code === 422) {
           // Field validation failed
           setError(response.message);
@@ -84,14 +84,16 @@ export default function Form() {
           <p>
             <strong>Přihlašuji se k odběru: </strong>
           </p>
-          <label htmlFor="checkbox"> Události </label>
-          <input
-            type="checkbox"
-            name="checkbox"
-            checked={events}
-            onChange={(e) => setEvents(e.target.checked)}
-            id="events"
-          />
+          <div className="checkbox">
+            <label htmlFor="checkbox"> Události </label>
+            <input
+              type="checkbox"
+              name="checkbox"
+              checked={events}
+              onChange={(e) => setEvents(e.target.checked)}
+              id="events"
+            />
+          </div>
         </div>
         <div className="formcarry-block">
           <button type="submit"> Poslat </button>

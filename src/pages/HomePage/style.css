@@ -35,7 +35,7 @@ body {
 }
 
 .card .card-text {
-  text-align: left;
+  text-align: center;
   padding: 30px;
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .text-container p {
-  text-align: left;
+  text-align: center;
   line-height: 1.5em;
 
 }
@@ -110,7 +110,7 @@ body {
   }
 
   .text-container {
-    width: 100vh;
+    max-width: 100vh;
     padding: 0;
     margin-left: 0;
     margin-right: 0;

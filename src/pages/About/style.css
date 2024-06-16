@@ -5,16 +5,19 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  margin: 120px 100px 80px 100px;
-  /* margin-bottom: 0; */
+  /* margin: 120px 100px 80px 100px; */
 }
 
 .about-box img {
   border-radius: 20px;
   width: 50%;
   margin: 22px;
-  /* float: inline-end; */
 }
+
+.about-box .text {
+  padding: 0;
+}
+
 
 p a {
   color: var(--dark-color);
@@ -42,7 +45,8 @@ p i {
   width: 90%;
   margin: 0 auto;
   padding: 30px 70px 30px 70px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .dula-services li {
@@ -51,6 +55,7 @@ p i {
 
 .dula {
   width: 90%;
+  margin-top: 20px;
 }
 
 .dula li {

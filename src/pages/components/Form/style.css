@@ -1,21 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap'); */
-
-
 .form-container {
   box-sizing: border-box;
   margin: 40px auto 0 auto;
   padding: 0;
-  /* font-family: "Inter", sans-serif; */
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
   letter-spacing: -0.01em;
   width: 400px;
   border: 1px solid var(--brand-color);
   box-shadow: 0 0 2px 3px var(--brand-color);
   border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 25px;
 
   /* NORMAL */
   --fc-border-color: #ECEFF9;
@@ -32,7 +27,6 @@
   --fc-field-hover-bg-color: #F7F9FC;
   --fc-border-hover-color: #DDE0EE;
   --fc-field-hover-text-color: #B3B8D0;
-
   --fc-border-active-color: #8C698C;
 }
 
@@ -55,12 +49,10 @@
   margin-top: 4px;
   width: 100%;
   height: 42px;
-  border: 1px solid var(--fc-border-color);
-  color: var(--fc-normal-text-color);
+  border: 1px solid var(--brand-color);
+  color: var(--dark-color);
   border-radius: 6px;
   padding: 8px 12px;
-
-  /* font-family: "Inter", sans-serif; */
   font-size: 16px;
   transition: 125ms background, 125ms color, 125ms box-shadow;
 }
@@ -95,8 +87,8 @@
 .form-container textarea:focus,
 .form-container select:focus {
   background-color: #fff;
-  border-color: hsl(var(--fc-primary-hsl));
-  box-shadow: hsla(var(--fc-primary-hsl), 8%) 0px 0px 0px 3px;
+  border-color: hsl(var(--brand-color));
+  box-shadow: hsla(var(--brand-color), 8%) 0px 0px 0px 3px;
   outline: none;
 }
 
@@ -110,39 +102,21 @@
 }
 
 .form-container button {
-  /* font-family: "Inter", sans-serif; */
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  height: 42px;
-  line-height: 40px;
-  width: 100%;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid hsla(var(--fc-primary-hsl));
-  background-color: hsla(var(--fc-primary-hsl));
-  color: #fff;
-  cursor: pointer;
-  margin-bottom: 30px;
-}
-
-.form-container button {
-  /* font-family: "Inter", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
   height: 40px;
   line-height: 20px;
   width: 100%;
-  border: 0;
+  border-radius: 6px;
   box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
   background-color: var(--brand-color);
   box-shadow: 0 0 2px var(--dark-color);
   transition: background-color 350ms ease-in-out;
   border-radius: 15px;
-  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .form-container button:hover {
@@ -187,4 +161,5 @@ p {
 
 h3 {
   margin-bottom: 20px;
+  text-align: center;
 }

@@ -5,7 +5,7 @@ import './style.css';
 export const Contacts = () => {
   return (
     <div className="container">
-      <div className="contact">
+      <div className="contacts">
         <h1>Kde nás najdete? </h1>
         <p>
           Na adrese:<strong> Badeniho 290/1, Praha 6, 160 00</strong>
@@ -48,7 +48,7 @@ export const Contacts = () => {
           </a>
         </p>
         <Link to={'/find_doula'}>
-          <i class="fa-solid fa-map-location-dot fa-lg"></i>
+          <i className="fa-solid fa-map-location-dot fa-lg"></i>
         </Link>
         <p>
           <Link to={'/find_doula'}>
@@ -56,7 +56,6 @@ export const Contacts = () => {
           </Link>
         </p>
       </div>
-      <hr />
       <Form />
     </div>
   );
