@@ -14,11 +14,11 @@ iframe {
   opacity: 0.65;
 }
 
-.contacts p {
+.contact-box p {
   text-align: center;
 }
 
-.contacts a {
+.contact-box a {
   color: var(--brand-color);
 }
 
@@ -39,59 +39,28 @@ i:hover {
 
   }
 
-  .contacts {
+  .container.contact p {
+    padding-bottom: 0;
+  }
+
+  .contact-box {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .container.contact .form-container {
     width: 100%;
-  }
 
-  @media screen and (max-width: 390px) {
-    .map iframe {
-      transform: scale(0.65);
-    }
-
-  }
-
-  @media screen and (min-width: 391px) and (max-width: 493px) {
-    .map iframe {
-      transform: scale(0.75);
-    }
-
-  }
-
-
-  @media screen and (min-width: 494px) and (max-width: 559px) {
-    .map iframe {
-      transform: scale(0.9);
-    }
-
-  }
-
-  @media screen and (min-width: 560px) and (max-width: 629px) {
-    .map iframe {
-      transform: scale(0.8);
-    }
-
-
-  }
-
-  @media screen and (min-width: 630px) and (max-width: 800px) {
-    .map iframe {
-      transform: scale(0.9);
-    }
-
-  }
-
-  /* .container.contact iframe {
-    min-width: 25%;
-  } */
-
-  .container.contact .form-container {
-    margin: 0;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .map iframe {
+    width: 100%;
+  }
+
+}
+
 
 
 @media screen and (min-width: 513px) and (max-width: 1200px) {
@@ -100,6 +69,7 @@ i:hover {
     margin-right: 20px;
     padding: 0;
   }
+
 
   .container.contact .form-container {
     margin: 0;

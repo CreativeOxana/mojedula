@@ -5,7 +5,7 @@ import './style.css';
 export const Contacts = () => {
   return (
     <div className="container contact">
-      <div className="contacts">
+      <div className="contact-box">
         <h1>Kde nás najdete? </h1>
         <p>
           Na adrese:<strong> Badeniho 290/1, Praha 6, 160 00</strong>

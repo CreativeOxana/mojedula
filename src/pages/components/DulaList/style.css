@@ -55,18 +55,20 @@
 
 }
 
-@media screen and (min-width: 630px) and (max-width: 1200px) {
-  .container.dula {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 40px;
-  }
-}
+
 
 @media screen and (max-width: 629px) {
   .container.dula {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 1200px) {
+  .container.dula {
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 40px;
   }
 }
