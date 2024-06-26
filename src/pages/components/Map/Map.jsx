@@ -18,8 +18,7 @@ export default function ({ sendDataToParent }) {
         xmlns:svg="http://www.w3.org/2000/svg"
         xmlns="http://www.w3.org/2000/svg"
         fill="#8C698C"
-        stroke="#fff"
-        stroke-width="1"
+        stroke="#9C76A6"
         width="612.45972"
         height="350.61844"
         onClick={onClickPathHandler}
