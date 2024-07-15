@@ -1,7 +1,6 @@
 .form-container {
   box-sizing: border-box;
   margin: 40px auto 0 auto;
-  padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -155,7 +154,7 @@ input[type="checkbox"] {
 }
 
 p {
-  margin: 0;
+  margin: 7px;
   text-align: center;
 }
 
