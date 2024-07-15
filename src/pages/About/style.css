@@ -104,7 +104,10 @@ p i {
     margin-right: 30px;
     padding: 0;
     font-size: 14px;
+  }
 
+  .container.about .dula-services {
+    padding: 10px;
   }
 
 

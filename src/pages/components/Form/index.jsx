@@ -60,6 +60,7 @@ export default function Form() {
             onChange={(e) => setName(e.target.value)}
             id="name"
             placeholder="Zadejte své celé jméno"
+            required
             autoComplete="on"
           />
         </div>
@@ -72,6 +73,7 @@ export default function Form() {
             onChange={(e) => setEmail(e.target.value)}
             id="email"
             placeholder="john@doe.com"
+            required
             autoComplete="on"
           />
         </div>
@@ -84,6 +86,7 @@ export default function Form() {
             onChange={(e) => setMessage(e.target.value)}
             id="message"
             placeholder="Zadejte svou zprávu..."
+            required
           ></textarea>
         </div>
         <div className="formcarry-block">
