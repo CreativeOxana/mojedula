@@ -169,7 +169,7 @@ p i {
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
 
   .container.about {
-    margin: 0 70px 0 70px;
+    margin: 120px 100px 80px 120px;
   }
 
   .container.about .about-box,
