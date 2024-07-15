@@ -160,9 +160,17 @@ p i {
     margin-left: 30px;
     margin-right: 30px;
   }
+
+  .container.about h3 {
+    margin-top: 7px;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
+
+  .container.about {
+    margin: 0 70px 0 70px;
+  }
 
   .container.about .about-box,
   .container.about .text {
@@ -188,5 +196,9 @@ p i {
 
   .container.about.about-box img {
     min-width: 50%;
+  }
+
+  .container.about h3 {
+    margin-top: 7px;
   }
 }
