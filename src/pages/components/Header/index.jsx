@@ -72,7 +72,7 @@ export const Header = () => {
               <li className="about" onClick={handleNavClick}>
                 <Link to="/about">O nás</Link>
               </li>
-              <li className="/about/association" onClick={handleNavClick}>
+              <li className="association" onClick={handleNavClick}>
                 <Dropdown dropdownContent={dropdownContent} />
               </li>
               <li className="education" onClick={handleNavClick}>
