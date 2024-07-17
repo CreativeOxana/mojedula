@@ -1,9 +1,18 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
+import { Dropdown } from '../Dropdown';
 import Logo from '/img/logo.png';
 
 export const Header = () => {
+  const dropdownContent = (
+    <ul>
+      <li>
+        <Link to="/about/association">O spolku</Link>
+      </li>
+    </ul>
+  );
+
   const handleNavClick = () => {
     navbarRef.current.classList.remove('openNav');
   };
@@ -62,6 +71,9 @@ export const Header = () => {
               <i className="uil uil-bars navCloseBtn"></i>
               <li className="about" onClick={handleNavClick}>
                 <Link to="/about">O nás</Link>
+              </li>
+              <li className="/about/association" onClick={handleNavClick}>
+                <Dropdown dropdownContent={dropdownContent} />
               </li>
               <li className="education" onClick={handleNavClick}>
                 <Link to="/education">Vzdělávání</Link>

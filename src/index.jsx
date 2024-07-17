@@ -5,6 +5,7 @@ import { About } from './pages/About';
 import { Education } from './pages/Education';
 import { Events } from './pages/Events';
 import { Find_doula } from './pages/Find_doula';
+import { Association } from './pages/components/Association';
 import { Contacts } from './pages/Contacts';
 import { App } from './pages/components/App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />,
+        children: [
+          {
+            path: '/about/association',
+            element: <Association />,
+          },
+        ],
       },
       {
         path: '/education',
