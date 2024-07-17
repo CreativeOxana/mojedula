@@ -1,4 +1,4 @@
-export const Association = () => {
+export const About = () => {
   return (
     <div className="container">
       <div className="contact">
