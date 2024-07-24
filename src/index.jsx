@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import './global.css';
 import { HomePage } from './pages/HomePage';
-import { Dula } from './pages/Dula';
+import { Doula } from './pages/Doula';
 import { Education } from './pages/Education';
 import { Events } from './pages/Events';
 import { Find_doula } from './pages/Find_doula';
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/dula',
-        element: <Dula />,
+        path: '/doula',
+        element: <Doula />,
       },
       {
         path: '/about',

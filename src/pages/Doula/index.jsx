@@ -1,7 +1,7 @@
 import './style.css';
 import { Link } from 'react-router-dom';
 
-export const Dula = () => {
+export const Doula = () => {
   return (
     <>
       <div className="container about">
