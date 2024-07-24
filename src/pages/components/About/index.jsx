@@ -59,78 +59,159 @@ export const About = () => {
       </p>
       <ul className="annual_report">
         <li>
-          <a href="http://mojedula.cz/files/pdf/vyrocni-zprava-ceske-duly-final.pdf">
+          <a
+            href="http://mojedula.cz/files/pdf/vyrocni-zprava-ceske-duly-final.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2009
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/files/pdf/vyrocni-zprava-2010.pdf">
+          <a
+            href="http://mojedula.cz/files/pdf/vyrocni-zprava-2010.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2010
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/files/vyrocni-zprava-2011.docx">
+          <a
+            href="http://mojedula.cz/files/vyrocni-zprava-2011.docx"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2011
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/files/vz-2012.pdf">
+          <a href="http://mojedula.cz/files/vz-2012.pdf" target="_blank">
             Výroční­ zpráva o.s. České duly za rok 2012
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/files/vz-ceske-duly-2013.pdf">
+          <a
+            href="http://mojedula.cz/files/vz-ceske-duly-2013.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2013
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/files/vz-2014-final.pdf">
+          <a href="http://mojedula.cz/files/vz-2014-final.pdf" target="_blank">
             Výroční­ zpráva o.s. České duly za rok 2014
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2016/02/VZ_2015_se_statistikou_a_vzděláváním-pracovní_verze.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2016/02/VZ_2015_se_statistikou_a_vzděláváním-pracovní_verze.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2015
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2017/03/VZ-2016.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2017/03/VZ-2016.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2016
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2018/03/VZ-2017-ofic.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2018/03/VZ-2017-ofic.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2017
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2019/04/zprava2018.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2019/04/zprava2018.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2018
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2020/03/VZ-2019.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2020/03/VZ-2019.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2019
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2021/03/VZ-2020_ofic.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2021/03/VZ-2020_ofic.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2020
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2022/04/VZ2021.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2022/04/VZ2021.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2021
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2023/03/VZ2022.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2023/03/VZ2022.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2022
           </a>
         </li>
         <li>
-          <a href="http://mojedula.cz/wp-content/uploads/2024/04/VZ2023.pdf">
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2024/04/VZ2023.pdf"
+            target="_blank"
+          >
             Výroční­ zpráva o.s. České duly za rok 2023
+          </a>
+        </li>
+      </ul>
+      <p>
+        <strong>Dokumenty ke stažení</strong>
+      </p>
+      <ul>
+        <li>
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2022/11/Stanovy-České-duly.pdf"
+            target="_blank"
+          >
+            Stanovy zapsaného spolku České duly
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2022/11/Etický-kodex-České-duly.pdf"
+            target="_blank"
+          >
+            Etický kodex zapsaného spolku České duly
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://mojedula.cz/wp-content/uploads/2022/11/Akreditační-řád-České-duly.pdf"
+            target="_blank"
+          >
+            Akreditační­ řád zapsaného spolku České duly
+          </a>
+        </li>
+      </ul>
+      <p>
+        <strong>Další důležité informace</strong>
+      </p>
+      <ul>
+        <li>
+          <a
+            href="http://mojedula.cz/index.php/ochrana-osobnich-udaju/"
+            target="_blank"
+          >
+            Ochrana osobních údajů
           </a>
         </li>
       </ul>
