@@ -88,33 +88,50 @@ export const Doula = () => {
         <h2>Jaké služby dula nabí­zí­?</h2>
         <ul className="dula-services">
           <li>
-            Psychickou a emocionální­ podporu ženy v průběhu těhotenství­,
-            porodu a šestinedělí­.
+            <strong>P</strong>sychickou a emocionální­ podporu ženy v průběhu
+            těhotenství­, porodu a šestinedělí­.
           </li>
           <li>
-            Nezaujaté předávání možností a aktuálních informací, spolupráci na
-            pří­pravě porodní­ho plánu.
+            <strong>N</strong>ezaujaté předávání možností a aktuálních
+            informací, spolupráci na pří­pravě porodní­ho plánu.
           </li>
-          <li>Naslouchaní, nesouzení.</li>
-          <li>Nepřetržitý doprovod během porodu a podporu v tomto čase.</li>
           <li>
-            Možnosti nefarmakologické úlevy od bolesti (polohování, teplo,
-            provázení slovem, práce s dechem, popřípadě práce s masážemi,
-            aromaterapií, rebozem, porodní napářkou atd.).
+            <strong>N</strong>aslouchaní, nesouzení.
           </li>
-          <li>Zapojení partnera dle potřeb a přání rodiny.</li>
-          <li>Vytváření prostoru pro komunikaci mezi rodičkou a personálem.</li>
-          <li>Podporu pro partnera a rodinu v celém pečujícím období.</li>
-          <li>Zkušenosti a podporu při zahájení­ kojení.­</li>
           <li>
-            Podporu nové rodině v šestinedělí­, předávání­ zkušeností­ s péčí­ o
-            dí­tě.
+            <strong>N</strong>epřetržitý doprovod během porodu a podporu v tomto
+            čase.
           </li>
-          <li>Kontakty na další odborníky a služby.</li>
           <li>
-            Některé České duly jsou taktéž vzdělané v některých dalších oborech,
-            jako je laktační poradenství, zpracovávání placenty, masáži
-            těhotných nebo miminek a jiné.
+            <strong>M</strong>ožnosti nefarmakologické úlevy od bolesti
+            (polohování, teplo, provázení slovem, práce s dechem, popřípadě
+            práce s masážemi, aromaterapií, rebozem, porodní napářkou atd.).
+          </li>
+          <li>
+            <strong>Z</strong>apojení partnera dle potřeb a přání rodiny.
+          </li>
+          <li>
+            <strong>V</strong>ytváření prostoru pro komunikaci mezi rodičkou a
+            personálem.
+          </li>
+          <li>
+            <strong>P</strong>odporu pro partnera a rodinu v celém pečujícím
+            období.
+          </li>
+          <li>
+            <strong>Z</strong>kušenosti a podporu při zahájení­ kojení.­
+          </li>
+          <li>
+            <strong>P</strong>odporu nové rodině v šestinedělí­, předávání­
+            zkušeností­ s péčí­ o dí­tě.
+          </li>
+          <li>
+            <strong>K</strong>ontakty na další odborníky a služby.
+          </li>
+          <li>
+            <strong>N</strong>ěkteré České duly jsou taktéž vzdělané v některých
+            dalších oborech, jako je laktační poradenství, zpracovávání
+            placenty, masáži těhotných nebo miminek a jiné.
           </li>
         </ul>
         <h2>Co je pro nás důležité?</h2>
