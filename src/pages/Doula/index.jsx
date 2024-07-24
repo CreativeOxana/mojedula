@@ -137,27 +137,32 @@ export const Doula = () => {
         <h2>Co je pro nás důležité?</h2>
         <ul className="dula">
           <li>
-            České duly usilují­ o stálé zvyšování­ kvality vzdělávání­ a práce
-            dul v ČR, o dodržování­ etických i profesní­ch standardů, o
-            zlepšování­ informovanosti laické i odborné veřejnosti.
+            České duly usilují­ o stálé{' '}
+            <strong>zvyšování­ kvality vzdělávání­ a práce dul v ČR</strong>, o
+            dodržování­ etických i profesní­ch standardů, o zlepšování­
+            informovanosti laické i odborné veřejnosti.
           </li>
           <li>
             České duly podporují­ takové změny v systému českého porodnictví­,
             které vycházejí­ z potřeb žen a novorozenců. České duly usilují­ o
             profesionalizaci profese duly.
           </li>
-          <li>Organizace České duly pomáhá ženám nají­t kvalifikovanou dulu</li>
           <li>
-            Pořádá základní­ i postgraduální­ kurzy pro duly, spolupracuje s
-            odbornými a dobrovolnými organizacemi podobného zaměření­,
-            spolupracuje se zahraniční­mi organizacemi s obdobnými cí­li,
-            vytváří­ a publikuje materiály, které přibližují­ laické i odborné
-            veřejnosti práci dul.
+            Organizace České duly pomáhá ženám nají­t{' '}
+            <strong>kvalifikovanou dulu</strong>
           </li>
           <li>
-            Spolek České duly poskytuje profesní zázemí svým členkám. Organizuje
-            pravidelné supervize a vytváří bezpečné prostředí pro vzájemnou
-            podporu a sdílení.
+            Pořádá <strong>základní­ i postgraduální­ kurzy pro duly</strong>,
+            spolupracuje s odbornými a dobrovolnými organizacemi podobného
+            zaměření­, spolupracuje se zahraniční­mi organizacemi s obdobnými
+            cí­li, vytváří­ a publikuje materiály, které přibližují­ laické i
+            odborné veřejnosti práci dul.
+          </li>
+          <li>
+            Spolek České duly poskytuje profesní{' '}
+            <strong>zázemí svým členkám</strong>. Organizuje pravidelné
+            supervize a vytváří bezpečné prostředí pro vzájemnou podporu a
+            sdílení.
           </li>
           <li>
             Spolek podporuje studentky a duly tak, aby mohly svou práci
