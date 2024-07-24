@@ -23,7 +23,7 @@ export const HomePage = () => {
               </div>
               <button className="card-button">
                 {' '}
-                <Link to="/about">Zjisti více o spolku</Link>
+                <Link to="/doula">Zjisti více o spolku</Link>
               </button>
             </div>
             <div className="card scale-element">
