@@ -31,9 +31,8 @@ export const About = () => {
         <p>
           <strong>Akreditační komise</strong>
         </p>
-        <p>Dagmar Hricová</p>
-        <p>PhDr. Irena Hrabincová (odborná garantka vzdělávání)</p>
         <p>Mgr. Markéta Vlčková</p>
+        <p>PhDr. Irena Hrabincová (odborná garantka vzdělávání)</p>
         <p>Mgr. Šárka Kučerová</p>
         <p>Mgr. Zuzana Dubová</p>
         <p>Ing. Vlaďka Hejzlarová</p>
@@ -58,7 +57,7 @@ export const About = () => {
       <p>
         <strong>Výroční zprávy</strong>
       </p>
-      <ul>
+      <ul className="annual_report">
         <li>
           <a href="http://mojedula.cz/files/pdf/vyrocni-zprava-ceske-duly-final.pdf">
             Výroční­ zpráva o.s. České duly za rok 2009

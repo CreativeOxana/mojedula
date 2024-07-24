@@ -88,33 +88,33 @@ export const Doula = () => {
         <h2>Jaké služby dula nabí­zí­?</h2>
         <ul className="dula-services">
           <li>
-            psychickou a emocionální­ podporu ženy v průběhu těhotenství­,
-            porodu a šestinedělí­
+            Psychickou a emocionální­ podporu ženy v průběhu těhotenství­,
+            porodu a šestinedělí­.
           </li>
           <li>
-            nezaujaté předávání možností a aktuálních informací, spolupráci na
-            pří­pravě porodní­ho plánu
+            Nezaujaté předávání možností a aktuálních informací, spolupráci na
+            pří­pravě porodní­ho plánu.
           </li>
-          <li>naslouchaní, nesouzení</li>
-          <li>nepřetržitý doprovod během porodu a podporu v tomto čase</li>
+          <li>Naslouchaní, nesouzení.</li>
+          <li>Nepřetržitý doprovod během porodu a podporu v tomto čase.</li>
           <li>
-            možnosti nefarmakologické úlevy od bolesti (polohování, teplo,
+            Možnosti nefarmakologické úlevy od bolesti (polohování, teplo,
             provázení slovem, práce s dechem, popřípadě práce s masážemi,
-            aromaterapií, rebozem, porodní napářkou atd.)
+            aromaterapií, rebozem, porodní napářkou atd.).
           </li>
-          <li>zapojení partnera dle potřeb a přání rodiny</li>
-          <li>vytváření prostoru pro komunikaci mezi rodičkou a personálem</li>
-          <li>podporu pro partnera a rodinu v celém pečujícím období</li>
-          <li>zkušenosti a podporu při zahájení­ kojení­</li>
+          <li>Zapojení partnera dle potřeb a přání rodiny.</li>
+          <li>Vytváření prostoru pro komunikaci mezi rodičkou a personálem.</li>
+          <li>Podporu pro partnera a rodinu v celém pečujícím období.</li>
+          <li>Zkušenosti a podporu při zahájení­ kojení.­</li>
           <li>
-            podporu nové rodině v šestinedělí­, předávání­ zkušeností­ s péčí­ o
-            dí­tě
+            Podporu nové rodině v šestinedělí­, předávání­ zkušeností­ s péčí­ o
+            dí­tě.
           </li>
-          <li>kontakty na další odborníky a služby</li>
+          <li>Kontakty na další odborníky a služby.</li>
           <li>
-            některé České duly jsou taktéž vzdělané v některých dalších oborech,
+            Některé České duly jsou taktéž vzdělané v některých dalších oborech,
             jako je laktační poradenství, zpracovávání placenty, masáži
-            těhotných nebo miminek a jiné
+            těhotných nebo miminek a jiné.
           </li>
         </ul>
         <h2>Co je pro nás důležité?</h2>
