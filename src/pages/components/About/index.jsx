@@ -178,7 +178,7 @@ export const About = () => {
       <p>
         <strong>Dokumenty ke stažení</strong>
       </p>
-      <ul>
+      <ul className="download">
         <li>
           <a
             href="http://mojedula.cz/wp-content/uploads/2022/11/Stanovy-České-duly.pdf"
@@ -207,7 +207,7 @@ export const About = () => {
       <p>
         <strong>Další důležité informace</strong>
       </p>
-      <ul>
+      <ul className="important">
         <li>
           <a
             href="http://mojedula.cz/index.php/ochrana-osobnich-udaju/"
