@@ -1,7 +1,7 @@
-.container.about {
+.container.info {
   margin-top: 150px;
 }
 
-.container.about .annual_report a {
+.container.info .annual_report a {
   color: var(--brand-color);
 }
