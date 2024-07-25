@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1200px) {
 
   .container.info {
     margin-left: 30px;
