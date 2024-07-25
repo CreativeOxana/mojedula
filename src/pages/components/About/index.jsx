@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="container about">
+    <div className="container info">
       <div className="contact">
         <p>Badeniho 1, Praha 6, 160 00</p>
         <p>IČO: 26559366</p>
