@@ -2,6 +2,8 @@
   margin-top: 150px;
 }
 
-.container.info .annual_report a {
+.container.info .annual_report a, 
+.contianer.info .download a,
+.container.info .important a {
   color: var(--brand-color);
 }
