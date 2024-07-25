@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Doula = () => {
   return (
     <>
-      <div className="container dula">
+      <div className="container about">
         <h1>Kdo je dula</h1>
         <div className="about-box">
           <img
