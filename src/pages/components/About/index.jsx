@@ -4,62 +4,78 @@ export const About = () => {
   return (
     <div className="container info">
       <div className="contact">
-        <p>Badeniho 1, Praha 6, 160 00</p>
-        <p>IČO: 26559366</p>
-        <p>Čí­slo účtu: 0534561339/0800, Česká spořitelna a.s.</p>
+        <p>
+          <strong>Adresa: </strong>Badeniho 1, Praha 6, 160 00
+        </p>
+        <p>
+          <strong>IČO: </strong>26559366
+        </p>
+        <p>
+          <strong>Čí­slo účtu: </strong>0534561339/0800,{' '}
+          <strong>Česká spořitelna a.s.</strong>
+        </p>
         <p> Zapsané u Městského soudu v Praze pod spis. značkou L 20158.</p>
       </div>
       <div className="committee-container">
-        <p>
-          <strong>Výkonný výbor</strong>
-        </p>
-        <p>Mgr. Markéta Vlčková</p>
-        <p>Ing. Petra Nerodilová</p>
-        <p>MVDr. Anna Musilová, Ph.D.</p>
-        <p>Zuzana Sokolová, Dis.</p>
-        <p>Mgr. Hana Zámečníková</p>
+        <ul>
+          <li className="main">
+            <strong>Výkonný výbor</strong>
+          </li>
+          <li>Mgr. Markéta Vlčková</li>
+          <li>Ing. Petra Nerodilová</li>
+          <li>MVDr. Anna Musilová, Ph.D.</li>
+          <li>Zuzana Sokolová, Dis.</li>
+          <li>Mgr. Hana Zámečníková</li>
+        </ul>
       </div>
       <div className="ethics-container">
-        <p>
-          <strong>Etická komise</strong>
-        </p>
-        <p>Prof. JUDr. Ivo Telec, CSc.</p>
-        <p>PhDr. Irena Hrabincová</p>
-        <p>Mgr. Markéta Vlčková</p>
-        <p>Anežka Příhodová Msc.</p>
-        <p>Dagmar Hricová</p>
+        <ul>
+          <li className="main">
+            <strong>Etická komise</strong>
+          </li>
+          <li>Prof. JUDr. Ivo Telec, CSc.</li>
+          <li>PhDr. Irena Hrabincová</li>
+          <li>Mgr. Markéta Vlčková</li>
+          <li>Anežka Příhodová Msc.</li>
+          <li>Dagmar Hricová</li>
+        </ul>
       </div>
       <div>
-        <p>
-          <strong>Akreditační komise</strong>
-        </p>
-        <p>Mgr. Markéta Vlčková</p>
-        <p>PhDr. Irena Hrabincová (odborná garantka vzdělávání)</p>
-        <p>Mgr. Šárka Kučerová</p>
-        <p>Mgr. Zuzana Dubová</p>
-        <p>Ing. Vlaďka Hejzlarová</p>
-        <p>Zuzana Sokolová, Dis. (manažerka vzdělávání)</p>
+        <ul>
+          <li className="main">
+            <strong>Akreditační komise</strong>
+          </li>
+          <li>Mgr. Markéta Vlčková</li>
+          <li>PhDr. Irena Hrabincová (odborná garantka vzdělávání)</li>
+          <li>Mgr. Šárka Kučerová</li>
+          <li>Mgr. Zuzana Dubová</li>
+          <li>Ing. Vlaďka Hejzlarová</li>
+          <li>Zuzana Sokolová, Dis. (manažerka vzdělávání)</li>
+        </ul>
       </div>
-      <p>
-        <strong>Revizorka</strong>
-      </p>
-      <p>Ing. Vlaďka Hejzlarová</p>
+      <ul>
+        <li className="main">
+          <strong>Revizorka</strong>
+        </li>
+        <li>Ing. Vlaďka Hejzlarová</li>
+      </ul>
 
-      <p>
-        <strong>Čestní členové</strong>
-      </p>
-      <p>
-        Čestnými členy se mohou stát osoby, které se významným způsobem
-        zasloužily o ší­ření­ a rozví­jení­ myšlenek práce dul, pří­padně o
-        dobré jméno, výsledky nebo majetek sdružení­.
-      </p>
-      <p>
-        <strong>Mgr. Markéta Pavlí­ková, M. SC. (od roku 2012)</strong>
-      </p>
-      <p>
-        <strong>Výroční zprávy</strong>
-      </p>
+      <ul>
+        <li className="main">
+          <strong>Čestní členové</strong>
+        </li>
+        <li>Mgr. Markéta Pavlí­ková, M. SC. (od roku 2012)</li>
+        <li className="small">
+          Čestnými členy se mohou stát osoby, které se významným způsobem
+          zasloužily o ší­ření­ a rozví­jení­ myšlenek práce dul, pří­padně o
+          dobré jméno, výsledky nebo majetek sdružení­.
+        </li>
+      </ul>
+
       <ul className="annual_report">
+        <li className="main">
+          <strong>Výroční zprávy</strong>
+        </li>
         <li>
           <a
             href="http://mojedula.cz/files/pdf/vyrocni-zprava-ceske-duly-final.pdf"
@@ -175,10 +191,10 @@ export const About = () => {
           </a>
         </li>
       </ul>
-      <p>
-        <strong>Dokumenty ke stažení</strong>
-      </p>
       <ul className="download">
+        <li className="main">
+          <strong>Dokumenty ke stažení</strong>
+        </li>
         <li>
           <a
             href="http://mojedula.cz/wp-content/uploads/2022/11/Stanovy-České-duly.pdf"
@@ -204,10 +220,10 @@ export const About = () => {
           </a>
         </li>
       </ul>
-      <p>
-        <strong>Další důležité informace</strong>
-      </p>
       <ul className="important">
+        <li className="main">
+          <strong>Další důležité informace</strong>
+        </li>
         <li>
           <a
             href="http://mojedula.cz/index.php/ochrana-osobnich-udaju/"

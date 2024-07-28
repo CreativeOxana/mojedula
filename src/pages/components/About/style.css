@@ -2,11 +2,29 @@
   margin-top: 150px;
 }
 
-.container.info .annual_report a, 
+.container.info .annual_report a,
 .container.info .download a,
 .container.info .important a {
   color: var(--brand-color);
 }
+
+.container.info li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.container.info li.main {
+  padding-bottom: 10px;
+  margin-top: 11px;
+  font-size: large;
+}
+
+.container.info li.small {
+  font-size: small;
+}
+
+
+
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
 
@@ -78,7 +96,7 @@
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media screen and (min-width: 1001px) {
 
   .container.info {
     margin: 120px 100px 80px 120px;
@@ -92,7 +110,7 @@
     padding: 0;
 
   }
-  
+
   .container.info h3 {
     margin-top: 7px;
   }
