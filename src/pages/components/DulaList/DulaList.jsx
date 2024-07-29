@@ -144,10 +144,10 @@ export default function ({ region }) {
   return (
     <>
       <ul className="container dula box">
+        {showModal && <Modal />}
         {currentDulas.map((cd, id) => (
           <li key={id} onClick={handleToggleModal}>
-            {showModal && <Modal />} {cd.name}, {cd.accretitaion}, jazyky:{' '}
-            {cd.language}
+            {cd.name}, {cd.accretitaion}, jazyky: {cd.language}
           </li>
         ))}
       </ul>

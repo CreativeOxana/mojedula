@@ -53,7 +53,7 @@ export default function Modal() {
         <div className="modal-overlay">
           <div className="modal">
             <h2>Medailonek duly</h2>
-            <DulaList medallion={dulas.medallion} />
+            <DulaList />
             <button onClick={closeModal}>Zavřít</button>
           </div>
         </div>
