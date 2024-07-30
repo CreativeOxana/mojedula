@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DulaList from '../DulaList/DulaList';
 
-const fetchData = async () => {
-  const api = await fetch('http://localhost:3000/api/duly');
-  console.log(api);
-  const response = await api.json();
-  console.log(response);
-  const duly = response.data;
-  console.log(duly);
-};
-fetchData();
+useEffect(() => {
+  const fetchData = async () => {
+    const api = await fetch('http://localhost:4000/api/duly');
+    const response = await api.json();
+    console.log(response);
+    const dulyData = response.data;
+    console.log(dulyData);
+    setDuly(dulyData);
+  };
+
+  fetchData();
+}, []);
 
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [duly, setDuly] = useState(null);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -30,7 +34,7 @@ export default function Modal() {
         <div className="modal-overlay">
           <div className="modal">
             <h2>Medailonek duly</h2>
-            <DulaList medallion={duly.medallion} />
+            {duly && <DulaList medallion={duly.medallion} />}
             <button onClick={closeModal}>Zavřít</button>
           </div>
         </div>
