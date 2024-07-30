@@ -1,19 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DulaList from '../DulaList/DulaList';
 
-useEffect(() => {
-  const fetchData = async () => {
-    const api = await fetch('http://localhost:4000/api/duly');
-    const response = await api.json();
-    console.log(response);
-    const dulyData = response.data;
-    console.log(dulyData);
-    setDuly(dulyData);
-  };
-
-  fetchData();
-}, []);
-
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [duly, setDuly] = useState(null);
@@ -25,6 +12,19 @@ export default function Modal() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const api = await fetch('http://localhost:4000/api/duly');
+      const response = await api.json();
+      console.log(response);
+      const dulyData = response.data;
+      console.log(dulyData);
+      setDuly(dulyData);
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <>
