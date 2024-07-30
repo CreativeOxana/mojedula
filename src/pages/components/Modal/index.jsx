@@ -18,9 +18,9 @@ export default function Modal() {
       const api = await fetch('http://localhost:4000/api/duly');
       const response = await api.json();
       console.log(response);
-      const dulyData = response.data;
-      console.log(dulyData);
-      setDuly(dulyData);
+      const duly = response.data;
+      console.log(duly);
+      setDuly(duly);
     };
 
     fetchData();
@@ -34,7 +34,17 @@ export default function Modal() {
         <div className="modal-overlay">
           <div className="modal">
             <h2>Medailonek duly</h2>
-            {duly && <DulaList medallion={duly.medallion} />}
+            {duly.map((dula) => {
+              return (
+                <>
+                  <DulaList
+                    key={dula.id}
+                    image={dula.picture}
+                    medallion={dula.medallion}
+                  />
+                </>
+              );
+            })}
             <button onClick={closeModal}>Zavřít</button>
           </div>
         </div>
