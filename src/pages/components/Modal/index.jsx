@@ -1,38 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import DulaList from '../DulaList/DulaList';
 
-export const DataFetchingComponent = () => {
-  const [data, setData] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://localhost:3000/duly.json/');
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const jsonData = await response.json();
-        setData(jsonData.data);
-      } catch (err) {
-        setError(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return <div>Načítání...</div>;
-  }
-
-  if (error) {
-    return <div>Chyba: {error.message}</div>;
-  }
+const fetchData = async () => {
+  const api = await fetch('http://localhost:3000/api/duly');
+  console.log(api);
+  const response = await api.json();
+  console.log(response);
+  const duly = response.data;
+  console.log(duly);
 };
+fetchData();
 
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -53,7 +30,7 @@ export default function Modal() {
         <div className="modal-overlay">
           <div className="modal">
             <h2>Medailonek duly</h2>
-            <DulaList />
+            <DulaList medallion={duly.medallion} />
             <button onClick={closeModal}>Zavřít</button>
           </div>
         </div>
