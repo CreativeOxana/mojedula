@@ -36,13 +36,11 @@ export default function Modal() {
             <h2>Medailonek duly</h2>
             {duly.map((dula) => {
               return (
-                <>
-                  <DulaList
-                    key={dula.id}
-                    image={dula.picture}
-                    medallion={dula.medallion}
-                  />
-                </>
+                <DulaList
+                  key={dula.id}
+                  image={dula.picture}
+                  medallion={dula.medallion}
+                />
               );
             })}
             <button onClick={closeModal}>Zavřít</button>
