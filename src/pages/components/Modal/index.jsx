@@ -3,10 +3,12 @@ import DulaList from '../DulaList/DulaList';
 
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [duly, setDuly] = useState(null);
+  const [duly, setDuly] = useState([]);
 
   const openModal = () => {
-    setIsModalOpen(true);
+    if (duly.length > 0) {
+      setIsModalOpen(true);
+    }
   };
 
   const closeModal = () => {
@@ -19,7 +21,7 @@ export default function Modal() {
       const response = await api.json();
       console.log(response);
       const duly = response.data;
-      console.log(duly);
+      console.log(duly[0].medallion);
       setDuly(duly);
     };
 
@@ -30,7 +32,7 @@ export default function Modal() {
     <>
       <button onClick={openModal}>Více informací o dule</button>
 
-      {isModalOpen && (
+      {isModalOpen && duly.length > 0 && (
         <div className="modal-overlay">
           <div className="modal">
             <h2>Medailonek duly</h2>
