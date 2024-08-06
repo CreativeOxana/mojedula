@@ -4,8 +4,10 @@ import './style.css';
 
 export default function ({ region }) {
   const [showModal, setShowModal] = useState(false);
+  const [selectedDula, setSelectedDula] = useState(null);
 
-  const handleToggleModal = () => {
+  const handleToggleModal = (dula) => {
+    setSelectedDula(dula);
     setShowModal(!showModal);
   };
 
@@ -139,16 +141,24 @@ export default function ({ region }) {
   ];
 
   const currentDulas =
-    region === '' ? dulas : dulas.filter((d) => d.regionIds.includes(region));
+    region === ''
+      ? dulas
+      : dulas.filter((dula) => dula.regionIds.includes(region));
 
   return (
     <>
       <ul className="container dula box">
-        {showModal && <Modal />}
+        {showModal && selectedDula && (
+          <>
+            <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
+          </>
+        )}
         {currentDulas.map((cd, id) => (
-          <li key={id} onClick={handleToggleModal}>
-            {cd.name}, {cd.accretitaion}, jazyky: {cd.language}
-          </li>
+          <>
+            <li key={id} onClick={() => handleToggleModal(cd)}>
+              {cd.name}, {cd.accretitaion}, jazyky: {cd.language.join(', ')}
+            </li>
+          </>
         ))}
       </ul>
     </>

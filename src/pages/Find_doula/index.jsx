@@ -12,6 +12,7 @@ export const Find_doula = () => {
   return (
     <>
       <div>
+        <h2>Duly z vybraného kraje</h2>
         <Map sendDataToParent={handleDataFromChild} />
         <DulaList region={regionId} />
       </div>
