@@ -54,7 +54,7 @@
 
   {
     "id": 5,
-    "picture": "img/duly/hajkova_katerina.jpg",
+    "picture": "img/duly/hajkova.jpeg",
     "name": "Hájková Kateřina",
     "regionIds": ["cz-pr", "cz-st"],
     "phone": "608 901 606",
@@ -197,7 +197,7 @@
   },
   {
     "id": 16,
-    "picture": "img/duly/sokolova.jpg",
+    "picture": "img/duly/sokolova.jpeg",
     "name": "Sokolová Zuzana, DiS.",
     "regionIds": ["cz-pr", "cz-st", "cz-vy"],
     "phone": "606 203 059",
@@ -210,7 +210,7 @@
   },
   {
     "id": 17,
-    "picture": "img/duly/vlcova.jpg",
+    "picture": "img/duly/vlckova.jpg",
     "name": "Vlčková Markéta, Mgr.",
     "regionIds": ["cz-zl"],
     "phone": "731 104 162",
