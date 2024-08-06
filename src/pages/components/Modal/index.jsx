@@ -38,7 +38,6 @@ export default function Modal() {
 
   return (
     <>
-      <button onClick={openModal}>Více informací o dule</button>
       <h2>Seznam dul</h2>
       <ul>
         {duly.length > 0 ? (
@@ -51,7 +50,6 @@ export default function Modal() {
           <p>Žádné údaje o dulách k zobrazení.</p>
         )}
       </ul>
-
       {isModalOpen && selectedDula && (
         <div className="modal-overlay">
           <div className="modal">

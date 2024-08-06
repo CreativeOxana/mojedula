@@ -25,16 +25,16 @@ export const Events = () => {
         </h3>
         <ul className="event-dates">
           <li>
-            <strong>24.6.2024, 18:00 </strong>- Setkání s dulami online
+            <strong>24.8.2024, 18:00 </strong>- Setkání s dulami online
           </li>
           <li>
-            <strong>26.6.2024, 18:00 </strong>- Předporodní příprava
+            <strong>26.8.2024, 18:00 </strong>- Předporodní příprava
           </li>
           <li>
-            <strong>28.6.2024, 20:00</strong> - Ženský kruh
+            <strong>28.8.2024, 20:00</strong> - Ženský kruh
           </li>
           <li>
-            <strong>1.7.2024, 17:00</strong> - Podpůrná skupina
+            <strong>1.9.2024, 17:00</strong> - Podpůrná skupina
           </li>
         </ul>
         <div className="image">
