@@ -11,6 +11,11 @@ export default function ({ region }) {
     setShowModal(!showModal);
   };
 
+  const handleDulaClick = (dula) => {
+    setSelectedDula(dula);
+    setShowModal();
+  };
+
   const dulas = [
     {
       id: 1,
