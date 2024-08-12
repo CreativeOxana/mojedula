@@ -24,7 +24,7 @@ export default function Modal() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:4000/api/duly');
+        const response = await fetch('assets/api/duly');
 
         if (!response.ok) {
           throw new Error('Network response was not ok');
