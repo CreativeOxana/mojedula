@@ -7,6 +7,7 @@ export default function ({ region }) {
   const [selectedDula, setSelectedDula] = useState(null);
 
   const handleToggleModal = (dula) => {
+    console.log('Selected Dula:', dula);
     setSelectedDula(dula);
     setShowModal(!showModal);
   };
