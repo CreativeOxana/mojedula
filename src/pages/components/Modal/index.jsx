@@ -5,6 +5,8 @@ export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [duly, setDuly] = useState([]);
   const [selectedDula, setSelectedDula] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const openModal = () => {
     if (selectedDula) {
@@ -20,12 +22,21 @@ export default function Modal() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const api = await fetch('http://localhost:4000/api/duly');
-      const response = await api.json();
-      console.log(response);
-      const duly = response.data;
-      console.log(duly[0].medallion);
-      setDuly(duly);
+      setLoading(true);
+      try {
+        const response = await fetch('http://localhost:4000/api/duly');
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        setDuly(data.data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
     };
 
     fetchData();
@@ -35,6 +46,14 @@ export default function Modal() {
     setSelectedDula(dula);
     openModal();
   };
+
+  if (loading) {
+    return <p>Načítání...</p>;
+  }
+
+  if (error) {
+    return <p>Chyba při načítání: {error}</p>;
+  }
 
   return (
     <>
