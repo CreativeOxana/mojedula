@@ -5,7 +5,6 @@ import './style.css';
 export default function ({ region }) {
   const [showModal, setShowModal] = useState(false);
   const [selectedDula, setSelectedDula] = useState(null);
-  const [hoveredDulaId, setHoveredDulaId] = useState(null);
 
   const handleToggleModal = (dula) => {
     setSelectedDula(dula);
@@ -150,32 +149,34 @@ export default function ({ region }) {
     <>
       <ul className="container dula box">
         {showModal && selectedDula && (
-          <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
+          <>
+            <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
+          </>
         )}
-        <h2>Seznam dul</h2>
-        <ul>
-          {currentDulas.length > 0 ? (
-            currentDulas.map((cd) => (
-              <li
-                key={cd.id}
-                onClick={() => handleToggleModal(cd)}
-                onMouseEnter={() => setHoveredDulaId(cd.id)} // Set hovered dula ID
-                onMouseLeave={() => setHoveredDulaId(null)} // Clear hovered dula ID
-                className="dula-list-item"
-              >
-                {cd.name}
-                {hoveredDulaId === cd.id && ( // Render additional props if hovered
-                  <div className="dula-info">
-                    <p>Akreditace: {cd.accretitaion}</p>
-                    <p>Jazyky: {cd.language.join(', ')}</p>
-                  </div>
-                )}
-              </li>
-            ))
-          ) : (
-            <p>Žádné údaje o dulách k zobrazení.</p>
-          )}
-        </ul>
+        {!showModal && (
+          <div>
+            <h2>Seznam dul</h2>
+            <ul>
+              {dulas.length > 0 ? (
+                dulas.map((dula) => (
+                  <li key={dula.id} onClick={() => handleDulaClick(dula)}>
+                    {dula.name}
+                  </li>
+                ))
+              ) : (
+                <p>Žádné údaje o dulách k zobrazení.</p>
+              )}
+            </ul>
+          </div>
+        )}
+
+        {currentDulas.map((cd, id) => (
+          <>
+            <li key={id} onClick={() => handleToggleModal(cd)}>
+              {cd.name}, {cd.accretitaion}, jazyky: {cd.language.join(', ')}
+            </li>
+          </>
+        ))}
       </ul>
     </>
   );
