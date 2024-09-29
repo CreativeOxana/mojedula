@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import DulaList from '../DulaList/DulaList';
 
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
