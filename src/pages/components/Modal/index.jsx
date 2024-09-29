@@ -60,7 +60,7 @@ export default function Modal() {
     <>
       <h2>Seznam dul</h2>
       <ul>
-        {duly.length > 0 ? (
+        {duly > 0 ? (
           duly.map((dula) => (
             <li key={dula.id} onClick={() => handleDulaClick(dula)}>
               {dula.name}
