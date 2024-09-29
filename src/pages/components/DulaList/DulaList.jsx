@@ -178,7 +178,10 @@ export default function ({ region }) {
 
         {currentDulas.map((cd, id) => (
           <>
-            <li key={cd.id} onClick={() => handleDulaClick(cd)}>
+            <li
+              key={cd.id}
+              onClick={() => handleDulaClick + handleToggleModal(cd)}
+            >
               {cd.name}, {cd.accretitaion}, jazyky: {cd.language.join(', ')}
             </li>
           </>
