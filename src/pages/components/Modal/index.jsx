@@ -58,7 +58,7 @@ export default function Modal() {
   return (
     <>
       <h2>Seznam dul</h2>
-      <ul>
+      {/* <ul>
         {duly > 0 ? (
           duly.map((dula) => (
             <li key={dula.id} onClick={() => handleDulaClick(dula)}>
@@ -68,7 +68,7 @@ export default function Modal() {
         ) : (
           <p>Žádné údaje o dulách k zobrazení.</p>
         )}
-      </ul>
+      </ul> */}
       {isModalOpen && selectedDula && (
         <div className="modal-overlay">
           <div className="modal">
