@@ -76,7 +76,10 @@ export default function Modal() {
             <div>
               {duly > 0 ? (
                 <div key={selectedDula.id}>
-                  <h3>{selectedDula.name}</h3>
+                  <h3>
+                    onClick={() => handleDulaClick(selectedDula)}{' '}
+                    {selectedDula.name}
+                  </h3>
                   <img src={selectedDula.picture} alt={selectedDula.name} />
                   <p>Akreditace: {selectedDula.accreditation}</p>
                   <p>Jazyky: {selectedDula.language.join(', ')}</p>
