@@ -32,7 +32,7 @@ export default function Modal() {
         }
 
         const data = await response.json();
-        setDuly(data.data);
+        setDuly(data);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -75,7 +75,7 @@ export default function Modal() {
           <div className="modal">
             <h2>Medailonek vybrané duly</h2>
             <div>
-              {duly.length > 0 ? (
+              {duly > 0 ? (
                 <div key={selectedDula.id}>
                   <h3>{selectedDula.name}</h3>
                   <img src={selectedDula.picture} alt={selectedDula.name} />
