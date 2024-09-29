@@ -159,7 +159,7 @@ export default function ({ region }) {
             <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
           </>
         )}
-        {!showModal && (
+        {/* {!showModal && (
           <div>
             <h2>Seznam dul</h2>
             <ul>
@@ -174,11 +174,11 @@ export default function ({ region }) {
               )}
             </ul>
           </div>
-        )}
+        )} */}
 
         {currentDulas.map((cd, id) => (
           <>
-            <li key={id} onClick={() => handleToggleModal(cd)}>
+            <li key={cd.id} onClick={() => handleDulaClick(cd)}>
               {cd.name}, {cd.accretitaion}, jazyky: {cd.language.join(', ')}
             </li>
           </>
