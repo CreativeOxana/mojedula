@@ -176,19 +176,16 @@ export default function ({ region }) {
           </div>
         )} */}
 
-        {currentDulas.map((cd) => (
+        {currentDulas.map((cd, id) => (
           <>
             <li
               key={cd.id}
               onClick={() => {
-                handleDulaClick(cd);
+                handleDulaClick(id);
                 handleToggleModal(cd);
               }}
             >
-              {cd.name}, {cd.accretitaion}, jazyky:{' '}
-              {Array.isArray(cd.language)
-                ? cd.language.join(', ')
-                : 'Není k dispozici'}
+              {cd.name}, {cd.accretitaion}, jazyky: {cd.language.join(', ')}
             </li>
           </>
         ))}
