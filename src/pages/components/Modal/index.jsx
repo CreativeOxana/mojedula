@@ -32,7 +32,7 @@ export default function Modal() {
         }
 
         const data = await response.json();
-        setDuly(data.data);
+        setDuly(data);
       } catch (err) {
         setError(err.message);
       } finally {
