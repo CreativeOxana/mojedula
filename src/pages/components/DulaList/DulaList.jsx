@@ -30,6 +30,10 @@ export default function DulaList({ region }) {
   }, []);
 
   const handleDulaClick = (dula) => {
+    if (selectedDula && selectedDula.id === dula.id) {
+      setShowModal(false);
+      setSelectedDula(null);
+    } else {
     setSelectedDula(dula);
     setShowModal(true);
   };
