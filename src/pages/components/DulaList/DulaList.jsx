@@ -34,33 +34,34 @@ export default function DulaList({ region }) {
       setShowModal(false);
       setSelectedDula(null);
     } else {
-    setSelectedDula(dula);
-    setShowModal(true);
+      setSelectedDula(dula);
+      setShowModal(true);
+    }
+
+    const currentDulas =
+      region === ''
+        ? dulas
+        : dulas.filter((dula) => dula.regionIds.includes(region));
+
+    if (loading) return <p>Načítání...</p>;
+    if (error) return <p>Chyba při načítání: {error}</p>;
+
+    return (
+      <>
+        <ul className="container dula box">
+          {currentDulas.map((dula) => (
+            <li key={dula.id} onClick={() => handleDulaClick(dula)}>
+              {dula.name}, {dula.accreditation}, jazyky:{' '}
+              {dula.language.join(', ')}
+            </li>
+          ))}
+        </ul>
+        {showModal && selectedDula && (
+          <>
+            <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
+          </>
+        )}
+      </>
+    );
   };
-
-  const currentDulas =
-    region === ''
-      ? dulas
-      : dulas.filter((dula) => dula.regionIds.includes(region));
-
-  if (loading) return <p>Načítání...</p>;
-  if (error) return <p>Chyba při načítání: {error}</p>;
-
-  return (
-    <>
-      <ul className="container dula box">
-        {currentDulas.map((dula) => (
-          <li key={dula.id} onClick={() => handleDulaClick(dula)}>
-            {dula.name}, {dula.accreditation}, jazyky:{' '}
-            {dula.language.join(', ')}
-          </li>
-        ))}
-      </ul>
-      {showModal && selectedDula && (
-        <>
-          <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
-        </>
-      )}
-    </>
-  );
 }
