@@ -47,7 +47,8 @@ export default function DulaList({ region }) {
       <ul className="container dula box">
         {currentDulas.map((dula) => (
           <li key={dula.id} onClick={() => handleDulaClick(dula)}>
-            {dula.name}, {dula.accretitaion}, jazyky: {dula.language.join(', ')}
+            {dula.name}, {dula.accreditation}, jazyky:{' '}
+            {dula.language.join(', ')}
           </li>
         ))}
       </ul>
