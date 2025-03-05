@@ -11,8 +11,8 @@ export const About = () => {
           <strong>IČO: </strong>26559366
         </p>
         <p>
-          <strong>Čí­slo účtu: </strong>0534561339/0800,{' '}
-          <strong>Česká spořitelna a.s.</strong>
+          <strong>Čí­slo účtu: </strong>2702986651/2010,{' '}
+          <strong>Fio banka</strong>
         </p>
         <p> Zapsané u Městského soudu v Praze pod spis. značkou L 20158.</p>
       </div>
