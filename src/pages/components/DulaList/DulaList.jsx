@@ -130,8 +130,8 @@ export default function DulaList({ region }) {
 
   const currentDulas =
     region === ''
-      ? dulás
-      : dulás.filter((dula) => dula.regionIds.includes(region));
+      ? dulas
+      : dulas.filter((dula) => dula.regionIds.includes(region));
 
   if (loading) return <p>Načítání...</p>;
   if (error) return <p>Chyba při načítání: {error}</p>;
