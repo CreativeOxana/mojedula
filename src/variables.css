@@ -1,6 +1,7 @@
 :root {
-  /* --brand-color: #b396b4; */
-  --brand-color: #8C698C;
+  /* --brand-color: #b396b4; #8C698C */
+
+  --brand-color: #694F69;
   --dark-color: #682a68;
   --background-color: #fff8f8;
 }
