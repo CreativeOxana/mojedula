@@ -37,35 +37,33 @@ export default function DulaList({ region }) {
       setSelectedDula(dula);
       setShowModal(true);
     }
-
-    // const handleDulaClick = (dula) => {
-    //   setSelectedDula(selectedDula && selectedDula.id === dula.id ? null : dula);
-    //   setShowModal(!showModal);
-
-    const currentDulas =
-      region === ''
-        ? dulas
-        : dulas.filter((dula) => dula.regionIds.includes(region));
-
-    if (loading) return <p>Načítání...</p>;
-    if (error) return <p>Chyba při načítání: {error}</p>;
-
-    return (
-      <>
-        <ul className="container dula box">
-          {currentDulas.map((dula) => (
-            <li key={dula.id} onClick={() => handleDulaClick(dula)}>
-              {dula.name}, {dula.accreditation}, jazyky:{' '}
-              {dula.language.join(', ')}
-            </li>
-          ))}
-        </ul>
-        {showModal && selectedDula && (
-          <>
-            <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
-          </>
-        )}
-      </>
-    );
   };
+
+  // const handleDulaClick = (dula) => {
+  //   setSelectedDula(selectedDula && selectedDula.id === dula.id ? null : dula);
+  //   setShowModal(!showModal);
+
+  const currentDulas =
+    region === ''
+      ? dulas
+      : dulas.filter((dula) => dula.regionIds.includes(region));
+
+  if (loading) return <p>Načítání...</p>;
+  if (error) return <p>Chyba při načítání: {error}</p>;
+
+  return (
+    <>
+      <ul className="container dula box">
+        {currentDulas.map((dula) => (
+          <li key={dula.id} onClick={() => handleDulaClick(dula)}>
+            {dula.name}, {dula.accreditation}, jazyky:{' '}
+            {dula.language.join(', ')}
+          </li>
+        ))}
+      </ul>
+      {showModal && selectedDula && (
+        <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
+      )}
+    </>
+  );
 }
