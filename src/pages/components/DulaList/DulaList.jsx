@@ -79,7 +79,27 @@ export default function DulaList({ region }) {
   const [dulas, setDulas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const modalRef = useRef(); // Reference na modal
+
+  const modalRef = useRef(); // Reference pro modální okno
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Zkontrolujeme, zda kliknutí proběhlo mimo modální okno
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        setShowModal(false);
+      }
+    };
+
+    if (showModal) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showModal]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -102,31 +122,14 @@ export default function DulaList({ region }) {
   }, []);
 
   const handleDulaClick = (dula) => {
-    setSelectedDula(selectedDula?.id === dula.id ? null : dula);
-    setShowModal((prev) =>
-      prev && selectedDula?.id === dula.id ? false : true,
-    );
-  };
-
-  // Zavřeme modal, pokud klikneme mimo modal
-  const handleClickOutside = (event) => {
-    if (modalRef.current && !modalRef.current.contains(event.target)) {
+    if (selectedDula && selectedDula.id === dula.id) {
       setShowModal(false);
       setSelectedDula(null);
+    } else {
+      setSelectedDula(dula);
+      setShowModal(true);
     }
   };
-
-  useEffect(() => {
-    if (showModal) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [showModal]);
 
   const currentDulas =
     region === ''
@@ -147,9 +150,11 @@ export default function DulaList({ region }) {
         ))}
       </ul>
       {showModal && selectedDula && (
-        <div ref={modalRef}>
-          <Modal dula={selectedDula} onClose={() => setShowModal(false)} />
-        </div>
+        <Modal
+          ref={modalRef}
+          dula={selectedDula}
+          onClose={() => setShowModal(false)}
+        />
       )}
     </>
   );
