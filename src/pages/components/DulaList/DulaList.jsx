@@ -27,7 +27,7 @@ export default function DulaList({ region }) {
     };
 
     fetchData();
-  }, []);
+  }, [region]);
 
   // const handleDulaClick = (dula) => {
   //   if (selectedDula && selectedDula.id === dula.id) {
