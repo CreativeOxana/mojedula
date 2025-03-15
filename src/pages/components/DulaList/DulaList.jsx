@@ -29,18 +29,14 @@ export default function DulaList({ region }) {
     fetchData();
   }, []);
 
-  // const handleDulaClick = (dula) => {
-  //   if (selectedDula && selectedDula.id === dula.id) {
-  //     setShowModal(false);
-  //     setSelectedDula(null);
-  //   } else {
-  //     setSelectedDula(dula);
-  //     setShowModal(true);
-  //   }
-
   const handleDulaClick = (dula) => {
-    setSelectedDula(selectedDula && selectedDula.id === dula.id ? null : dula);
-    setShowModal(!showModal);
+    if (selectedDula && selectedDula.id === dula.id) {
+      setShowModal(false);
+      setSelectedDula(null);
+    } else {
+      setSelectedDula(dula);
+      setShowModal(true);
+    }
 
     const currentDulas =
       region === ''
