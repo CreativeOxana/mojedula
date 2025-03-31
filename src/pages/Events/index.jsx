@@ -65,22 +65,28 @@ export const Events = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchEvents = async () => {
-      try {
-        const response = await axios.get(
-          'https://script.google.com/macros/s/AKfycbzlCHeAusP5xQ7hM5rPiURhmp3bf3lz4jv8p7LbNc8gdE7Q8HHElQP1KzHc08tfxmz1/exec',
-        );
-        setEvents(response.json);
-      } catch (error) {
-        console.error('Error fetching events:', error);
-        setError('Chyba při načítání událostí.');
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchEvents = async () => {
+    try {
+      const response = await axios.get(
+        'https://script.google.com/macros/s/AKfycbzlCHeAusP5xQ7hM5rPiURhmp3bf3lz4jv8p7LbNc8gdE7Q8HHElQP1KzHc08tfxmz1/exec',
+      );
+      setEvents(response.json);
+    } catch (error) {
+      console.error('Error fetching events:', error);
+      setError('Chyba při načítání událostí.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchEvents();
+
+    const intervalId = setInterval(() => {
+      fetchEvents();
+    }, 360000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   if (loading) return <p>Načítání událostí...</p>;
