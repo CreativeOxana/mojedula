@@ -91,6 +91,20 @@ export const Events = () => {
   if (loading) return <p>Načítání událostí...</p>;
   if (error) return <p>{error}</p>;
 
+  const formatDate = (eventDate) => {
+    const datePattern = /^(\d{1,2})\.(\d{1,2})\.(\d{4})$/;
+    const match = eventDate.match(datePattern);
+
+    if (match) {
+      let [_, day, month, year] = match;
+      day = day.padStart(2, '0');
+      month = month.padStart(2, '0');
+      return `${day}.${month}.${year}`;
+    }
+
+    return 'Datum není platné';
+  };
+
   return (
     <div className="container events">
       <h3>
@@ -98,40 +112,36 @@ export const Events = () => {
       </h3>
       <ul className="event-dates">
         {Array.isArray(events) && events.length > 0 ? (
-          events.map((event, index) => {
-            const eventDate = event.event_date;
-
-            return (
-              <li key={index}>
-                <strong>
-                  {event.event_title || 'Název události není dostupný'}
-                </strong>
-                <br />
-                <span>
-                  {event.event_description || 'Popis události není dostupný'}
-                </span>
-                <br />
-                <span>
-                  {eventDate
-                    ? `Datum: ${eventDate.replace('.', '/').replace('.', '/')}`
-                    : 'Datum není k dispozici'}
-                </span>
-                <br />
-                <span>
-                  Kontaktní informace:{' '}
-                  {event.contact_info || 'Kontaktní informace nejsou dostupné'}
-                </span>
-                <br />
-                <a
-                  href={event.event_link || '#'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Odkaz na událost
-                </a>
-              </li>
-            );
-          })
+          events.map((event, index) => (
+            <li key={index}>
+              <strong>
+                {event.event_title || 'Název události není dostupný'}
+              </strong>
+              <br />
+              <span>
+                {event.event_description || 'Popis události není dostupný'}
+              </span>
+              <br />
+              <span>
+                {`Datum: ${
+                  formatDate(event.event_date) || 'Datum není k dispozici'
+                }`}
+              </span>
+              <br />
+              <span>
+                Kontaktní informace:{' '}
+                {event.contact_info || 'Kontaktní informace nejsou dostupné'}
+              </span>
+              <br />
+              <a
+                href={event.event_link || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Odkaz na událost
+              </a>
+            </li>
+          ))
         ) : (
           <li>Žádné události k zobrazení.</li>
         )}
