@@ -117,32 +117,34 @@ export const Events = () => {
         </h3>
         <ul className="event-dates">
           {Array.isArray(events) && events.length > 0 ? (
-            events.map((event, index) => (
-              <li key={index}>
-                <strong>{event.event_title}</strong>
-                <br />
-                <span>{event.event_description}</span>
-                <br />
-                <span>
-                  {`Datum: ${new Date(event.event_date).toLocaleString(
-                    'cs-CZ',
-                    {
-                      timeZone: 'UTC',
-                    },
-                  )}, Čas: ${event.event_time}`}
-                </span>
-                <br />
-                <span>Kontaktní informace: {event.contact_info}</span>
-                <br />
-                <a
-                  href={event.event_link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Odkaz na událost
-                </a>
-              </li>
-            ))
+            events.map((event, index) => {
+              const eventDate = new Date(event.event_date);
+              const formattedDate = isNaN(eventDate.getTime())
+                ? 'Datum není platné'
+                : eventDate.toLocaleString('cs-CZ', { timeZone: 'UTC' });
+
+              return (
+                <li key={index}>
+                  <strong>{event.event_title}</strong>
+                  <br />
+                  <span>{event.event_description}</span>
+                  <br />
+                  <span>
+                    {`Datum: ${formattedDate}, Čas: ${event.event_time}`}
+                  </span>
+                  <br />
+                  <span>Kontaktní informace: {event.contact_info}</span>
+                  <br />
+                  <a
+                    href={event.event_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Odkaz na událost
+                  </a>
+                </li>
+              );
+            })
           ) : (
             <li>Žádné události k zobrazení.</li>
           )}
