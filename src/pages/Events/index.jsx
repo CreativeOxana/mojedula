@@ -81,16 +81,13 @@ export const Events = () => {
   };
 
   useEffect(() => {
-    const now = new Date();
-    const lastFetch = localStorage.getItem('lastFetch');
-    const lastFetchDate = lastFetch ? new Date(lastFetch) : null;
+    fetchEvents();
 
-    const oneDayInMilliseconds = 60 * 1000;
-    if (!lastFetchDate || now - lastFetchDate > oneDayInMilliseconds) {
+    const intervalId = setInterval(() => {
       fetchEvents();
-    } else {
-      setLoading(false);
-    }
+    }, 60000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   if (loading) return <p>Načítání událostí...</p>;
