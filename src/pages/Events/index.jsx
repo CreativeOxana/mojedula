@@ -118,7 +118,13 @@ export const Events = () => {
         <ul className="event-dates">
           {Array.isArray(events) && events.length > 0 ? (
             events.map((event, index) => {
-              const eventDate = new Date(event.event_date);
+              const [datePart, timePart] = event.event_date.split(' ');
+              const [day, month, year] = datePart.split('.').map(Number);
+
+              const eventDate = new Date(
+                Date.UTC(year, month - 1, day, ...timePart.split(':')),
+              );
+
               const formattedDate = isNaN(eventDate.getTime())
                 ? 'Datum není platné'
                 : eventDate.toLocaleString('cs-CZ', { timeZone: 'UTC' });
