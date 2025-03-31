@@ -119,12 +119,18 @@ export const Events = () => {
           {Array.isArray(events) && events.length > 0 ? (
             events.map((event, index) => (
               <li key={index}>
-                <strong>
-                  {event.event_date}, {event.event_time}{' '}
-                </strong>{' '}
-                - {event.event_title}
+                <strong>{event.event_title}</strong>
                 <br />
                 <span>{event.event_description}</span>
+                <br />
+                <span>
+                  {`Datum: ${new Date(event.event_date).toLocaleString(
+                    'cs-CZ',
+                    {
+                      timeZone: 'UTC',
+                    },
+                  )}, Čas: ${event.event_time}`}
+                </span>
                 <br />
                 <span>Kontaktní informace: {event.contact_info}</span>
                 <br />
