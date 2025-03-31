@@ -109,7 +109,7 @@ export const Events = () => {
           <strong>Seznam událostí, na které se můžete těšit: </strong>
         </h3>
         <ul className="event-dates">
-          {events.length > 0 ? (
+          {Array.isArray(events) && events.length > 0 ? (
             events.map((event, index) => (
               <li key={index}>
                 <strong>
