@@ -70,6 +70,7 @@ export const Events = () => {
       const response = await axios.get(
         'https://script.google.com/macros/s/AKfycbzKytejwjFWhlETiR0q2cwBCk8g9QRVPzeSSDOeGeJZ56U3uTYcQ-OOa30YquRjz5-F/exec',
       );
+      console.log(response.data);
       setEvents(response.data);
       localStorage.setItem('lastFetch', new Date().toISOString());
     } catch (error) {
@@ -145,7 +146,27 @@ export const Events = () => {
               );
             }
 
+            if (
+              typeof event.event_date !== 'string' ||
+              event.event_date.trim() === ''
+            ) {
+              return (
+                <li key={index}>
+                  <strong>Datum není platné.</strong>
+                </li>
+              );
+            }
+
             const [datePart, timePart] = event.event_date.split(' ');
+
+            if (!datePart || !timePart) {
+              return (
+                <li key={index}>
+                  <strong>Datum není platné.</strong>
+                </li>
+              );
+            }
+
             const [day, month, year] = datePart.split('.').map(Number);
             const eventDate = new Date(
               Date.UTC(year, month - 1, day, ...timePart.split(':')),
@@ -199,7 +220,7 @@ export const Events = () => {
       </div>
       <p>
         Bližší informace o jednotlivých událostech získáte na{' '}
-        <a href="mailto: info@mojedula.cz" target="_blank">
+        <a href="mailto:info@mojedula.cz" target="_blank">
           emailu<i className="fa-solid fa-envelope"></i>
         </a>
       </p>
