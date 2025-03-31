@@ -37,6 +37,11 @@
 
 }
 
+.event-dates a link {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
 @media screen and (max-width: 1200px) {
   .container.events {
     padding-left: 0;
