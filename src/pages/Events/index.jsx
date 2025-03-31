@@ -158,6 +158,7 @@ export const Events = () => {
                 }
                 target="_blank"
                 rel="noopener noreferrer"
+                className="link"
               >
                 {event.event_link
                   ? 'Odkaz na událost'
