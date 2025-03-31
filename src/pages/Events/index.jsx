@@ -150,19 +150,21 @@ export const Events = () => {
                 {event.event_info || 'Další informace nejsou dostupné'}
               </span>
               <br />
-              <a
-                href={
-                  event.event_link && event.event_link !== ''
-                    ? event.event_link
-                    : '#'
-                }
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {event.event_link
-                  ? 'Odkaz na událost'
-                  : 'Odkaz není k dispozici'}
-              </a>
+              <span>
+                <a
+                  href={
+                    event.event_link && event.event_link !== ''
+                      ? event.event_link
+                      : '#'
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {event.event_link
+                    ? 'Odkaz na událost'
+                    : 'Odkaz není k dispozici'}
+                </a>
+              </span>
             </li>
           ))
         ) : (
