@@ -84,9 +84,9 @@ export const Events = () => {
     },
   ];
 
-  const eventContainer = document.getElementById('eventContainer'); // Element, do kterého se události vkládají
+  const eventContainer = document.getElementById('eventContainer');
 
-  events.forEach((event) => {
+  event.forEach((event) => {
     const eventElement = document.createElement('div');
     eventElement.innerHTML = `
         <h3>${event.event_title}</h3>
