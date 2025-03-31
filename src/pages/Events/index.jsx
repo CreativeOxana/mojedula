@@ -144,8 +144,10 @@ export const Events = () => {
                 }`}
               </span>
               <br />
+              <span>{event.event_place || 'Místo události není dostupné'}</span>
+              <br />
               <span>
-                {event.contact_info || 'Kontaktní informace nejsou dostupné'}
+                {event.event_info || 'Další informace nejsou dostupné'}
               </span>
               <br />
               <a
