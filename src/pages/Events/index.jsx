@@ -82,11 +82,9 @@ export const Events = () => {
 
   useEffect(() => {
     fetchEvents();
-
     const intervalId = setInterval(() => {
       fetchEvents();
     }, 60000);
-
     return () => clearInterval(intervalId);
   }, []);
 
@@ -94,55 +92,50 @@ export const Events = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <>
-      <div className="container events">
-        <p>
-          <strong>České duly z.s.</strong> pořádají postgraduální kurzy,
-          semináře a workshopy.
-          <br />
-          <br />
-          Dále probíhají osobní i online schůzky s našimi dulami, týkající se
-          buď témat práce duly, informace pro rodičky, nebo také informační
-          schůzky ohledně našeho výcviku.
-          <br />
-          <br />
-          Také zveřejňujeme události, kde naše duly můžete potkat, jako
-          například předporodní přípravy, ženské kruhy, podpůrné skupiny a další
-          sezonní akce, stejně jako festivaly a další větší události, věnující
-          se našim tématům.
-        </p>
+    <div className="container events">
+      <p>
+        <strong>České duly z.s.</strong> pořádají postgraduální kurzy, semináře
+        a workshopy.
+        <br />
+        <br />
+        Dále probíhají osobní i online schůzky s našimi dulami, týkající se buď
+        témat práce duly, informace pro rodičky, nebo také informační schůzky
+        ohledně našeho výcviku.
+        <br />
+        <br />
+        Také zveřejňujeme události, kde naše duly můžete potkat, jako například
+        předporodní přípravy, ženské kruhy, podpůrné skupiny a další sezonní
+        akce, stejně jako festivaly a další větší události, věnující se našim
+        tématům.
+      </p>
 
-        <h3>
-          <strong>Seznam událostí, na které se můžete těšit: </strong>
-        </h3>
-        <ul className="event-dates">
-          {Array.isArray(events) && events.length > 0 ? (
-            events.map((event, index) => {
-              const [datePart, timePart] = event.event_date.split(' ');
-              const [day, month, year] = datePart.split('.').map(Number);
-
-              const eventDate = new Date(
-                Date.UTC(year, month - 1, day, ...timePart.split(':')),
-              );
-
-              const formattedDate = isNaN(eventDate.getTime())
-                ? 'Datum není platné'
-                : eventDate.toLocaleString('cs-CZ', { timeZone: 'UTC' });
-
+      <h3>
+        <strong>Seznam událostí, na které se můžete těšit: </strong>
+      </h3>
+      <ul className="event-dates">
+        {Array.isArray(events) && events.length > 0 ? (
+          events.map((event, index) => {
+            if (!event.event_date) {
               return (
                 <li key={index}>
-                  <strong>{event.event_title}</strong>
-                  <br />
-                  <span>{event.event_description}</span>
+                  <strong>
+                    {event.event_title || 'Název události není dostupný'}
+                  </strong>
                   <br />
                   <span>
-                    {`Datum: ${formattedDate}, Čas: ${event.event_time}`}
+                    {event.event_description || 'Popis události není dostupný'}
                   </span>
                   <br />
-                  <span>Kontaktní informace: {event.contact_info}</span>
+                  <span>Datum není k dispozici</span>
+                  <br />
+                  <span>
+                    Kontaktní informace:{' '}
+                    {event.contact_info ||
+                      'Kontaktní informace nejsou dostupné'}
+                  </span>
                   <br />
                   <a
-                    href={event.event_link}
+                    href={event.event_link || '#'}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -150,26 +143,66 @@ export const Events = () => {
                   </a>
                 </li>
               );
-            })
-          ) : (
-            <li>Žádné události k zobrazení.</li>
-          )}
-        </ul>
-        <div className="image">
-          <img
-            src="img/pages/women-together.jpg"
-            alt="women-together"
-            width="500px"
-          />
-        </div>
-        <p>
-          Bližší informace o jednotlivých událostech získáte na{' '}
-          <a href="mailto: info@mojedula.cz" target="_blank">
-            emailu
-            <i className="fa-solid fa-envelope"></i>
-          </a>
-        </p>
+            }
+
+            const [datePart, timePart] = event.event_date.split(' ');
+            const [day, month, year] = datePart.split('.').map(Number);
+            const eventDate = new Date(
+              Date.UTC(year, month - 1, day, ...timePart.split(':')),
+            );
+
+            const formattedDate = isNaN(eventDate.getTime())
+              ? 'Datum není platné'
+              : eventDate.toLocaleString('cs-CZ', { timeZone: 'UTC' });
+
+            return (
+              <li key={index}>
+                <strong>
+                  {event.event_title || 'Název události není dostupný'}
+                </strong>
+                <br />
+                <span>
+                  {event.event_description || 'Popis události není dostupný'}
+                </span>
+                <br />
+                <span>
+                  {`Datum: ${formattedDate}, Čas: ${
+                    event.event_time || 'Čas není dostupný'
+                  }`}
+                </span>
+                <br />
+                <span>
+                  Kontaktní informace:{' '}
+                  {event.contact_info || 'Kontaktní informace nejsou dostupné'}
+                </span>
+                <br />
+                <a
+                  href={event.event_link || '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Odkaz na událost
+                </a>
+              </li>
+            );
+          })
+        ) : (
+          <li>Žádné události k zobrazení.</li>
+        )}
+      </ul>
+      <div className="image">
+        <img
+          src="img/pages/women-together.jpg"
+          alt="women-together"
+          width="500px"
+        />
       </div>
-    </>
+      <p>
+        Bližší informace o jednotlivých událostech získáte na{' '}
+        <a href="mailto: info@mojedula.cz" target="_blank">
+          emailu<i className="fa-solid fa-envelope"></i>
+        </a>
+      </p>
+    </div>
   );
 };
