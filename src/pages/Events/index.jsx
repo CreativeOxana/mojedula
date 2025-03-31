@@ -101,12 +101,27 @@ export const Events = () => {
       month = month.padStart(2, '0');
       return `${day}.${month}.${year}`;
     }
-
     return 'Datum není platné';
   };
 
   return (
     <div className="container events">
+      <p>
+        <strong>České duly z.s.</strong> pořádají postgraduální kurzy, semináře
+        a workshopy.
+        <br />
+        <br />
+        Dále probíhají osobní i online schůzky s našimi dulami, týkající se buď
+        témat práce duly, informace pro rodičky, nebo také informační schůzky
+        ohledně našeho výcviku.
+        <br />
+        <br />
+        Také zveřejňujeme události, kde naše duly můžete potkat, jako například
+        předporodní přípravy, ženské kruhy, podpůrné skupiny a další sezonní
+        akce, stejně jako festivaly a další větší události, věnující se našim
+        tématům.
+      </p>
+
       <h3>
         <strong>Seznam událostí, na které se můžete těšit: </strong>
       </h3>
@@ -146,6 +161,13 @@ export const Events = () => {
           <li>Žádné události k zobrazení.</li>
         )}
       </ul>
+      <div className="image">
+        <img
+          src="img/pages/women-together.jpg"
+          alt="women-together"
+          width="500px"
+        />
+      </div>
       <p>
         Bližší informace o jednotlivých událostech získáte na{' '}
         <a href="mailto:info@mojedula.cz" target="_blank">
