@@ -130,10 +130,12 @@ export const Events = () => {
           events.map((event, index) => (
             <li key={index}>
               <strong>
+                Název události:{' '}
                 {event.event_title || 'Název události není dostupný'}
               </strong>
               <br />
               <span>
+                Popis:{' '}
                 {event.event_description || 'Popis události není dostupný'}
               </span>
               <br />
