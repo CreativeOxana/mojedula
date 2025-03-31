@@ -26,6 +26,10 @@
   color: var(--dark-color);
 }
 
+.event a {
+  display: none;
+}
+
 .event-dates {
   border: 1px solid var(--brand-color);
   box-shadow: 0 0 2px 3px var(--brand-color);
