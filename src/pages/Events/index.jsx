@@ -68,7 +68,7 @@ export const Events = () => {
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
-        'https://script.google.com/macros/s/AKfycbxalM9OocBTQP-VRETtfG0WpcFQDb9_7cgUgD0-dFcQ7lJ7Q-9bf9AGBBIy2Qs2AJw/exec',
+        'https://script.google.com/macros/s/AKfycbxaYcBsDpJdC65F6JDRiloqmEPKF7BHmll0X_KuQk-6fBubKVkLS6mGXI5DPRwT4vC5/exec',
       );
       console.log('Fetched events data:', response.data);
       setEvents(response.data);
