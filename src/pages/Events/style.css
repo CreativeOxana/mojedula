@@ -37,7 +37,7 @@
 
 }
 
-.event-date link a {
+.events .event-dates link a {
   text-decoration: none;
   color: var(--dark-color);
 }
