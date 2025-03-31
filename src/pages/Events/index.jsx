@@ -70,6 +70,7 @@ export const Events = () => {
       const response = await axios.get(
         'https://script.google.com/macros/s/AKfycbzKytejwjFWhlETiR0q2cwBCk8g9QRVPzeSSDOeGeJZ56U3uTYcQ-OOa30YquRjz5-F/exec',
       );
+      console.log('Fetched events data:', response.data);
       setEvents(response.data);
       localStorage.setItem('lastFetch', new Date().toISOString());
     } catch (error) {
@@ -130,12 +131,10 @@ export const Events = () => {
           events.map((event, index) => (
             <li key={index}>
               <strong>
-                Název události:{' '}
                 {event.event_title || 'Název události není dostupný'}
               </strong>
               <br />
               <span>
-                Popis:{' '}
                 {event.event_description || 'Popis události není dostupný'}
               </span>
               <br />
@@ -146,16 +145,21 @@ export const Events = () => {
               </span>
               <br />
               <span>
-                Kontaktní informace:{' '}
                 {event.contact_info || 'Kontaktní informace nejsou dostupné'}
               </span>
               <br />
               <a
-                href={event.event_link || '#'}
+                href={
+                  event.event_link && event.event_link !== ''
+                    ? event.event_link
+                    : '#'
+                }
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Odkaz na událost
+                {event.event_link
+                  ? 'Odkaz na událost'
+                  : 'Odkaz není k dispozici'}
               </a>
             </li>
           ))
