@@ -68,7 +68,7 @@ export const Events = () => {
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
-        'https://script.google.com/macros/s/AKfycbw8XZFRVZf08mC3-LfH19DS1ytxV1Yq98loXAPRfiYXEPFaNPGO4p-WrVp6WBKVKAOh/exec',
+        'https://script.google.com/macros/s/AKfycbxalM9OocBTQP-VRETtfG0WpcFQDb9_7cgUgD0-dFcQ7lJ7Q-9bf9AGBBIy2Qs2AJw/exec',
       );
       console.log('Fetched events data:', response.data);
       setEvents(response.data);
@@ -148,10 +148,6 @@ export const Events = () => {
               <br />
               <span>
                 Místo: {event.event_place || 'Místo události není dostupné'}
-              </span>
-              <br />
-              <span>
-                {event.event_info || 'Další informace nejsou dostupné'}
               </span>
               <br />
               <a
