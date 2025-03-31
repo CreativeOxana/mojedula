@@ -84,7 +84,7 @@ export const Events = () => {
 
     const intervalId = setInterval(() => {
       fetchEvents();
-    }, 360000);
+    }, 60000);
 
     return () => clearInterval(intervalId);
   }, []);
