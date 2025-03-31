@@ -158,7 +158,7 @@ export const Events = () => {
                 }
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link"
+                style={{ color: '#682a68', textDecoration: 'none' }}
               >
                 {event.event_link
                   ? 'Odkaz na událost'
