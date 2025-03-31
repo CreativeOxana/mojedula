@@ -70,7 +70,6 @@ export const Events = () => {
       const response = await axios.get(
         'https://script.google.com/macros/s/AKfycbzKytejwjFWhlETiR0q2cwBCk8g9QRVPzeSSDOeGeJZ56U3uTYcQ-OOa30YquRjz5-F/exec',
       );
-      console.log(response.data);
       setEvents(response.data);
       localStorage.setItem('lastFetch', new Date().toISOString());
     } catch (error) {
@@ -92,76 +91,15 @@ export const Events = () => {
   if (loading) return <p>Načítání událostí...</p>;
   if (error) return <p>{error}</p>;
 
-  const parseDate = (eventDate) => {
-    const datePattern = /^(\d{1,2})\.(\d{1,2})\.(\d{4}) (\d{1,2}):(\d{2})$/;
-    const match = eventDate.match(datePattern);
-
-    if (match) {
-      const [_, day, month, year, hour, minute] = match.map(Number);
-      const date = new Date(Date.UTC(year, month - 1, day, hour, minute));
-      return isNaN(date.getTime())
-        ? 'Datum není platné'
-        : date.toLocaleString('cs-CZ', { timeZone: 'UTC' });
-    }
-
-    return 'Datum není platné';
-  };
-
   return (
     <div className="container events">
-      <p>
-        <strong>České duly z.s.</strong> pořádají postgraduální kurzy, semináře
-        a workshopy.
-        <br />
-        <br />
-        Dále probíhají osobní i online schůzky s našimi dulami, týkající se buď
-        témat práce duly, informace pro rodičky, nebo také informační schůzky
-        ohledně našeho výcviku.
-        <br />
-        <br />
-        Také zveřejňujeme události, kde naše duly můžete potkat, jako například
-        předporodní přípravy, ženské kruhy, podpůrné skupiny a další sezonní
-        akce, stejně jako festivaly a další větší události, věnující se našim
-        tématům.
-      </p>
-
       <h3>
         <strong>Seznam událostí, na které se můžete těšit: </strong>
       </h3>
       <ul className="event-dates">
         {Array.isArray(events) && events.length > 0 ? (
           events.map((event, index) => {
-            if (!event.event_date) {
-              return (
-                <li key={index}>
-                  <strong>
-                    {event.event_title || 'Název události není dostupný'}
-                  </strong>
-                  <br />
-                  <span>
-                    {event.event_description || 'Popis události není dostupný'}
-                  </span>
-                  <br />
-                  <span>Datum není k dispozici</span>
-                  <br />
-                  <span>
-                    Kontaktní informace:{' '}
-                    {event.contact_info ||
-                      'Kontaktní informace nejsou dostupné'}
-                  </span>
-                  <br />
-                  <a
-                    href={event.event_link || '#'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Odkaz na událost
-                  </a>
-                </li>
-              );
-            }
-
-            const formattedDate = parseDate(event.event_date);
+            const eventDate = event.event_date;
 
             return (
               <li key={index}>
@@ -174,9 +112,9 @@ export const Events = () => {
                 </span>
                 <br />
                 <span>
-                  {`Datum: ${formattedDate}, Čas: ${
-                    event.event_time || 'Čas není dostupný'
-                  }`}
+                  {eventDate
+                    ? `Datum: ${eventDate.replace('.', '/').replace('.', '/')}`
+                    : 'Datum není k dispozici'}
                 </span>
                 <br />
                 <span>
@@ -198,13 +136,6 @@ export const Events = () => {
           <li>Žádné události k zobrazení.</li>
         )}
       </ul>
-      <div className="image">
-        <img
-          src="img/pages/women-together.jpg"
-          alt="women-together"
-          width="500px"
-        />
-      </div>
       <p>
         Bližší informace o jednotlivých událostech získáte na{' '}
         <a href="mailto:info@mojedula.cz" target="_blank">
