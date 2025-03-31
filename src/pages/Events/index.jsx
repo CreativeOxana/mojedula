@@ -65,6 +65,38 @@ export const Events = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const event = [
+    {
+      event_date: '4.4.2025',
+      event_description: 'Událost je pro duly, které se chtějí dále rozvíjet.',
+      event_link: 'https://www.web.cz/akce',
+      event_place: 'Vodičkova 1, Praha 1',
+      event_time: '11:11',
+      event_title: 'Workshop pro duly',
+    },
+    {
+      event_date: '5.5.2025',
+      event_description: 'Pravidelné setkávání určené se sdílení zkušeností',
+      event_link: 'https://www.web.cz/akce',
+      event_place: 'Alešova 5, Praha 5',
+      event_time: '8:00',
+      event_title: 'Setkání pro duly',
+    },
+  ];
+
+  const eventContainer = document.getElementById('eventContainer'); // Element, do kterého se události vkládají
+
+  events.forEach((event) => {
+    const eventElement = document.createElement('div');
+    eventElement.innerHTML = `
+        <h3>${event.event_title}</h3>
+        <p>${event.event_description}</p>
+        <p><strong>Čas:</strong> ${event.event_time}, <strong>Místo:</strong> ${event.event_place}</p>
+        <p><a href="${event.event_link}">Více informací</a></p>
+    `;
+    eventContainer.appendChild(eventElement);
+  });
+
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
