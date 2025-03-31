@@ -70,7 +70,8 @@ export const Events = () => {
       const response = await axios.get(
         'https://script.google.com/macros/s/AKfycbzlCHeAusP5xQ7hM5rPiURhmp3bf3lz4jv8p7LbNc8gdE7Q8HHElQP1KzHc08tfxmz1/exec',
       );
-      setEvents(response.json);
+      setEvents(response.data);
+      localStorage.setItem('lastFetch', new Date().toISOString());
     } catch (error) {
       console.error('Error fetching events:', error);
       setError('Chyba při načítání událostí.');
@@ -80,13 +81,16 @@ export const Events = () => {
   };
 
   useEffect(() => {
-    fetchEvents();
+    const now = new Date();
+    const lastFetch = localStorage.getItem('lastFetch');
+    const lastFetchDate = lastFetch ? new Date(lastFetch) : null;
 
-    const intervalId = setInterval(() => {
+    const oneDayInMilliseconds = 60 * 1000;
+    if (!lastFetchDate || now - lastFetchDate > oneDayInMilliseconds) {
       fetchEvents();
-    }, 60000);
-
-    return () => clearInterval(intervalId);
+    } else {
+      setLoading(false);
+    }
   }, []);
 
   if (loading) return <p>Načítání událostí...</p>;
