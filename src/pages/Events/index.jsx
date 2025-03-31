@@ -138,8 +138,8 @@ export const Events = () => {
               </span>
               <br />
               <span>
-                {`Datum: ${
-                  formatDate(event.event_date) || 'Datum není k dispozici'
+                {`Datum: ${formatDate(event.event_date)}; Čas: ${
+                  event.event_time || 'Čas není dostupný'
                 }`}
               </span>
               <br />
