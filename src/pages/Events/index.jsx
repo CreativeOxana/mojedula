@@ -92,6 +92,21 @@ export const Events = () => {
   if (loading) return <p>Načítání událostí...</p>;
   if (error) return <p>{error}</p>;
 
+  const parseDate = (eventDate) => {
+    const datePattern = /^(\d{1,2})\.(\d{1,2})\.(\d{4}) (\d{1,2}):(\d{2})$/;
+    const match = eventDate.match(datePattern);
+
+    if (match) {
+      const [_, day, month, year, hour, minute] = match.map(Number);
+      const date = new Date(Date.UTC(year, month - 1, day, hour, minute));
+      return isNaN(date.getTime())
+        ? 'Datum není platné'
+        : date.toLocaleString('cs-CZ', { timeZone: 'UTC' });
+    }
+
+    return 'Datum není platné';
+  };
+
   return (
     <div className="container events">
       <p>
@@ -146,35 +161,7 @@ export const Events = () => {
               );
             }
 
-            if (
-              typeof event.event_date !== 'string' ||
-              event.event_date.trim() === ''
-            ) {
-              return (
-                <li key={index}>
-                  <strong>Datum není platné.</strong>
-                </li>
-              );
-            }
-
-            const [datePart, timePart] = event.event_date.split(' ');
-
-            if (!datePart || !timePart) {
-              return (
-                <li key={index}>
-                  <strong>Datum není platné.</strong>
-                </li>
-              );
-            }
-
-            const [day, month, year] = datePart.split('.').map(Number);
-            const eventDate = new Date(
-              Date.UTC(year, month - 1, day, ...timePart.split(':')),
-            );
-
-            const formattedDate = isNaN(eventDate.getTime())
-              ? 'Datum není platné'
-              : eventDate.toLocaleString('cs-CZ', { timeZone: 'UTC' });
+            const formattedDate = parseDate(event.event_date);
 
             return (
               <li key={index}>
