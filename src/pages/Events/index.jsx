@@ -135,7 +135,9 @@ export const Events = () => {
               </strong>
               <br />
               <span>
-                {event.event_description || 'Popis události není dostupný'}
+                <em>
+                  {event.event_description || 'Popis události není dostupný'}
+                </em>
               </span>
               <br />
               <span>
@@ -144,7 +146,9 @@ export const Events = () => {
                 }`}
               </span>
               <br />
-              <span>{event.event_place || 'Místo události není dostupné'}</span>
+              <span>
+                Místo: {event.event_place || 'Místo události není dostupné'}
+              </span>
               <br />
               <span>
                 {event.event_info || 'Další informace nejsou dostupné'}
