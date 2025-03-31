@@ -68,7 +68,7 @@ export const Events = () => {
   const fetchEvents = async () => {
     try {
       const response = await axios.get(
-        'https://script.google.com/macros/s/AKfycbzlCHeAusP5xQ7hM5rPiURhmp3bf3lz4jv8p7LbNc8gdE7Q8HHElQP1KzHc08tfxmz1/exec',
+        'https://script.google.com/macros/s/AKfycbzKytejwjFWhlETiR0q2cwBCk8g9QRVPzeSSDOeGeJZ56U3uTYcQ-OOa30YquRjz5-F/exec',
       );
       setEvents(response.data);
       localStorage.setItem('lastFetch', new Date().toISOString());
