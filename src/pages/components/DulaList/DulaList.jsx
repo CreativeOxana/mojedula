@@ -80,11 +80,10 @@ export default function DulaList({ region }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const modalRef = useRef(); // Reference pro modální okno
+  const modalRef = useRef();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      // Zkontrolujeme, zda kliknutí proběhlo mimo modální okno
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         setShowModal(false);
       }
