@@ -13,7 +13,6 @@ export default function Modal({ dula, onClose }) {
             <p>Jazyky: {dula.language.join(', ')}</p>
             <p>Konkrétní města a kraje: {dula.precise_location}</p>
             <p>Webové stránky: {dula.website}</p>
-            <p>Medalionek: {dula.medallion}</p>
           </div>
           <div dangerouslySetInnerHTML={{ __html: dula.medallion }}></div>
           <button onClick={onClose}>Zavřít</button>
