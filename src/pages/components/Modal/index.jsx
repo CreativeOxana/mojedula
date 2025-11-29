@@ -1,10 +1,14 @@
 import React from 'react';
+import './modal.css';
 
 export default function Modal({ dula, onClose }) {
   return (
     <>
       <div className="modal-overlay">
         <div className="modal">
+          <button className="modal-close" onClick={onClose}>
+            &times;
+          </button>
           <h2>Medailonek vybrané duly</h2>
           <div>
             <h3>{dula.name}</h3>
