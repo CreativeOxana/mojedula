@@ -104,25 +104,6 @@
   margin-left: 0;
 }
 
-.modal::-webkit-scrollbar {
-  width: 10px;
-}
-
-.modal::-webkit-scrollbar-track {
-  background: var(--background-color);
-  border-radius: 5px;
-}
-
-.modal::-webkit-scrollbar-thumb {
-  background: var(--brand-color);
-  border-radius: 5px;
-  border: 2px solid var(--background-color);
-}
-
-.modal::-webkit-scrollbar-thumb:hover {
-  background: var(--dark-color);
-}
-
 @media (max-width: 768px) {
   .modal {
     padding: 15px 20px;

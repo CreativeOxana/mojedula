@@ -39,3 +39,28 @@ body {
   margin-bottom: 80px;
   flex-grow: 1;
 }
+
+/* Globální scrollbar pro VŠECHNY elementy */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--brand-color) var(--background-color);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background-color);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--brand-color);
+  border-radius: 5px;
+  border: 2px solid var(--background-color);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-color);
+}
