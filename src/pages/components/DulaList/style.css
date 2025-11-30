@@ -1,3 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .container.dula {
   margin-top: 0;
   margin-left: 300px;
@@ -8,7 +23,6 @@
   margin-bottom: 5px;
   text-align: center;
   list-style-type: none;
-
 }
 
 .box {
@@ -18,42 +32,197 @@
   margin-bottom: 300px;
 }
 
-@media screen and (max-width: 390px) {
-  svg {
-    transform: scale(0.5);
+/* Kontejner pro seznam dul */
+.dula-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Karta pro každou dulu */
+.dula-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Levý akcent jako pseudo-element */
+.dula-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--brand-color);
+  transition: all 0.3s ease;
+}
+
+.dula-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px) scale(1.02);
+  background-color: #fafafa;
+}
+
+.dula-card:hover::before {
+  width: 8px;
+}
+
+/* Hlavička karty */
+.dula-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.dula-name {
+  font-size: 1.3rem;
+  color: var(--brand-color);
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.dula-card:hover .dula-name {
+  transform: translateX(3px);
+}
+
+.dula-accreditation {
+  background-color: var(--brand-color);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.dula-card:hover .dula-accreditation {
+  transform: scale(1.08);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tělo karty - VŽDY POD SEBOU */
+.dula-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--dark-color);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.dula-info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.dula-card:hover .dula-info-item {
+  transform: translateX(3px);
+}
+
+.dula-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--brand-color);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.dula-card:hover .dula-icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Načítání a chybové hlášky */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-top: 50px;
+}
+
+.error {
+  color: red;
+}
+
+/* Responsivní design */
+@media (max-width: 768px) {
+  .dula-list-container {
+    padding: 10px;
   }
 
+  .dula-card {
+    padding: 15px;
+  }
+
+  .dula-card:hover {
+    transform: translateY(-3px) scale(1.01);
+  }
+
+  .dula-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .dula-name {
+    font-size: 1.2rem;
+  }
+
+  .dula-accreditation {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  svg:not(.dula-icon) {
+    transform: scale(0.5);
+  }
 }
 
 @media screen and (min-width: 391px) and (max-width: 469px) {
-  svg {
+  svg:not(.dula-icon) {
     transform: scale(0.63);
   }
-
 }
 
 @media screen and (min-width: 470px) and (max-width: 559px) {
-  svg {
+  svg:not(.dula-icon) {
     transform: scale(0.7);
   }
-
 }
 
 @media screen and (min-width: 560px) and (max-width: 629px) {
-  svg {
+  svg:not(.dula-icon) {
     transform: scale(0.8);
   }
-
-
 }
 
 @media screen and (min-width: 630px) and (max-width: 800px) {
-  svg {
+  svg:not(.dula-icon) {
     transform: scale(0.9);
   }
-
 }
-
 
 @media screen and (max-width: 629px) {
   .container.dula {
