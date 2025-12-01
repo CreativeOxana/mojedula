@@ -21,11 +21,9 @@ export const About = () => {
           <li className="main">
             <strong>Výkonný výbor</strong>
           </li>
-          <li>Mgr. Markéta Vlčková</li>
           <li>Ing. Petra Nerodilová</li>
           <li>MVDr. Anna Musilová, Ph.D.</li>
           <li>Zuzana Sokolová, Dis.</li>
-          <li>Mgr. Hana Zámečníková</li>
         </ul>
       </div>
       <div className="ethics-container">

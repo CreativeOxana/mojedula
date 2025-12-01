@@ -40,7 +40,6 @@ export default function DulaList({ region }) {
         }
         const data = await response.json();
 
-        // Normalizace dat - zajistit, že language je vždy pole s oddělenými jazyky
         const normalizedData = data.map((dula) => {
           let languages = dula.language;
 
