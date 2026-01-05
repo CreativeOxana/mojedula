@@ -1,6 +1,8 @@
 import './style.css';
 
 export const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer>
@@ -30,7 +32,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="copyright">
-          <i className="fa-regular fa-copyright"></i> 2025
+          <i className="fa-regular fa-copyright"></i> {currentYear}
         </div>
       </footer>
     </>

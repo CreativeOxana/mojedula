@@ -1,0 +1,17 @@
+export const regionNames = {
+  'cz-pr': 'Praha',
+  'cz-st': 'Středočeský kraj',
+  'cz-jc': 'Jihočeský kraj',
+  'cz-pl': 'Plzeňský kraj',
+  'cz-kv': 'Karlovarský kraj',
+  'cz-us': 'Ústecký kraj',
+  'cz-li': 'Liberecký kraj',
+  'cz-kr': 'Královéhradecký kraj',
+  'cz-kh': 'Královéhradecký kraj',
+  'cz-pa': 'Pardubický kraj',
+  'cz-vy': 'Vysočina',
+  'cz-jm': 'Jihomoravský kraj',
+  'cz-ol': 'Olomoucký kraj',
+  'cz-zl': 'Zlínský kraj',
+  'cz-mo': 'Moravskoslezský kraj',
+};
