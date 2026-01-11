@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  padding: 10px;
 }
 
 .modal {
@@ -19,7 +20,7 @@
   padding: 20px 30px;
   max-width: 600px;
   width: 90%;
-  max-height: 90%;
+  max-height: 90vh;
   overflow-y: auto;
   font-family: Arial, sans-serif;
 }
@@ -47,7 +48,6 @@
   display: block;
 }
 
-/* ✅ Standardní odstavce (Akreditace, Jazyky, atd.) */
 .modal p {
   margin: 0.5rem 0;
   color: var(--brand-color);
@@ -72,25 +72,33 @@
   background-color: var(--dark-color);
 }
 
-.modal-close {
+.modal .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
+  background-color: var(--brand-color);
+  color: #fff;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: var(--brand-color);
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 1;
 }
 
-.modal-close:hover {
+.modal .modal-close:hover {
   background-color: var(--dark-color);
   color: #fff;
 }
 
-/* ✅ HTML obsah z dangerouslySetInnerHTML - FLEXBOX VYSTŘEDĚNÍ */
 .modal div[dangerouslySetInnerHTML] {
   margin-top: 1rem;
   color: var(--background-color);
@@ -98,10 +106,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Vystředí vše */
 }
 
-/* ✅ Odstavce v HTML obsahu */
 .modal div[dangerouslySetInnerHTML] p {
   color: var(--background-color);
   text-align: left;
@@ -110,7 +116,6 @@
   max-width: 500px;
 }
 
-/* ✅ Seznamy v HTML obsahu */
 .modal div[dangerouslySetInnerHTML] ul {
   list-style-type: disc;
   list-style-position: outside;
@@ -118,7 +123,6 @@
   margin: 15px 0;
   text-align: left;
   width: auto;
-  /* Seznam se přizpůsobí obsahu */
 }
 
 .modal div[dangerouslySetInnerHTML] li {
@@ -128,14 +132,66 @@
 
 @media (max-width: 768px) {
   .modal {
-    padding: 15px 20px;
+    padding: 60px 20px 20px;
+    width: 90%;
+    max-height: 90vh;
   }
 
   .modal h2 {
     font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0;
   }
 
   .modal h3 {
     font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .modal img {
+    width: 140px;
+    height: 140px;
+    margin: 10px auto 20px;
+  }
+
+  .modal p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 6px 0;
+  }
+
+  .modal .modal-close {
+    top: 10px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+    font-size: 2.2rem;
+  }
+
+  .modal div[dangerouslySetInnerHTML] {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .modal div[dangerouslySetInnerHTML] p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #333;
+  }
+
+  .modal div[dangerouslySetInnerHTML] ul {
+    padding-left: 20px;
+    margin: 15px 0;
+  }
+
+  .modal div[dangerouslySetInnerHTML] li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
   }
 }
