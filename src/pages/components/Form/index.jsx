@@ -13,7 +13,7 @@ export default function Form() {
     e.preventDefault();
     e.stopPropagation();
 
-    fetch('https://formcarry.com/s/Vhn4P9evIRG', {
+    fetch('https://formcarry.com/s/hc2CG9s_z6U', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -35,15 +35,12 @@ export default function Form() {
           setMessage('');
           setEvents(false);
         } else if (response.code === 422) {
-          // Field validation failed
           setError(response.message);
         } else {
-          // other error from formcarry
           setError(response.message);
         }
       })
       .catch((error) => {
-        // request related error.
         setError(error.message ? error.message : error);
       });
   }
